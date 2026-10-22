@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="a0b4ab28-e50a-4256-a8c1-5feb5792c5cf" name="Battleship Museum Official Sign" modified="2026-10-16 08:57:00Z" next_poly_id="10" next_text_id="4" next_noise_id="0" next_group_id="0">
+    <layer name="Flag Base White" type="PolygonSignLayer" pos="0, 0" rot="0" scale="2.6, 0.74" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 1" type="PolygonSignLayer" pos="-0.03662119, 0.4507902" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 2" type="PolygonSignLayer" pos="-0.0209264, 0.3002725" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 3" type="PolygonSignLayer" pos="0.0340054, 0.1497548" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 4" type="PolygonSignLayer" pos="0.0235422, -0.0007629" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 5" type="PolygonSignLayer" pos="0.0183106, -0.1512806" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 6" type="PolygonSignLayer" pos="-0.005231599, -0.3017983" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Red Stripe 7" type="PolygonSignLayer" pos="0.03923699, -0.452316" rot="0" scale="2.6, 0.055" color="#B22234FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Blue Union Canton" type="PolygonSignLayer" pos="-0.9715528, 0.3904905" rot="0" scale="0.3, 0.11" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Canton Star" type="PolygonSignLayer" pos="-0.8486103, 0.3957219" rot="0" scale="0.035, 0.035" color="#FFFFFFFF" mode="ColorOnly" sides="5" smoothness="0" starify="0.62" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 03 Shadow" type="TextSignLayer" pos="0.005, -0.065" rot="0" scale="0.24, 0.2" color="#1C1C1CFF" mode="ColorOnly" font="Stardos Stencil" text="BATTLESHIP" direction="0" spacing="1" softness="0" dilate="0.06" />
+    <layer name="Text 02 Shadow" type="TextSignLayer" pos="0.005, -0.265" rot="0" scale="0.24, 0.2" color="#1C1C1CFF" mode="ColorOnly" font="Stardos Stencil" text="MUSEUM" direction="0" spacing="1" softness="0" dilate="0.06" />
+    <layer name="Text 01" type="TextSignLayer" pos="0.02, 0.12" rot="0" scale="0.21, 0.21" color="#051329FF" mode="ColorOnly" font="Stardos Stencil" text="USS NEW JERSEY" direction="0" spacing="1" softness="0" dilate="0.01" />
+    <layer name="Text 03" type="TextSignLayer" pos="0, -0.06" rot="0" scale="0.24, 0.2" color="#002FA7FF" mode="ColorOnly" font="Stardos Stencil" text="BATTLESHIP" direction="0" spacing="1" softness="0" dilate="0.02" />
+    <layer name="Text 02" type="TextSignLayer" pos="0, -0.26" rot="0" scale="0.24, 0.2" color="#002FA7FF" mode="ColorOnly" font="Stardos Stencil" text="MUSEUM" direction="0" spacing="1" softness="0" dilate="0.02" />
+  </sign>
+  <sign guid="44844c63-0b98-4e58-8198-c2e860eb1b9b" name="Museum Gift Shop Directional" modified="2026-10-16 10:55:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Brass Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Brass Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#1C1C1CFF" mode="ColorOnly" font="Stardos Stencil" text="The Ships Store" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="The Ships Store" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="7b2a1a8c-9d43-4e81-b51f-2e38b4d82301" name="Navy Sign - The Bridge" modified="2026-10-16 10:55:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Brass Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Brass Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#1C1C1CFF" mode="ColorOnly" font="Stardos Stencil" text="THE BRIDGE" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="THE BRIDGE" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="3c8e4d2a-11b7-4f92-9cb8-f7d1a3c5a612" name="Navy Sign - Engine Room" modified="2026-10-16 10:55:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Brass Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Brass Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#E5B33BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#1C1C1CFF" mode="ColorOnly" font="Stardos Stencil" text="ENGINE ROOM" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="ENGINE ROOM" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="f4a9b8c3-d2e1-45a7-8f3b-6c7d8e9f0a1b" name="Navy Sign - Armory" modified="2026-10-16 11:17:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Carbon Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#232731FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Carbon Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#232731FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="ARMORY" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#D32F2FFF" mode="ColorOnly" font="Stardos Stencil" text="ARMORY" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="e8b5d3c1-7f92-4a4b-8c11-9fa2b4d3c5e2" name="Navy Sign - State Rooms" modified="2026-10-16 11:24:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Maroon Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#4A0E17FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Maroon Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#4A0E17FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="STATE ROOMS" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FDFBF7FF" mode="ColorOnly" font="Stardos Stencil" text="STATE ROOMS" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="b3c4d5e6-7f9a-4b1c-8d2e-3f4a5b6c7d8e" name="Navy Sign - Mess Hall" modified="2026-10-16 11:34:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Navy Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="MESS HALL" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FDFBF7FF" mode="ColorOnly" font="Stardos Stencil" text="MESS HALL" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="e2f3a4b5-c6d7-4e8f-9a0b-1c2d3e4f5a6b" name="Navy Sign - Barber Shop" modified="2026-10-16 11:43:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Barber Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#104E5BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Barber Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#104E5BFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="BARBER SHOP" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FFFDD0FF" mode="ColorOnly" font="Stardos Stencil" text="BARBER SHOP" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="c7d8e9f0-a1b2-4c3d-8e9f-0a1b2c3d4e5f" name="Navy Sign - Ships Chapel" modified="2026-10-16 11:41:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Chapel Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#1C1E36FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Chapel Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#1C1E36FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="SHIPS CHAPEL" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FFFFFFFF" mode="ColorOnly" font="Stardos Stencil" text="SHIPS CHAPEL" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="a1b2c3d4-e5f6-7fa8-b9c0-d1e2f3a4b5c6" name="Navy Sign - Infirmary" modified="2026-10-16 11:45:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Infirmary Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#1E4620FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Green Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#1E4620FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="INFIRMARY" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FFFFFFFF" mode="ColorOnly" font="Stardos Stencil" text="INFIRMARY" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="d9e8f7c6-b5a4-4321-9876-f5e4d3c2b1a1" name="Navy Sign - Laundry" modified="2026-10-16 11:45:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Laundry Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#4B515DFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Gray Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#4B515DFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="LAUNDRY" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#FFFFFFFF" mode="ColorOnly" font="Stardos Stencil" text="LAUNDRY" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="e8b5d3c1-7f92-4a4b-8c11-9fa2b4d3c5e3" name="Navy Sign - Officer Mess" modified="2026-10-16 11:45:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="OFFICERS MESS" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="OFFICERS MESS" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="a3d8f1e6-2b4a-4c8d-97fe-0b5c3a1f7243" name="Navy Sign - Crew Quarters" modified="2026-10-16 12:05:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.23, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="CREW QUARTERS" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.23, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="CREW QUARTERS" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="f2a6c4d8-1b3a-4e7c-85df-9b4c2a0f6142" name="Navy Sign - Mail Room" modified="2026-10-16 12:04:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="MAIL ROOM" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="MAIL ROOM" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="d8f3c6a4-2e1b-4c7a-93ef-8e4b1c2a0f53" name="Navy Sign - Shooting Range" modified="2026-10-16 12:04:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.22, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="SHOOTING RANGE" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.22, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="SHOOTING RANGE" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="c4a2e5d9-3f81-4b7a-82cd-9e3b1c0a5f42" name="Navy Sign - Brig" modified="2026-10-16 12:04:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.25, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="BRIG" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.25, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="BRIG" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+  <sign guid="1c9f4d3a-6ee8-4a5f-b519-7e4a8b2cda14" name="Navy Sign - Ships Weapons" modified="2026-10-16 12:03:00Z" next_poly_id="8" next_text_id="3" next_noise_id="0" next_group_id="0">
+    <layer name="Wardroom Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.9, 0.42" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Black Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.84, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="White Border Base" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.78, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Inner Navy Plate" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1.72, 0.28" color="#0B2F64FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left Black Pillar" type="PolygonSignLayer" pos="-0.9984742, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Left White Pillar" type="PolygonSignLayer" pos="-0.9684742, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right Black Pillar" type="PolygonSignLayer" pos="0.9984741, 0" rot="0" scale="0.04, 0.36" color="#1A1A1AFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Right White Pillar" type="PolygonSignLayer" pos="0.9684741, 0" rot="0" scale="0.02, 0.32" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01 Shadow" type="TextSignLayer" pos="0.006, -0.026" rot="0" scale="0.23, 0.2" color="#111111FF" mode="ColorOnly" font="Stardos Stencil" text="SHIPS WEAPONS" direction="0" spacing="1" softness="0" dilate="0.04">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0, -0.02" rot="0" scale="0.23, 0.2" color="#E5B33BFF" mode="ColorOnly" font="Stardos Stencil" text="SHIPS WEAPONS" direction="0" spacing="1" softness="0" dilate="0">
+      <warp type="SkewWarp" amount="0.1, 1.490116E-09" rotation="0" />
+    </layer>
+  </sign>
+</signs>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<ServerGroup Name="USS New Jersey Battleship Museum Challenge" Logo="https://githubusercontent.com" Description="Can you escape the Battleship?">
+		<Server Name="USS New Jersey Battleship Museum Challenge V.3.3" Logo="https://githubusercontent.com">
+			<Description>
+				A heavy narrative overhaul mod pack for Release Ver.3.3 (B13) Stable. This mod pack was created for a solo or multiplayer survival challenge onboard an US Iowa-class Battleship (USS New Jersey BB-62), concept design and custom POIs engineered by Devilskut.
+
+				MAIN FEATURE OVERHAUL:
+				- This mod pack fully incorporates an accelerated "Learn by Doing" progression system powered by Spherii's custom mod engine. Your skills dynamically improve as you perform tasks in the field, bypassing standard rigid level gates for a more natural, responsive tactical growth curve.
+
+				Notes about this mini-mod changes and mechanics:
+				- Map and Logistics: Features five (5) existing pre-generated custom worlds allowing you to choose your starting area biome—Forest, Burnt, Desert, Snow, or the ultimate challenge, Wasteland. Features a dedicated [FF4F00]Battleship (biome)[-] game world. Built-in setup requires Loot Respawn set to [FF4F00]7 Days[-] and Air Drops strictly [ffd700]DISABLED[-].
+				- Important Tool Warning: Player-placed workstations like the Concrete Mixer, Chemistry Station, and Workbench can be picked up, but they MUST NOT be wrenched while full or you will lose your tools and items.
+				- Item and Crafting Tweaks: Added specialized consumables like "Goldens Swallow" (Mega Crush) and "Leather Bandage". Acid can be processed via a beaker at a campfire or refined directly from car batteries at a chemistry station. Coal can now be rendered down directly from wood in a campfire.
+				- Naval Fortifications and Transport: Deploys heavy automated defenses including 5D CIWIS Turrets, 5D Patriot Mobile Launchers/Trailers, alongside tactical vehicle assets like the ATV Puma and Military Trailer.
+				- Tailored Combat Perks: Pack Mule progression has been rebalanced (Rank 1 starts as "Disorganized", immediately granting +5 unencumbered inventory slots).
+
+				CHOOSE YOUR SPECIALIZATION PACK:
+				- ORDNANCE SPECIALIST: Elite Marine Engineer armed with a combat spear, silent tracking, black powder, and heavy rocket payloads. (Gives Pipe Rifle, Stone Spear, and Pipe Bombs).
+				- DIRECTOR OF SECURITY: Frontline powerhouse utilizing kinetic shock tactics and absolute breaching force. (Gives Shotgun, Wooden Club, and Stone Sledge).
+				- NAVAL RECON SCOUT: High-mobility phantom operating silently from the dark shadows of the engine rooms. (Gives Pipe Pistol, Bone Knife, and Wooden Bow).
+				- CHIEF SYSTEMS ENGINEER: Tactical bridge coordinator using high-voltage stun batons and robotic automated crossfire networks. (Gives Pipe Baton and Robotic Sledge).
+				- BIOLOGICAL WARFARE SURVIVOR: Pathogen-adapted close-quarters juggernaut built for pure physical endurance and machine-gun suppression. (Gives Pipe Machine Gun and Knuckle Wraps).
+
+				DETAILED CHALLENGE PROGRESSION:
+				- Stage 1: The Pier Lockdown — You awaken trapped under the strict exploitation of Trader Hugh at the Museum Toll Booths. To secure entry past the harbor perimeter and unlock your first Admin Quest Ticket, you must execute a frontline breach-and-clear to eliminate the rotting walkers cluttering the local docks.
+				- Stage 2: Sector Supply Runs — Advance your track by securing critical resources through high-risk deployment zones. Raid the Army Depot, clear the high-threat defenses on the Bridge Supplies run, and infiltrate the locked deck layers of the Battleship Museum to extract tier-1 weapon configurations.
+				- Stage 3: The Subterranean Transit — Navigate through the dark, confined layout of the Escape Tunnel to bypass the primary quarantine lines. You must locate the deep hidden assets stashed within the heavily infested Yacht Club without getting turned into bait along the way.
+				- Stage 4: Engineering Overhaul — Breach the deepest interior bulkheads of the Battleship Drive. Survive the localized mechanical traps, salvage Classified Documents, and gather essential components to craft a dedicated Gyrocopter Repair Kit.
+				- Stage 5: Airfield Liberation and Flight — Fight your way out to Devil's Air Strip. Cleanse the landing strips, establish defensive coverage with localized automated networks, repair the derelict aircraft structure, and achieve takeoff before the trailing Blood Moon horde completely overruns your extraction point.
+			</Description>
+			<Version>3.3 (B13) Stable</Version>
+			<EAC>Disabled</EAC>
+			<Discord>https://discord.gg</Discord>
+			<Donate></Donate>
+			<DownloadMode>Clone</DownloadMode>
+			<Downloads>
+				<Download>https://github.com</Download>
+			</Downloads>
+		</Server>
+	</ServerGroup>
+</Servers>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="d9716ef4-d40e-418b-b57a-9b02fbf2af03" name="New Sign" modified="2026-10-14 07:17:18Z" next_poly_id="0" next_text_id="1" next_noise_id="0" next_group_id="0">
+    <layer name="Text 01" type="TextSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#606060FF" mode="ColorOnly" font="Stardos Stencil" text="Admissions" direction="0" spacing="1" softness="0" dilate="0" />
+  </sign>
+  <sign guid="5ca91605-e7d6-47e8-ac16-98a4a076ed0d" name="New Sign" modified="2026-10-18 13:31:19Z" next_poly_id="1" next_text_id="1" next_noise_id="0" next_group_id="0">
+    <layer name="Poly 01" type="PolygonSignLayer" pos="0, 0" rot="0" scale="1, 1" color="#FFFFFFFF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Text 01" type="TextSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#A9A9A9FF" mode="ColorOnly" font="Stardos Stencil" text="ADMISSIONS" direction="0" spacing="1" softness="0" dilate="0" />
+  </sign>
+</signs>

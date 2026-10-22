@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="104902df-55cf-419b-afb9-f5d54dfd6e40" name="New Sign" modified="2026-10-14 10:48:32Z" next_poly_id="0" next_text_id="3" next_noise_id="1" next_group_id="0">
+    <layer name="Noise 01" type="NoiseSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#2C384EFF" mode="ColorOnly" seed="0" detail="4" softness="0" dilate="0" fade="0">
+      <warp type="KaleidoWarp" offset="0, 0" sides="6" rotation="0" offsetScale="1" />
+    </layer>
+    <layer name="Text 01" type="TextSignLayer" pos="0.013079, 0.2354219" rot="0" scale="0.3, 0.3" color="#FF0000FF" mode="ColorOnly" font="Stardos Stencil" text="DEVIL'S" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Text 02" type="TextSignLayer" pos="0, 0" rot="0" scale="0.3, 0.3" color="#FFFFFFFF" mode="ColorOnly" font="Stardos Stencil" text="AIR" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Text 03" type="TextSignLayer" pos="-0.0052316, -0.26158" rot="0" scale="0.3, 0.3" color="#0000FFFF" mode="ColorOnly" font="Stardos Stencil" text="STRIP" direction="0" spacing="1" softness="0" dilate="0" />
+  </sign>
+</signs>

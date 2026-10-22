@@ -1,0 +1,394 @@
+Key,English
+goGameWorld,[FF4F00]Select Battleship (biome)[-]
+goLootRespawnDays,Loot Respawn[FF4F00]Select 7 Days [-]
+goAirDropFrequency,Air Drops. Set to [ffd700]DISABLED[-].
+
+noteDuke01,"Note from Devilskut"
+
+noteDuke01Desc,"Congratulations!  \nThe ship's still afloat. Your odds aren't. Keep going. I could use the entertainment.\nSee you soon,\nDevilskut \n\n Warning: Complaints must be submitted after surviving."
+
+escape_hugh,Storage Facility
+Museum_Trader,Museum Trader
+USS_New_Jersey_BB-62, Battleship Museum
+USS_New_Jersey_BB-62_1, Battleship Museum
+Battleship_drive_2,Battleship Drive
+ESCAPE_TUNNEL,Escape Tunnel
+Museum_Entrance,Museum Toll Booths
+Spicy_Sea_9,Yacht Club
+Trader_Mechanic,Trader Bob
+Battleship_Park,Battleship Park
+ESCAPE_AIR_STRIP,Devil's Air Strip
+Trader_dock,Museum Trader
+Spicy_Sea_10,Yacht Club
+
+Biker Bag,Duffle Bag
+Chip Bag,Duffle Bag
+Duffle Bag 2,Duffle Bag
+Medical Bag,Duffle Bag
+Confiscated bag,Duffle Bag
+Wight Bag,Duffle Bag
+Mutant Bag,Duffle Bag
+Thug Bag,Duffle Bag
+Party Bag,Duffle Bag
+Cop Bag,Duffle Bag
+Utility Bag,Duffle Bag
+Lumber Bag,Duffle Bag
+Soldier Bag,Duffle Bag
+Big Bag,Duffle Bag
+Rancher Bag,Duffle Bag
+Janitor Bag,Duffle Bag
+Bio Bag,Duffle Bag
+
+ConcreteMixer, Concrete Mixer Do not wrench
+ChemiestationCustom,Chemistry Station Do not wrench
+Workbench1,Workbench Do not wrench
+drinkCanMegaCrush,Goldens Swallow
+medicalFirstAidBandage2,Leather Bandage
+
+gunT4Minigun,Minigun
+MinigunDesc," Very beefy and heavy gun "You will be slowed" "
+gunExplosivesT3RG4Launcher,RG40 Grenade Launcher
+RG40LauncherDesc," Stand back not for CQC "
+gunT4Flamethrower,Flamethrower
+gunT4FlamethrowerDesc," Nothing smells better than BarBQ zombie "
+ammoGrenade40mmFrag,40mm Frag
+ammoGrenade40mmFragDesc,"Main Ammo for the RG40 Grenade Launcher "
+ammoGrenade40mmFragAP,40mm Frag
+ammoGrenade40mmFragAPDesc,"Ammo for the RG40 Grenade Launcher "
+
+CF_CWIS_Base,CIWS
+CF_CWIS_Turret_Up_60,5D CIWS Turret
+CF_CWIS_Turret_Up_30,5D CIWS Turret
+CF_CWIS_Turret_Straight,5D CIWS Turret
+CF_CWIS_Turret_Down_65,5D CIWS Turret
+CF_CWIS_Turret_Down_45,5D CIWS Turret
+CF_HEMTT_CIWIS,5D CIWS HEMTT
+CF_HEMTT_Patriot,5D Patriot HEMTT
+CF_HEMTT_Patriot_Launcher,5D Patriot Launcher
+CF_HEMTT_Patriot_Trailer,5D Patriot Trailer
+CF_HEMTT_Patriot_Trailer_Full,5D Patriot Trailer Full
+atvpuma,ATV Puma
+MilitaryTrailer,Military Trailer
+
+ORDNANCE SPECIALISTdesc,"You are a specialized Marine Engineer trapped aboard a locked-down battleship. You view the infested lower decks not as a death trap, but as a controlled tactical grid that needs to be systematically purged. Modern firearms are a liability in these narrow steel bulkheads, so you rely on the silent, high-lethality reach of a combat spear and heightened acoustic tracking. But when the Blood Moon rings the battle stations, you unleash the heavy munitions—flooding the decks with devastating black powder, localized fires, and rocket fire to completely cleanse the hull. [FF4F00]Pack gives Pipe Rifle, Stone Spear, and a few pipe bombs.[-]"
+
+DIRECTOR OF SECURITYdesc,"When the shore infrastructure collapsed, you seized control of the main deck and established a strict military hierarchy. You do not waste time with elegant maneuvers; your authority is written in raw kinetic force on the front lines. To your unit, you are an impenetrable bulkhead protector; to the hostiles swarming the lower decks, you are an unstoppable, fast-moving breach-and-clear nightmare who shatters bones and commands the firing line with devastating shock tactics.[FF4F00] Pack gives Shotgun, Wooden Club, and a Stone Sledge hammer.[-]"
+
+NAVAL RECON SCOUTdesc,"Before the ship was quarantined under lockdown, you operated as an elite phantom in the shadows of the lower decks. You know that weapon discharges inside these enclosed steel hulls draw the entire swarm, so you shed heavy gear for silent padding and trade ballistic rounds for silent arrows. You have mastered navigating the pitch-black engine rooms entirely undetected. To the hostiles flanking the harbor, you are a lethal ghost—leaving nothing behind but cold bodies with arrows through their eyes.[FF4F00] Pack gives Pipe Pistol, Bone Knife, and a Wooden Bow.[-]"
+
+CHIEF SYSTEMS ENGINEERdesc,"You view this containment failure aboard the battleship strictly as a critical mechanical optimization problem. While other units expend ammunition in desperate, chaotic brawls, you dictate the parameters of deck defense from the safety of the command bridge. Utilizing high-voltage stun batons and automated robotic armaments, you systematically funnel hostile forces into narrow passageways, monitoring the lockdown behind a wall of automated defense networks and crossfire. [FF4F00]Pack gives Pipe Baton, and a Robotic Sledge.[-]"
+
+BiologicalWarfareSurvivordesc,"The bioweapon quarantine failed, but your physiology completely adapted to the pathogen, transforming you into the ultimate close-quarters combat asset. You refuse to hide behind bulkheads or rely on automated defense networks; you let the brutal meat-grinder of the ship's steel interior forge your body into a fortress of absolute endurance. Operating with an unnaturally accelerated healing factor, you act as a localized storm either boxing hostiles into paste in tight corridors or locking your boots to the deck as an unstoppable, walking machine-gun turret.[FF4F00] Pack gives Pipe Machine Gun and Knuckle wraps.[-]"
+
+LumberJackDesc,"Head-Wood harvest, Outfit-Backpack slots, Gloves-Axe Dmg+, Boots-Stamina Regen (run), Bonus- Less Stam W Axe."
+
+PreacherDesc,"Head-Discount (buy),Outfit-Dam Resist (zom),Gloves-Dam (zom),Boots-Crit heal (treated), Bonus-Crit Resist."
+
+RogueDesc,"Head-Loot stage +,Outfit-Noise-/Crouch speed+,Gloves-Pick Speed+/Break,Boots-Fall Distance+, Bonus-Cash+/Dukes+ (loot)."
+
+AthleticDesc,"Head-Buy Discount (consume),Outfit-Max Health,Gloves-Max stamina,Boots-Run Speed, Bonus-Food/Water use-."
+
+FarmerDesc,"Head-Seed chance+ (loot),Outfit-Extra Crop Chance, Gloves-Rifle Dmg+, Boots-Seed harvest chance, Bonus-Health from food+."
+
+EnforcerDesc,"Head-Barter (buy/sell),Outfit-Crit Resist,Gloves-Less fuel in vehicle,Boots-Run Speed, Bonus-44 Reload/DMG."
+
+BikerDesc,"Head-Stun resist,Outfit-Max Health,Gloves-Melee DMG+, Boots-Stamin Use (melee), Bonus-Armor+/Fuel use."
+
+ScavengerDesc,"Head-XP+ (Salvaging),Outfit-Backpack slots+,Gloves- Salvage Harvest, Boots-Salvage Stamina, Bonus-Loot Stage+."
+
+RangerDesc,"Head-Barter (buy/sell),Outfit-Max Health,Gloves-Revolver/Lever DMG+, Boots-Max stamina+, Bonus-Revolver/Lever Reload."
+
+CommandoDesc,"Head-Stun Resist,Outfit-Crit Heal, Gloves-Ranged Damage+,Boots-Run Speed+, Bonus-Recovery Item speed."
+
+AssassinDesc,"Head-Sneak Damage,Outfit-Sneak Effectiveness,Gloves-Attack Speed+(Knife, Pistol),Boots-Noise 100%, Bonus-Enemy Search."
+
+MinerDesc,"Head-Mining Harvest+,Outfit-Stamin loss-(Tools),Gloves-Block Damage (Tools),Boots-Fall Distance, Bonus-Tool Degredation."
+
+NomadDesc,"Head-Food/Water loss,Outfit-Backpack Slots+,Gloves-Damage to RADS+,Boots-Run Speed+, Bonus-Samina Recovery Cost-."
+
+NerdDesc,"Head-XP Gain,Outfit-Magazing point chance,Gloves-Baton Damage+,Boots-Fall Distance+, Bonus-Weapon/Tool Degredation."
+
+RaiderDesc,"Head-Stun Resist,Outfit-Crit Heal,Gloves-Melee Damage+,Boots-Fall Distance+, Bonus-Crit Resist+."
+
+Mission_1_Army DepotDesc, "Did you run to far away or die trying?"
+
+Mission_2_Bridge suppliesDesc, "Did you run to far away or die trying?"
+
+Mission_3_DD_62 suppliesDesc, "Did you run to far away or die trying?"
+
+adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
+
+adminSkillMagazine2Desc,"Learn 10 Crafting Skills for weapons, tools and armor instantly!\n\nYou can now craft T1 weapons and tools."
+
+resourcePaper,"Classified Document" 
+resourcePaperDesc,"Just flush twice")"
+
+resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire"
+resourceAcidDesc,A resource used in crafting recipes.\n\nCan be crafted in beaker at a campfire or at the chemistry station.
+
+resourceBatteryAcid,Bottle of Acid
+resourceBatteryAcidDesc,A resource used in crafting recipes.\n\nCan be extracted from a car battery at the chemistry station.
+
+resourceAnimalFat,"Fat"
+resourceAnimalFatDesc,"Fat can be eaten raw or used in cooking or other crafting recipes."
+
+perkGreaseMonkeyRank1Desc,Wheely good
+perkGreaseMonkeyRank1LongDesc,Congratulations - you are now as smart as a primitive human!\n\nCraft wheels 33% cheaper.\n\nRepair kits are 10 percent more effective on vehicles.
+
+perkGreaseMonkeyRank2Desc,Oil be back
+perkGreaseMonkeyRank2LongDesc,"Not quite a fully-fledged grease monkey, but at least it's a start.\n\nRepair kits are 20 percent more effective on vehicles."
+
+perkGreaseMonkeyRank3Desc,Life's a gas
+perkGreaseMonkeyRank3LongDesc,Now you're starting to know your way around a toolbox!\n\nRepair kits are 30 percent more effective on vehicles.
+
+perkGreaseMonkeyRank4Desc,Not very basic
+perkGreaseMonkeyRank4LongDesc,"Your mechanical prowess is that of a professional pit crew!\n\nRepair kits are 40 percent more effective on vehicles."
+
+perkGreaseMonkeyRank5Desc,At last!!
+perkGreaseMonkeyRank5LongDesc,"You're a full-on aeronautical MacGyver.\nCraft Gyrocopter parts 33% cheaper.\n\nRepair kits are 50 percent more effective on vehicles."
+
+vehiclesT1,Tier 1: Wheels
+vehiclesT2,Tier 2: Oil
+vehiclesT3,Tier 3: Gas Cans
+vehiclesT4,Tier 4: Acid
+vehiclesT5,Tier 5: Flight
+
+questRewardGyrocopterPartsBundle,Gyrocopter Parts Bundle
+
+meleeWpnBladeT3Machete,Devils' Blade
+
+npcTraderJen, Dawnrox
+npcTraderJoel, Shadow_Floodlight
+
+zombieKamikazeBurnt,Ashen Seeker
+zombieKamikazeBurntFeral,Feral Ashblast
+
+zombieBiker,Devilskut
+zombieBikerFeral,Feral Devilskut
+zombieBikerRadiated,Radiated Devilskut
+zombieBikerCharged ,Charged Devilskut
+zombieBikerInfernal,Infernal Devilskut
+
+zombieBoe,Sphereii
+zombieBoeFeral,Feral Sphereii
+zombieBoeRadiated,Radiated Sphereii
+zombieBoeCharged,Charged Sphereii
+zombieBoeInfernal,Infernal Sphereii
+
+zombieChuck,Chip
+zombieChuckFeral,Tiny Chunk
+zombieChuckRadiated,Chuckles
+zombieChuckCharged,Chuckster
+zombieChuckInfernal,Chucky Cheese
+
+zombieSteveCrawler,LT Dan
+zombieSteveCrawlerFeral,Feral LT Dan
+
+animalZombieVulture,VultureGeist
+animalZombieVultureRadiated,Radiated VultureGeist
+
+zombieWightFeral,Feral DeathAngel
+zombieWightRadiated,Radiated DeathAngel
+zombieWightCharged,Charged DeathAngel
+zombieWightInfernal,Infernal DeathAngel
+
+animalMountainLion,KatPop
+
+# ============================================================
+# CHALLENGES - GROUPS
+# ============================================================
+
+challengeGroupBasics,Starter Missions 
+challengeGroupBasicsReward,Find Trader
+
+challengeGroupKill,Eliminate Zed heads!
+challengeGroupKillReward,Rewards XP
+
+challengeGroupGatherer,Gyrocopter Repair kit
+challengeGroupGathererReward,Rewards XP
+
+challengeGroupResources,Mine Resources, Find Resources hidden in the ship engine room.
+challengeGroupResourcesReward,Rewards XP
+
+challenge_reward_BattleEnding,Final Trader
+
+# ============================================================
+# CHALLENGES - INDIVIDUAL
+# ============================================================
+
+# --- Start Mission ---
+challengeKillZombiesBattle10Short,10 zombies
+challengeKillZombiesBattle10Desc,"Talk to the Trader."
+challenge_BattleStarting_500xp,500XP and Wrench
+
+# --- Kill some Zed heads! ---
+challengeKillZombiesBattle15Short,15 more zombies
+challengeKillZombiesBattle15Desc,"Kill another 15 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
+Battle_reward_500xp, 500xp and First Aid Bandage
+
+challengeKillZombiesBattle25Short,25 more zombies
+challengeKillZombiesBattle25Desc,"Kill another 25 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
+Battle_reward_1000xp, 1000xp and FirstAidBandage
+
+challengeKillZombiesBattle50Short,50 more zombies
+challengeKillZombiesBattle50Desc,"Kill another 50 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
+Battle_reward_2000xp, 2000xp and FirstAidBandage
+
+challengeKillZombiesBattle75Short,75 more zombies
+challengeKillZombiesBattle75Desc,"Kill another 75 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
+Battle_reward_2500xp, 2500xp and FirstAidBandage
+
+challengeKillZombiesBattle125Short,125 more zombies
+challengeKillZombiesBattle125Desc,"Kill another 125 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
+Battle_reward_5000xp, 5000xp and FirstAidBandage
+
+challengeKillZombiesBattle200Short,200 more zombies
+challengeKillZombiesBattle200Desc,"Kill another 200 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages.\n\nNow you're just showing off!"
+Battle_reward_10000xp, 10000xp and Medical skill book
+
+
+challengeGatherBasicPartsHint,"Salvage vehicles, electronics, and air conditioners with a wrench to find these base components."
+challengeGatherBasicPartsShort,"Gather basic mechanical and electrical parts."
+challengeGatherBasicPartsDesc,"Before you can get any major machinery or aircraft off the ground, you need to hoard a massive pile of standard components. Scrape together the basic structural pipes, mechanical gears, wiring, and adhesives."
+
+challengeGatherVehicleItemsHint,"Break down old beds, vehicle wrecks, and machinery to secure these core automotive components."
+challengeGatherVehicleItemsShort,"Gather essential vehicle parts and electronics."
+challengeGatherVehicleItemsDesc,"Your chassis needs a suspension system and power. Scour the roads for working car batteries, small engines, functional wheels, headlights, and high-tension springs to prepare your assembly area."
+ 
+challengeGatherCrucibleSteelHint,"Search Working Stiffs crates, trader inventories, or forge advanced metals to secure a crucible."
+challengeGatherCrucibleSteelShort,"Acquire a Crucible and smelt high-grade Forged Steel."
+challengeGatherCrucibleSteelDesc,"Standard scrap metal won't survive aircraft-grade stress. Find or buy a Forge Crucible so you can handle high-temperature smelting, then secure a massive stockpile of Forged Steel blocks."
+
+challengeGatherGatherGyroCopterPartsHint,"Search high-tier military crates, secure hangars, or check with advanced vehicle traders."
+challengeGatherGyroCopterPartsShort,"Locate the main frame parts and structural accessories."
+challengeGatherGyroCopterPartsDesc,"The main frame requires heavy engineering blueprints. Track down the heavy structural airframe chassis and the advanced mechanical flight accessories required to anchor a rotor system."
+
+challengeGatherGyroCopterItemsHint,"Double-check your parts inventory to ensure all structural items are ready for frame integration."
+challengeGatherGyroCopterItemsShort,"Consolidate all peripheral engine and chassis components."
+challengeGatherGyroCopterItemsDesc,"Gather the final round of peripheral components required to fully integrate the accessories and chassis modules with operational battery and engine systems."
+
+challengeGatherGyrocopterRepairKitHint,"Use your collected schematics and parts at a Workbench to craft the final kit."
+challengeGatherGyrocopterRepairKitShort,"Secure a fully manufactured Gyrocopter Repair Kit."
+challengeGatherGyrocopterRepairKitDesc,"With all structural materials,engines, and heavy framing modules gathered together, manufacture the unified aircraft repair package. This kit contains everything needed to completely restore a crashed bird to full operational status."
+challenge_reward_GyrocopterKitComplete,Challenges,RewardText,,3000 XP, Vehicle Supercharger Mod, and Story Progression
+
+# --- Trader Jen ---
+challengeMeetJenShort,Meet Trader Dawnrox
+challengeMeetJenDesc," You can find Trader Dawnrox in the makeshift sickbay at Jen's clinic. She is friendlier than Trader Rekt and deals mostly in Medical supplies."
+
+# --- Trader Hugh ---
+challengeMeetHughShort,Meet Trader Hugh
+challengeMeetHughDesc,"Trader Hugh is a grizzled veteran holed up in the Admissions building in the front of the ship. Hugh Got It. He's the guy holding you against your will."
+
+challengeMeetBobShort,Meet Trader Bob
+challengeMeetBobDesc,"Bob's Salvage is home to crapped vehicles,broken appliances, and local gear-head Trader Bob.If you are in the market for Vehicles and toolds he's the man to talk to."
+
+
+# --- Trader Joel ---
+challengeMeetJoelShort,Meet Trader Shadow_Floodlight
+challengeMeetJoelDesc,"Track down Trader Shadow_Floodlight at his heavily fortified Hunter's Camp. Try and not bring any of those zed heads with you."
+
+loadingTipBattleship1_title,Seeds
+loadingTipBattleship1,"All seed crafting is unlocked by default, and some seeds only require a couple of food items to craft."
+
+loadingTipBattleship2_title,Jars
+loadingTipBattleship2,"The jar return should be set to ZERO. They can be found in loot or crafted in the forge."
+
+loadingTipBattleship3_title,Books
+loadingTipBattleship3,"Books are shared among all players, and all zombies have a chance to drop certain types of books."
+
+loadingTipBattleship4_title,Cucumbered?
+loadingTipBattleship4,"Becoming encumbered advances the Pack Mule skill, but it also increases your chances of death onboard the ship."
+
+loadingTipBattleship5_title,Water Source
+loadingTipBattleship5,"Look for the Desalination Plant onboard for water, or dip into the harbor. Be careful—don't jump completely in, or it will end your challenge!"
+
+loadingTipBattleship6_title,Resources
+loadingTipBattleship6,"Resources are scarce on the ship, but you will be able to find or craft everything you need to complete the challenge. Some resources, like old cash, are used in unique recipes—so make sure you check the recipes for EVERYTHING. Additionally, rare resources like acid, antibiotics, and beakers can now be crafted or looted from zombies."
+
+loadingTipBattleship7_title,Crafting Skills
+loadingTipBattleship7,"In this challenge, you learn by doing."
+
+loadingTipBattleship8_title,Trying to Leave?
+loadingTipBattleship8,"Trying to leave the Naval Museum is not advised. The ground is SPICY, and the air surrounding the area is radiated—stepping out will end your challenge..."
+
+loadingTipBattleship9_title,Wrench
+loadingTipBattleship9,"Use this on everything!"
+
+loadingTipBattleship10_title,Special Thanks
+loadingTipBattleship10,"Special thanks to Spherii for the custom code."
+
+loadingTipBattleship11_title,Horde Night
+loadingTipBattleship11,"Horde night? Better suck it up, buttercup. This should be set to 7 days... to die!"
+
+loadingTipBattleship12_title,Battleship Resources
+loadingTipBattleship12,"Resource gathering has many changes from vanilla. Clay soil, for example, can be harvested from potted plants, farm plots, and destroyed stone."
+
+loadingTipBattleship13_title,Search Everywhere
+loadingTipBattleship13,"For a military vessel, there are considerable nooks, crannies, hidey-holes, and hidden stashes all over the place. Some say there are secret shortcuts within the walls too! Navy brass would be rolling in their graves if they weren't ambling around in hordes of the reanimated dead..."
+
+loadingTipBattleship14_title,Failed Quest?
+loadingTipBattleship14,"Want to restart your mission after you have died? You can recover and resume your progress by crafting the mission item using Dukes."
+
+loadingTipBattleship15_title,Permadeath?
+loadingTipBattleship15,"Want to continue your mission after you have died? You can freely adjust your death penalties in the main game options."
+
+dishongTowerBundle,Battleship Starter Items,,
+dishongTowerBundleDesc,Starter items for the Battleship challenge.,,
+
+Welcome,"Started The Battleship Museum"
+
+tutorialTipQuest01,"You didn't choose to board the USS New Jersey Battleship Museum, but Trader Hugh didn't give you a choice. After his previous outpost was overrun, Trader Hugh seized the massive Iowa-class battleship, setting up his main command center right inside the Admissions Building on the pier. Hugh has locked down the entire shore infrastructure, trapping you within the secure perimeter.\n\nTrader Hugh's hours of operation are strictly 6:00 AM to 12:00 PM (noon). If you are inside after these hours, you will get dumped straight off the pier into the toxic harbor or if your lucky into the radiated field."
+
+ 
+tutorialTipQuest02,"Look here, fresh meat. You think you're walking out of here? Think again. You work for me now, and you're going to put that forge to use and make yourself useful. Don't go looking around for a payout either—your reward is getting to breathe another day.\n\n My doors slide open at 0600 and slam shut at 1200 maximum. Fire up the forge, clear my walkway, or take a long swim off the edge of this pier."/>
+
+tutorialTipQuest03,"This is it—your one clean shot at escaping Hugh's slave labor. The yacht ahead is packed tight with the infected from an old high-society bash, but it's the only way into the deeper harbor channels. Get inside, find that commando locked in the server room, and get him to override the security protocols. If you fail here, you're either zombie chow or you'll spend the rest of your short life slaving away at Hugh's forge."/>
+
+tutorialTipQuest04,"By the looks of that skyline, you brought the whole damn harbor graveyard with you! Listen to me, we don't have much time. I want those mechanical manuals, and you've earned your freedom from Hugh, but you need to make a choice right now. Take a payout and run before we're surrounded, or stay here, help me lock down the shop, and let's clear this horde together. What's it gonna be, friend? Stand and fight, or cut and run? \n [FFFF00]Talk to Trader Bob and view his inventory, complete your challenge log and then make your decision.[-]"/>
+
+tutorialTipQuest05,"(Intercom static) You think you can just walk away from me? You belong to this pier now! If you won't work the forge, you can bleed for it. I've locked down the entire Engineering deck and opened up the holding pens. Enjoy the dark, you ungrateful rat. Let's see if those walkers leave enough of you to clean up the mess"/>
+
+tutorialTipQuest06,"This is your final ticket out of this living hell. You've got Bob's notes and the fuel you need. Sneak out to Devil's Airstrip, clear out the flesh-eaters guarding the tarmac, and use that repair kit you've been secretly putting together to get that gyrocopter airborne. Fly low, follow the coordinates to my mechanic shop, and don't look back. Hugh can't reach you in the sky."
+
+
+challenge_StartingBattleship,"The Battleship Captive"
+challenge_StartingBattleship_subtitle,"Survival Under Lock and Key"
+challenge_StartingBattleship_description,"You're trapped here, and Trader Hugh has no intention of letting you leave without getting his hands dirty first. He's locked you in and is demanding you fire up a forge to produce assets for him. With absolutely no rewards on the table, it's either comply with his demands or rot on the walkway. Remember: his heavy steel doors are only unlocked from 6:00 AM until noon sharp. If you aren't producing or if you miss your window, you're getting dumped right off the pier into the dark water below."
+challenge_StartingBattleship_offer,"Look here, fresh meat. You think you're walking out of here? Think again. You work for me now, and you're going to put that forge to use and make yourself useful. Don't go looking around for a payout either—your reward is getting to breathe another day. My doors slide open at 0600 and slam shut at 1200 maximum. Fire up the forge, clear my walkway, or take a long swim off the edge of this pier."
+
+quest_BattleshipMuseum,"The Pier-Side Exploitation"
+quest_BattleshipMuseum_subtitle,"Recover Hugh's Valuables Under Threat"
+quest_BattleshipMuseum_description,"Forced into compliance under the threat of starvation, your next grueling task is to venture out to the exposed entrance toll booths to retrieve valuables Hugh left behind during the initial chaos. He's offering little to no actual compensation for risking your neck.\nGo to the toll booths and grab my dropped valuables. Don't look at them, don't pocket anything, and don't get eaten by the local strays. Do this, and maybe I'll let you eat tonight. Fail, and you can join the horde outside without your skin."
+quest_BattleshipMuseum_offer,"You want a scrap of food tonight? Then you're going to earn it. I dropped some high-value items out by the entrance toll booths when the world went to hell. You're going out there to get them back for me. Don't go expecting a fat payout either—getting to eat a stale ration is your reward. Secure the area, bring me my stuff, and don't even think about running."
+
+quest_BattleshipMuseum1,"The Engineering Trap"
+quest_BattleshipMuseum1_subtitle,"Survive Hugh's Death Trap in Engineering"
+quest_BattleshipMuseum1_description,"You tried to slip away toward Bob's coordinates, but Trader Hugh treats his captives with an iron fist and caught wind of your defiance. In a paranoid rage over losing his forced labor, he rigged the entire Engineering room with an explosive dead man's switch to execute you. The moment you step into the lower deck, the trap springs—but the explosives malfunction. Instead of blowing you to pieces, the system triggers the emergency security lockdown doors, trapping you in pitch blackness while releasing a massive, starving horde of zombies directly onto your position. You have to fight off this claustrophobic nightmare before you can even look for the override to the secret tunnel hatch."
+quest_BattleshipMuseum1_offer,"(Intercom static) You think you can just walk away from me? You belong to this pier now! If you won't work the forge, you can bleed for it. I've locked down the entire Engineering deck and opened up the holding pens. Enjoy the dark, you ungrateful rat. Let's see if those walkers leave enough of you to clean up the mess."
+
+quest_BattleshipMuseum03,"The Yacht Party Gauntlet"
+quest_BattleshipMuseum03_subtitle,"Break Through the Yacht's Security System"
+quest_BattleshipMuseum03_description,"You've broken out of Hugh's lower decks, but your path to true freedom runs straight through a high-end luxury yacht anchored in the harbor—now overflowing with mutated, bloodthirsty former partygoers. Following Bob's directions, you must infiltrate the vessel and locate a heavily barricaded commando inside the yacht's server room. He holds the key to overriding the ship's automated lockdown. Once he bypasses the security grid, he'll remotely unseal the hidden lower deck hatch directly across from the stairs, exposing your final escape route out of Hugh's territory. Fight like your life depends on it, because it does."
+quest_BattleshipMuseum03_offer,"This is it—your one clean shot at escaping Hugh's slave labor. The yacht ahead is packed tight with the infected from an old high-society bash, but it's the only way into the deeper harbor channels. Get inside, find that commando locked in the server room, and get him to override the security protocols. If you fail here, you're either zombie chow or you'll spend the rest of your short life slaving away at Hugh's forge."
+
+
+quest_BattleshipMuseum04,"The Gyrocopter Escape"
+quest_BattleshipMuseum04_subtitle,"Rebuild and Fly to Freedom"
+quest_BattleshipMuseum04_description,"Armed with the schematic and gas cans Bob left behind, you successfully navigate past the hazardous harbor perimeter to Devil's Airstrip. The zone is crawling with the undead, requiring you to eliminate the hostiles blocking your path. Once the airstrip is clear, you locate a grounded gyrocopter tucked away inside a hangar. Utilizing the gyrocopter repair kit you have been secretly crafting behind Hugh's back, you patch up the aircraft, dump in the fuel, and take off into the sky, following the coordinates straight to Trader Bob's Mechanic Shop."
+quest_BattleshipMuseum04_offer,"This is your final ticket out of this living hell. You've got Bob's notes and the fuel you need. Sneak out to Devil's Airstrip, clear out the flesh-eaters guarding the tarmac, and use that repair kit you've been secretly putting together to get that gyrocopter airborne. Fly low, follow the coordinates to my mechanic shop, and don't look back. Hugh can't reach you in the sky."
+
+challenge_BattleshipMuseum05,"Safe Harbor"
+challenge_BattleshipMuseum05_subtitle,"Speak with Trader Bob at his Mechanic Shop"
+challenge_BattleshipMuseum05_description,"The engine of the gyrocopter roars to life, carrying you far above the zombie-infested harbor and out of Trader Hugh's tyrannical reach. Following the flight coordinates, you successfully touch down in the secure roof top of Trader Bob's Mechanic Shop. The smell of motor oil and the sound of whirring power tools replace the nightmare of the battleship. Bob walks out to meet you, wiping his grease-stained hands on a rag, eagerly waiting to see if you actually managed to bring back the priceless mechanical manuals from the storage facility.\nWell look at you! You actually survived Hugh's little death trap and flew that rust-bucket all the way here. Hand over those manuals, friend, you've officially earned your freedom, and a cold drink's on me."
+
+Challenge_Completion,"Freedom Earned"
+Challenge_Completion_subtitle,"Escape Complete!"
+Challenge_Completion_description,"Congratulations! You defied Trader Hugh's tyrannical hold, survived the treacherous gauntlet of the battleship and the yacht party, and successfully executed your airborne escape. Your forced labor at the forge is over, and your true survival story begins now."
+
+
+Congrats,"Battleship Challenge Complete"
+Congrats_message,"Congrats!  You have completed the Battleship Museum Challenge! GG!! Thank you for playing! If you are up for another challenge Please try the [FFFF00] Destroyer of Dreams High Seas [-] and [FFFF00] Aircraft Carrier Challenge High Seas [-]on the 7D2D Mod launcher by Sphereii or on 7daystodiemods.com"
+
+
+

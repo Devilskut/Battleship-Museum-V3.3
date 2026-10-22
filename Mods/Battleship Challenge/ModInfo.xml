@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+      <xml>
+	    <Name value="BattleshipChallenge" />
+	    <DisplayName value="Battleship Challenge" />
+		<Version value="2.5.1.0"/>
+		<Description value="Battleship Challenge"/>
+		<Author value="Devilskut"/>
+		<Website value="" />
+     </xml>

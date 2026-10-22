@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+<!--	<set xpath="/quests/@quests_per_tier">1</set> -->
+	
+<!-- Begin Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
+
+<!-- BEGIN removal of ALL vanillia quests -->
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen1']"/>
+
+	<remove xpath="/quests/quest_list/quest[@id='intro_buried_supplies']" />
+
+	<remove xpath="/quests/quest[contains(@id,'_fetch') or
+									 contains(@id,'_clear') or
+									 contains(@id,'supplies') or
+									 contains(@id,'_restore_power') or
+									 contains(@id,'_test_turnin') or
+									 contains(@id,'_reward_quest_')
+									 ]/reward[@type='LootItem']"/>
+	<remove xpath="/quests/quest[contains(@id,'_fetch') or
+									contains(@id,'_clear') or
+									contains(@id,'supplies') or
+									contains(@id,'_restore_power') or
+									contains(@id,'_test_turnin') or
+									contains(@id,'_reward_quest_')
+									]/reward[@type='Item']"/> 
+	
+	<!-- END removal of ALL vanillia quests -->
+	<!-- End Removal of quests that don't fit in to this pack / quests that are placed outside the main POI for this pack -->
+
+	<append xpath="/quests">
+
+		<!-- Initial quest that kicks off the challenge -->
+
+		<quest id="quest_whiteRiverCitizen1">
+			<property name="name_key" value="challenge_StartingBattleship"/>
+			<property name="subtitle_key" value="challenge_StartingBattleship_subtitle"/>
+			<property name="description_key" value="challenge_StartingBattleship_description"/>
+			<property name="group_name_key" value="challenge_StartingBattleship"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_StartingBattleship_offer"/>
+			<property name="difficulty" value="medium"/>
+
+			<action type="TrackQuest"/>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_white_river_completion"/>
+
+			<property name="reward_choices_count" value="1"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="Welcome"/>
+				<property name="message" value="tutorialTipQuest01"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<!--	<objective type="EntityKill" value="5" phase="1">
+			<property name="target_tags" value="zombie,animal,crawler,walker,feral,radiated" />
+		</objective> -->
+
+			<objective type="Goto" id="trader" value="5" phase="2">
+				<property name="biome_filter_type" value="any" />
+				<property name="Zoning" value="any" />
+				<property name="completion_distance" value="50" />
+				<property name="nav_object" value="go_to_trader" />
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<reward type="LootItem" id="groupQuestForge" ischosen="true" value="2"/>
+
+			<reward type="Quest" id="quest_BattleshipMuseum" />
+		</quest>
+
+		<quest id="quest_BattleshipMuseum">
+			<property name="name_key" value="quest_BattleshipMuseum" param1="name" />
+			<property name="subtitle_key" value="quest_BattleshipMuseum_subtitle"/>
+			<property name="description_key" value="quest_BattleshipMuseum_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty_tier" value="5"/>
+			<property name="offer_key" value="quest_BattleshipMuseum" />
+			<property name="login_rally_reset" value="true"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]The Pier-Side Exploitation[-]"/>
+				<property name="message" value="tutorialTipQuest02"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_clear_completion"/>
+			<property name="reward_choices_count" value="5"/>
+
+			<action type="TrackQuest"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="Museum_Entrance" />
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerFetchClear"/>
+			</objective>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<reward type="Exp" value="5060"/>
+			<!--	<reward type="Quest" id="quest_BattleshipMuseum1"/> -->
+
+			<reward type="LootItem" id="groupQuestWoodShapes" ischosen="true" value="2"/>
+
+		</quest>
+
+		<quest id="quest_BattleshipMuseum1">
+			<property name="name_key" value="quest_BattleshipMuseum1"/>
+			<property name="subtitle_key" value="quest_BattleshipMuseum1_subtitle"/>
+			<property name="description_key" value="quest_BattleshipMuseum1_description"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge" />
+			<property name="difficulty_tier" value="5" param1="difficulty"/>
+			<property name="offer_key" value="quest_BattleshipMuseum1_offer" />
+			<property name="statement_key" value="quest_restore_power_statement"/>
+			<property name="response_key" value="quest_restore_power_response"/>
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true"/>
+			<property name="extra_tags" value="escape"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]The Engineering Trap[-]"/>
+				<property name="message" value="tutorialTipQuest05"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<property name="login_rally_reset" value="true"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="USS_New_Jersey_BB-62_1" />
+				<property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="allowed_start_hour" value="22"/>
+				<property name="allowed_end_hour" value="4"/>
+				<property name="rally_marker_type" value="questRallyMarkerRestorePower"/>
+			</objective>
+			<objective type="POIBlockActivate" >
+				<property name="phase" value="3"/>
+				<property name="block_index" value="QuestRestorePower"/>
+				<property name="nav_object" value="restore_power"/>
+				<property name="complete_event" value="quest_poi_lights_on"/>
+			</objective>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<reward type="Quest" id="quest_BattleshipMuseum03">
+			</reward>
+		</quest>
+
+		<quest id="quest_BattleshipMuseum03">
+			<property name="name_key" value="quest_BattleshipMuseum03"/>
+			<property name="subtitle_key" value="quest_BattleshipMuseum03_subtitle"/>
+			<property name="description_key" value="quest_BattleshipMuseum03_description"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest" />
+			<property name="difficulty_tier" value="5" param1="difficulty"/>
+			<property name="offer_key" value="quest_BattleshipMuseum03_offer" />
+			<property name="difficulty" value="medium" />
+			<property name="shareable" value="true"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]The Yacht Party Gauntlet[-]"/>
+				<property name="message" value="tutorialTipQuest03"/>
+				<property name="delay" value="2"/>
+			</action>
+			<property name="login_rally_reset" value="true"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="escape_hugh" />
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerFetch"/>
+			</objective>
+
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI">
+				<property name="phase" value="4"/>
+			</action>
+			<reward type="Item" id="modVehicleExpandedSeat" value="1"/>
+			<reward type="Quest" id="quest_BattleshipMuseum04">
+			</reward>
+			
+		</quest>
+
+
+		<quest id="quest_BattleshipMuseum04">
+			<property name="name_key" value="quest_BattleshipMuseum04"/>
+			<property name="subtitle_key" value="quest_BattleshipMuseum04_subtitle"/>
+			<property name="description_key" value="quest_BattleshipMuseum04_description"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest" />
+			<property name="difficulty_tier" value="5" param1="difficulty"/>
+			<property name="offer_key" value="quest_BattleshipMuseum04_offer" />
+			<property name="statement_key" value="quest_infestation_statement"/>
+			<property name="response_key" value="quest_infestation_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="infested" param1="extra_tags"/>
+			<property name="filter_tags" value="poi" param1="filter_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier"/>
+			<property name="gamestage_mod" value=".6" param1="gamestage_mod"/>
+			<property name="gamestage_bonus" value="30" param1="gamestage_bonus"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]The Gyrocopter Escape[-]"/>
+				<property name="message" value="tutorialTipQuest06"/>
+				<property name="delay" value="2"/>
+			</action>
+			<property name="login_rally_reset" value="true"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="ESCAPE_AIR_STRIP" />
+				<property name="nav_object" value="quest" />
+			</objective>
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<reward type="Quest" id="quest_BattleshipMuseum05">
+			</reward>
+		</quest>
+
+		<quest id="quest_BattleshipMuseum05">
+			<property name="name_key" value="challenge_BattleshipMuseum05"/>
+			<property name="subtitle_key" value="challenge_BattleshipMuseum05_subtitle"/>
+			<property name="description_key" value="challenge_BattleshipMuseum05_description"/>
+			<property name="group_name_key" value="challenge_BattleshipMuseum05"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_BattleshipMuseum05_offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="extra_tags" value="infested" param1="extra_tags" />
+			<property name="shareable" value="true"/>
+			<property name="gamestage_mod" value=".6" param1="gamestage_mod" />
+			<property name="gamestage_bonus" value="30" param1="gamestage_bonus" />
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="[FFFF00]Rebuild and Fly to Freedom[-]"/>
+				<property name="message" value="tutorialTipQuest06"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<property name="login_rally_reset" value="true"/>
+
+			<action type="TrackQuest"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="Trader_Mechanic" />
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<action type="ShowMessageWindow">
+				<property name="phase" value="1" />
+				<property name="title" value="[FFFF00] Freedom is earned![-]"/>
+				<property name="message" value="tutorialTipQuest04"/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+
+			<action type="ShowMessageWindow">
+				<property name="phase" value="3"/>
+				<property name="title" value="Finale"/>
+				<property name="message" value="Jen says stay away from barrels they explode randomly."/>
+				<property name="delay" value="2"/>
+			</action>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="75"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<objective type="Goto" id="trader" value="1" phase="4">
+				<property name="biome_filter_type" value="any"/>
+				<property name="Zoning" value="any"/>
+				<property name="nav_object" value="go_to_trader"/>
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<reward type="Quest" id="Completion"/>
+		</quest>
+
+		<quest id="Completion">
+			<property name="name_key" value="Challenge_Completion"/>
+			<property name="subtitle_key" value="Challenge_Completion_subtitle"/>
+			<property name="description_key" value="Challenge_Completion_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="category_key" value="quest"/>
+			<property name="category" value="Congratulations!"/>
+			<property name="difficulty" value="easy"/>
+			<property name="shareable" value="false"/>
+
+			<action type="ShowMessageWindow">
+				<property name="title" value="Congrats"/>
+				<property name="message" value="Congrats_message"/>
+				<property name="delay" value="2"/>
+			</action>
+		</quest>
+		<!--   END Battleship main quest line -->
+
+		<!--   Start challenge quest line -->
+
+		<!-- ==================== MEDIC TRACK ==================== -->
+		<quest id="challenge_medic1">
+			<property name="name_key" value="challenge_medic1"/>
+			<property name="subtitle_key" value="challenge_medic1_subtitle"/>
+			<property name="description_key" value="challenge_medic1_description"/>
+			<property name="group_name_key" value="challenge_medic_group"/>
+			<property name="icon" value="ui_game_symbol_medical"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_medic1_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="medicalBandage" value="2" />
+			<reward type="Item" id="ammo9mmBulletBall" value="30"/>
+			<reward type="Item" id="Medical Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_medic2" />
+		</quest>
+
+		<quest id="challenge_medic2">
+			<property name="name_key" value="challenge_medic2"/>
+			<property name="subtitle_key" value="challenge_medic2_subtitle"/>
+			<property name="description_key" value="challenge_medic2_description"/>
+			<property name="group_name_key" value="challenge_medic_group"/>
+			<property name="icon" value="ui_game_symbol_medical"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_medic2_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="medicalFirstAidBandage2" value="2" />
+			<reward type="Item" id="ammoShotgunShell" value="15"/>
+			<reward type="Item" id="Medical Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_medic3" />
+		</quest>
+
+		<quest id="challenge_medic3">
+			<property name="name_key" value="challenge_medic3"/>
+			<property name="subtitle_key" value="challenge_medic3_subtitle"/>
+			<property name="description_key" value="challenge_medic3_description"/>
+			<property name="group_name_key" value="challenge_medic_group"/>
+			<property name="icon" value="ui_game_symbol_medical"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_medic3_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="medicalFirstAidBandage" value="1" />
+			<reward type="Item" id="ammo762mmBulletBall" value="30"/>
+			<reward type="Item" id="Medical Skill Book" value="1" />
+			<reward type="Exp" value="300"/>
+			<reward type="Quest" id="challenge_medic4" />
+		</quest>
+
+		<quest id="challenge_medic4">
+			<property name="name_key" value="challenge_medic4"/>
+			<property name="subtitle_key" value="challenge_medic4_subtitle"/>
+			<property name="description_key" value="challenge_medic4_description"/>
+			<property name="icon" value="ui_game_symbol_challenge"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="difficulty_tier" value="0"/>
+			<property name="allow_remove" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="MedicCompleteReward"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="LootItem" id="schematicsModsAndGeneralCommon" ischosen="true" value="1"/>
+			<reward type="LootItem" id="perkBooks" ischosen="true" value="1"/>
+		</quest>
+
+		<!-- ==================== MECHANIC TRACK ==================== -->
+		<quest id="challenge_mechanic1">
+			<property name="name_key" value="challenge_mechanic1"/>
+			<property name="subtitle_key" value="challenge_mechanic1_subtitle"/>
+			<property name="description_key" value="challenge_mechanic1_description"/>
+			<property name="group_name_key" value="challenge_mechanic_group"/>
+			<property name="icon" value="ui_game_symbol_wrench"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_mechanic1_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="resourceRepairKit" value="2" />
+			<reward type="Item" id="ammo9mmBulletBall" value="30"/>
+			<reward type="Item" id="Vehicle Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_mechanic2" />
+		</quest>
+
+		<quest id="challenge_mechanic2">
+			<property name="name_key" value="challenge_mechanic2"/>
+			<property name="subtitle_key" value="challenge_mechanic2_subtitle"/>
+			<property name="description_key" value="challenge_mechanic2_description"/>
+			<property name="group_name_key" value="challenge_mechanic_group"/>
+			<property name="icon" value="ui_game_symbol_wrench"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_mechanic2_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="" value="1" />
+			<objective type="Craft" id="" value="1" />
+			<reward type="Item" id="ammoShotgunShell" value="15"/>
+			<reward type="Item" id="Vehicle Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_mechanic3" />
+		</quest>
+
+		<quest id="challenge_mechanic3">
+			<property name="name_key" value="challenge_mechanic3"/>
+			<property name="subtitle_key" value="challenge_mechanic3_subtitle"/>
+			<property name="description_key" value="challenge_mechanic3_description"/>
+			<property name="group_name_key" value="challenge_mechanic_group"/>
+			<property name="icon" value="ui_game_symbol_wrench"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_mechanic3_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="vehicleRepairKit" value="2" />
+			<reward type="Item" id="ammo762mmBulletBall" value="30"/>
+			<reward type="Item" id="Vehicle Skill Book" value="1" />
+			<reward type="Exp" value="300"/>
+			<reward type="Quest" id="challenge_mechanic4" />
+		</quest>
+
+		<quest id="challenge_mechanic4">
+			<property name="name_key" value="challenge_mechanic4"/>
+			<property name="subtitle_key" value="challenge_mechanic4_subtitle"/>
+			<property name="description_key" value="challenge_mechanic4_description"/>
+			<property name="icon" value="ui_game_symbol_challenge"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="difficulty_tier" value="0"/>
+			<property name="allow_remove" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="MechanicCompleteReward"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="LootItem" id="schematicsModsAndGeneralCommon" ischosen="true" value="1"/>
+			<reward type="LootItem" id="perkBooks" ischosen="true" value="1"/>
+		</quest>
+
+		<!-- ==================== ENGINEER TRACK ==================== -->
+		<quest id="challenge_engineer1">
+			<property name="name_key" value="challenge_engineer1"/>
+			<property name="subtitle_key" value="challenge_engineer1_subtitle"/>
+			<property name="description_key" value="challenge_engineer1_description"/>
+			<property name="group_name_key" value="challenge_engineer_group"/>
+			<property name="icon" value="ui_game_symbol_concrete"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_engineer1_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="resourceIronIngot" value="5" />
+			<reward type="Item" id="ammo9mmBulletBall" value="30"/>
+			<reward type="Item" id="Electrical Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_engineer2" />
+		</quest>
+
+		<quest id="challenge_engineer2">
+			<property name="name_key" value="challenge_engineer2"/>
+			<property name="subtitle_key" value="challenge_engineer2_subtitle"/>
+			<property name="description_key" value="challenge_engineer2_description"/>
+			<property name="group_name_key" value="challenge_engineer_group"/>
+			<property name="icon" value="ui_game_symbol_concrete"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_engineer2_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="resourceForgedIron" value="15" />
+			<objective type="Craft" id="resourceMechanicalParts" value="10" />
+			<reward type="Item" id="ammoShotgunShell" value="15"/>
+			<reward type="Item" id="Electrical Skill Book" value="1" />
+			<reward type="Exp" value="200"/>
+			<reward type="Quest" id="challenge_engineer3" />
+		</quest>
+
+		<quest id="challenge_engineer3">
+			<property name="name_key" value="challenge_engineer3"/>
+			<property name="subtitle_key" value="challenge_engineer3_subtitle"/>
+			<property name="description_key" value="challenge_engineer3_description"/>
+			<property name="group_name_key" value="challenge_engineer_group"/>
+			<property name="icon" value="ui_game_symbol_concrete"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_engineer3_offer"/>
+			<property name="difficulty" value="easy"/>
+			<objective type="Craft" id="resourceForgedSteel" value="5" />
+			<reward type="Item" id="ammo762mmBulletBall" value="30"/>
+			<reward type="Item" id="Electrical Skill Book" value="1" />
+			<reward type="Exp" value="300"/>
+			<reward type="Quest" id="challenge_engineer4" />
+		</quest>
+
+		<quest id="challenge_engineer4">
+			<property name="name_key" value="challenge_engineer4"/>
+			<property name="subtitle_key" value="challenge_engineer4_subtitle"/>
+			<property name="description_key" value="challenge_engineer4_description"/>
+			<property name="icon" value="ui_game_symbol_challenge"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="difficulty_tier" value="0"/>
+			<property name="allow_remove" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="EngineerCompleteReward"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="LootItem" id="schematicsModsAndGeneralCommon" ischosen="true" value="1"/>
+			<reward type="LootItem" id="perkBooks" ischosen="true" value="1"/>
+		</quest>
+		
+		<quest id="challenge_Chef1">
+			<property name="name_key" value="quest_Chef"/>
+			<property name="subtitle_key" value="chef Challenge"/>
+			<property name="description_key" value="chef!!!!!"/>
+			<property name="group_name_key" value="Chef Quest 1/3"/>
+			<property name="icon" value="ui_game_symbol_safe"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="."/>
+			<property name="difficulty" value="easy"/>
+
+			<objective type="Craft" id="foodCornOnTheCob" value="1" />
+
+			<reward type="Item" id="foodCropCorn" count="5" />
+			<reward type="Item" id="ammo9mmBulletBall" value="30"/>
+			<reward type="Item" id="Cooking Skill Book" count="1" />
+			<reward type="Exp" value="1000"/>
+
+			<reward type="Quest" id="challenge_Chef2" />
+		</quest>
+
+		<quest id="challenge_Chef2">
+			<property name="name_key" value="quest_Chef"/>
+			<property name="subtitle_key" value="chef Challenge 2"/>
+			<property name="description_key" value="chef!!!!!"/>
+			<property name="group_name_key" value="Chef Quest 2/3"/>
+			<property name="icon" value="ui_game_symbol_safe"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="."/>
+			<property name="difficulty" value="easy"/>
+
+			<objective type="Craft" id="foodGrilledMeat" value="1" />
+
+			<reward type="Item" id="ammoShotgunShell" value="15"/>
+			<reward type="Item" id="Cooking Skill Book" count="1" />
+			<reward type="Exp" value="2000"/>
+
+			<reward type="Quest" id="challenge_Chef3" />
+		</quest>
+
+		<quest id="challenge_Chef3">
+			<property name="name_key" value="quest_Chef"/>
+			<property name="subtitle_key" value="chef Challenge 3"/>
+			<property name="description_key" value="chef!!!!!"/>
+			<property name="group_name_key" value="Chef Quest 3/3"/>
+			<property name="icon" value="ui_game_symbol_safe"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="."/>
+			<property name="difficulty" value="easy"/>
+
+			<objective type="Craft" id="drinkJarGoldenRodTea" value="1" />
+
+			<reward type="Item" id="ammo762mmBulletBall" value="30"/>
+			<reward type="Item" id="Cooking Skill Book" count="1" />
+			<reward type="Exp" value="3000"/>
+		</quest>
+
+		<quest id="challenge_chef4">
+			<property name="name_key" value="challenge_chef4"/>
+			<property name="subtitle_key" value="challenge_chef4_subtitle"/>
+			<property name="description_key" value="challenge_chef4_description"/>
+			<property name="icon" value="ui_game_symbol_challenge"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="difficulty_tier" value="0"/>
+			<property name="allow_remove" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="ChefCompleteReward"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="1000"/>
+			<reward type="LootItem" id="schematicsModsAndGeneralCommon" ischosen="true" value="1"/>
+			<reward type="LootItem" id="perkBooks" ischosen="true" value="1"/>
+		</quest>
+	</append>
+	
+	<!--   END Challenges quest line -->
+</configs>

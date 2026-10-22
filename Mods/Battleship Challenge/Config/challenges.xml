@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  
+	Aircraft Carrier Challenge - Custom Challenge System
+	Author: Devilskut
+	Version: 2.1.1
+	
+	CHALLENGE PROGRESSION:
+	
+	CHALLENGE GROUPS 1
+	1. Starting Quest Chain - Kill zombies, and quests
+    2. Kill Zombies - Kill some Zed heads!
+	3. Gather Materials - Find parts for the Gyrocopter
+	4. Gather2 Materials - 
+	5. Escape - Reach Trader Bob
+	3. Traders - Meet some traders  -->
+
+	<configs>
+
+<set xpath="/challenges">
+	
+	<challenge_category name="ACC High Seas" title="ACC Escape" icon="ui_game_symbol_challenge_category1"/>
+	
+	<!-- ========================================
+	     CHALLENGE GROUPS 1
+	     ======================================== -->
+	
+	<!-- Group 1: Starting Quest Chain - Kill zombies, get geared up -->
+	<challenge_group category="ACC High Seas" name="Basics" title_key="challengeGroupBasics"
+	                 reward_text_key="challengeGroupBasicsReward" reward_event="challenge_reward_500" link_challenges="true"/>
+
+	<!-- Group 2: Kill Zombies - Kill some Zed heads! -->
+	<challenge_group category="ACC High Seas" name="Kill" title_key="challengeGroupKill"
+	                 reward_text_key="challengeGroupKillReward" reward_event="challenge_reward_Kill" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 3: Gather Materials - Find parts for the Gyrocopter -->
+	<challenge_group category="ACC High Seas" name="Gatherer" title_key="challengeGroupGatherer"
+	                 reward_text_key="challengeGroupGathererReward" reward_event="challenge_reward_Gatherer" link_challenges="true" hidden_by="Basics"/>
+
+	<!-- Group 4: Resources -->
+	<challenge_group category="ACC High Seas" name="Resources" title_key="challengeGroupResources"
+	                 reward_text_key="challengeGroupResourcesReward" reward_event="challenge_reward_Resources" link_challenges="true" hidden_by="Basics"/>
+	
+	<!-- Group 5: Escape - Reach White River -->
+	
+
+	<!-- Group 6: Traders - Find Traders -->
+	<challenge_group category="ACC High Seas" name="Traders" title_key="challengeGroupTradersQuests"
+	                 reward_text_key="challengeRewardBonusTradersReward" reward_event="challenge_group_reward_trader_quests" hidden_by="Basics"/>
+
+	<!-- ========================================
+	     GROUP 1: Starting Quest chain
+	     ======================================== -->
+	
+	<challenge name="killZombiesBattle10" title_key="Kill 10 Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Basics"
+	           short_description_key="challengeKillZombiesBattle10Short" description_key="challengeKillZombiesBattle10Desc"
+	           reward_text_key="challenge_BattleStarting_500xp" reward_event="BattleStarting">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="10"/>
+	</challenge>
+	
+
+	<challenge name="questComplete" title_key="challengeQuestComplete" icon="ui_game_symbol_quest" group="Basics"
+		short_description_key="challengeQuestCompleteShort" description_key="challengeQuestCompleteDesc"
+		reward_text_key="challenge_reward_2000xp" reward_event="BasicsCompleteTriggerSkillQuests">
+		<objective type="QuestComplete" count="2"/>
+	</challenge>
+		
+	<!-- ========================================
+	     GROUP 2: Kill some Zed heads!
+	     ======================================== -->
+	<challenge name="killZombiesBattle15" title_key="Kill 15 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle15Short" description_key="challengeKillZombiesBattle15Desc"
+				   reward_text_key="Battle_reward_500xp" reward_event="Battle_reward_500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="25"/>
+	</challenge>
+
+	<challenge name="killZombiesBattle25" title_key="Kill 25 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle25Short" description_key="challengeKillZombiesBattle25Desc"
+				   reward_text_key="Battle_reward_1000xp" reward_event="Battle_reward_1000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="50"/>
+	</challenge>
+	
+	<challenge name="killZombiesBattle50" title_key="Kill 50 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle50Short" description_key="challengeKillZombiesBattle50Desc"
+				   reward_text_key="Battle_reward_2000xp" reward_event="Battle_reward_2000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="100"/>
+	</challenge>
+
+	<challenge name="killZombiesBattle75" title_key="Kill 75 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle75Short" description_key="challengeKillZombiesBattle75Desc"
+				   reward_text_key="Battle_reward_2500xp" reward_event="Battle_reward_2500">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="175"/>
+	</challenge>
+
+	<challenge name="killZombiesBattle125" title_key="Kill 125 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle125Short" description_key="challengeKillZombiesBattle125Desc"
+				   reward_text_key="Battle_reward_5000xp" reward_event="Battle_reward_5000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="300"/>
+	</challenge>
+
+	<challenge name="killZombiesBattle200" title_key="Kill 200 More Zombies" icon="ui_game_symbol_challenge_adv_survival_kill_zombies" group="Kill"
+				   short_description_key="challengeKillZombiesBattle200Short" description_key="challengeKillZombiesBattle200Desc"
+				   reward_text_key="Battle_reward_10000xp" reward_event="Battle_reward_10000">
+		<objective type="KillByTag" entity_tags="zombie" target_name_key="xuiZombies" count="500"/>
+	</challenge>
+
+	<challenge name="killVultures25" title_key="Kill 25 Vultures" icon="ui_game_symbol_zombie" group="Kill"
+		short_description_key="challengeKillVulturesShort" description_key="challengeKillVulturesDesc"
+		reward_text_key="Battle_reward_500xp" reward_event="Battle_reward_500">
+		<objective type="Kill" entity_names="animalZombieVulture,animalZombieVultureRadiated" count="25"/>
+	</challenge>
+	
+	<!-- ========================================
+	     GROUP 3: Gather Materials for repair kit
+	     ======================================== -->
+
+	<!-- Step 1: Gather some Basic Parts -->
+	<challenge name="challengeGatherBasicParts" title_key="Gather Basic Parts" icon="ui_game_symbol_challenge_harvesting_mechanical_parts" group="Gatherer"
+	           hint="challengeGatherBasicPartsHint"
+	           short_description_key="challengeGatherBasicPartsShort" description_key="challengeGatherBasicPartsDesc">
+		<objective type="Gather" item="resourceMechanicalParts" count="50"/>
+		<objective type="Gather" item="resourceElectricParts" count="53"/>
+		<objective type="Gather" item="resourceLeather" count="40"/>
+		<objective type="Gather" item="resourceDuctTape" count="25"/>
+		<objective type="Gather" item="resourceMetalPipe" count="50"/>
+	</challenge>
+	
+	<!-- Step 2: Gather some vehicle items -->
+	<challenge name="challengeGatherVehicleItems" title_key="Gather Vehicle Items" icon="ui_game_symbol_challenge_harvesting_polymers" group="Gatherer"
+	           hint="challengeGatherVehicleItemsHint"
+	           short_description_key="challengeGatherVehicleItemsShort" description_key="challengeGatherVehicleItemsDesc">
+		<objective type="Gather" item="resourceSpring" count="4"/>
+		<objective type="Gather" item="resourceHeadlight" count="8"/>
+		<objective type="Gather" item="vehicleWheels" count="2"/>
+		<objective type="Gather" item="carBattery" count="1"/>
+		<objective type="Gather" item="smallEngine" count="1"/>
+	</challenge>
+	<!-- Step 3: Gather crucible and make steel -->
+	<challenge name="challengeGatherCrucibleSteel" title_key="Gather Crucible snd Steel" icon="ui_game_symbol_challenge_harvesting_wrench_vending_machine" group="Gatherer"
+	           hint="challengeGatherCrucibleSteelHint"
+	           short_description_key="challengeGatherCrucibleSteelShort" description_key="challengeGatherCrucibleSteelDesc">
+		<objective type="Gather" item="toolForgeCrucible" count="1"/>
+		<objective type="Gather" item="resourceForgedSteel" count="125"/>
+	</challenge>
+
+	<!-- Step 4: Gather GyroCopter parts -->
+	<challenge name="GatherGyroCopterParts" title_key="Gather GyroCopter Parts" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gatherer"
+	           hint="challengeGatherGatherGyroCopterPartsHint"
+	           short_description_key="challengeGatherGyroCopterPartsShort" description_key="challengeGatherGyroCopterPartsDesc">
+		<objective type="Gather" item="vehicleGyroCopterAccessories" count="1"/>
+		<objective type="Gather" item="vehicleGyroCopterChassis" count="1"/>
+	</challenge>
+
+	<!-- Step 5: Gather GyroCopter repair kit parts -->
+	<challenge name="GatherGyroCopterItems" title_key="Gather Gryrocopter Items" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gatherer"
+		   hint="challengeGatherGyroCopterItemsHint"
+		   short_description_key="challengeGatherGyroCopterItemsShort" description_key="challengeGatherGyroCopterItemsDesc">
+		<objective type="Gather" item="vehicleGyroCopterAccessories" count="1"/>
+		<objective type="Gather" item="vehicleGyroCopterChassis" count="1"/>
+		<objective type="Gather" item="vehicleWheels" count="2"/>
+		<objective type="Gather" item="carBattery" count="1"/>
+		<objective type="Gather" item="smallEngine" count="1"/>
+	</challenge>
+
+	<!-- Step 6: Craft Gyrocopter Repair Kit -->
+	<challenge name="CraftGyrocopterRepairKit" title_key="Gather Gyrocopter Repair Kit" icon="ui_game_symbol_challenge_harvesting_wrench_cars" group="Gatherer"
+			   hint="challengeGatherGyrocopterRepairKitHint"
+			   short_description_key="challengeGatherGyrocopterRepairKitShort" description_key="challengeGatherGyrocopterRepairKitDesc"
+			   reward_text_key="challenge_reward_GyrocopterKitComplete" reward_event="GyrocopterKitCompleteReward">
+		<objective type="Gather" item="vehicleGyrocopterRepairKit"/>
+	</challenge>
+	
+	<!-- ========================================
+	     GROUP 4: Resources
+	     ======================================== -->
+	<challenge name="gathererIron" title_key="challengeGathererIron" icon="ui_game_symbol_mining" group="Resources"
+			short_description_key="challengeGathererIronShort" description_key="challengeGathererIronDesc"
+			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
+		<objective type="Harvest" item="resourceScrapIron" count="500" block_tag="ore"/>
+	</challenge>
+
+	<challenge name="gathererLead" title_key="challengeGathererLead" icon="ui_game_symbol_mining" group="Resources"
+		short_description_key="challengeGathererLeadShort" description_key="challengeGathererLeadDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
+		<objective type="Harvest" item="resourceScrapLead" count="500" block_tag="ore"/>
+	</challenge>
+
+	<challenge name="gathererCoal" title_key="challengeGathererCoal" icon="ui_game_symbol_mining" group="Resources"
+		short_description_key="challengeGathererCoalShort" description_key="challengeGathererCoalDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
+		<objective type="Harvest" item="resourceCoal" count="500" block_tag="ore"/>
+	</challenge>
+
+	<challenge name="gathererPotassium" title_key="challengeGathererPotassium" icon="ui_game_symbol_mining" group="Resources"
+		short_description_key="challengeGathererPotassiumShort" description_key="challengeGathererPotassiumDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
+		<objective type="Harvest" item="resourcePotassiumNitratePowder" count="500" block_tag="ore"/>
+	</challenge>
+	<!-- ========================================
+	     GROUP 5: ESCAPE (Reach the TRADER)
+	     ======================================== -->
+	
+
+
+
+	<!-- ========================================
+	     GROUP 6: Meet some Traders
+	     ======================================== -->
+
+	<challenge name="meetHugh" title_key="challengeMeetHugh" icon="ui_game_symbol_map_trader" group="Traders"
+			short_description_key="challengeMeetHughShort" description_key="challengeMeetHughDesc"
+			reward_text_key="challenge_reward_2500xp" reward_event="challenge_reward_2500">
+		<objective type="MeetTrader" trader_name="npcTraderHugh"/>
+	</challenge>
+
+	<challenge name="meetBob" title_key="challengeMeetBob" icon="ui_game_symbol_map_trader" group="Traders"
+		short_description_key="challengeMeetBobShort" description_key="challengeMeetBobDesc"
+	    reward_text_key="challenge_reward_BattleEnding" reward_event="BattleEnding">
+		<objective type="MeetTrader" trader_name="npcTraderBob"/>
+	</challenge>
+
+</set>
+
+</configs>

@@ -1,0 +1,38 @@
+<config>
+
+	<remove xpath="/windows/window[@name='mainMenuNews']" />
+	<remove xpath="/windows/window[@name='menuBackground']" />
+	<append xpath="/windows">
+	<window name="menuBackground" anchor="Center" pos="0,0" width="1050" height="780" depth="-5">
+		<sprite depth="0" color="[black]" globalopacitymod="0" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+		<texture depth="1" color="[white]" texture="@modfolder:UIAtlases/ItemIconAtlas/background.png" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+
+		<video name="videoTexture" depth="2" anchor_left="#cam,0.5,-924" anchor_right="#cam,0.5,924" anchor_bottom="#cam,0.5,-530" anchor_top="#cam,0.5,530" uri="/Video/MenuBackground2" videoaspect="FitInside" loop="true" />
+	</window>
+	
+	</append>
+	
+<!--		<append xpath="/windows">
+			<window name="windowBattleshipWelcomeRules" width="650" height="520" controller="TipWindow" anchor="Center" panel="center">
+
+				<panel name="header" height="45" depth="1">
+					<sprite depth="1" name="background" color="[black]" type="sliced" globalopacity="true"/>
+					<sprite depth="2" name="windowIcon" style="icon30px" pos="15,-7" sprite="ui_game_symbol_challenge" color="[FF4F00]"/>
+					<label depth="3" name="title" pos="55,-10" font_size="26" font="Stardos Stencil" color="[white]" text="USS NEW JERSEY: CHALLENGE RULES" />
+				</panel>
+
+				<panel name="content" pos="0,-45" height="475" depth="1">
+					<sprite depth="1" name="background" color="[darkGrey]" type="sliced" globalopacity="true"/>
+
+					<label depth="2" name="lblRules" pos="25,-25" width="600" height="360" font_size="20" color="[white]" autowrap="true"
+						   text="Welcome to the Battleship Museum Overhaul!\n\nYou have been taken captive by Trader Hugh. To earn your freedom, you must survive long enough to escape via Devil's Air Strip.\n\n[FF4F00]CORE SYSTEM FEATURES:[-]\n- Features an accelerated [FF4F00]Learn by Doing[-] progression system by Spherii.\n\n[FF4F00]CRITICAL RULES CONSTRAINTS:[-]\n1. NO DIGGING OR MINING under the Battleship hull or Docks.\n2. ALL BRIDGES built outward must be self-supporting and cannot touch ground.\n3. DO NOT WRENCH full workstations (Concrete Mixer, Chem Station, Workbench) or you will permanently lose stored items.\n4. Loot respawns every 7 days. Air drops are strictly DISABLED." />
+
+					<button name="btnCancel" style="press" pos="225,-410" width="200" height="42" label="I ACCEPT THE CHALLENGE" tooltip="Dismiss rules window and begin your deployment." font_size="18" sound="craft_click_complete" />
+				</panel>
+
+			</window>
+		</append> -->
+	
+
+
+</config>

@@ -1,0 +1,349 @@
+ <configs>
+
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']"/>
+	
+	<insertBefore xpath="/gameevents/action_sequence[@name='game_on_death_none']">
+
+		<action_sequence name="game_first_spawn">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+
+			<action class="Teleport">
+				 <property name="target_position" value="-584,65,-2379" rotation="0,90,0" />
+			 </action>
+			
+			<action class="Delay">
+				<property name="time" value="2" />
+			</action>
+			<action class="AddItems">
+				<property name="added_items" value="Backpack" />
+				<property name="added_item_counts" value="1" />
+			</action>
+			<action class="AddQuest">
+				<property name="phase" value="1" />
+				<property name="quest" value="quest_whiteRiverCitizen1" />
+			</action>
+    </action_sequence>
+	</insertBefore>
+
+	 <remove xpath="/gameevents/action_sequence[@name='game_on_respawn_none']"/>
+	 <remove xpath="/gameevents/action_sequence[@name='game_on_respawn_default']"/>
+	 <remove xpath="/gameevents/action_sequence[@name='game_on_respawn_injured']"/>
+	 <remove xpath="/gameevents/action_sequence[@name='game_on_respawn_permanent']"/>
+	 
+	 
+	 <insertBefore xpath="/gameevents/action_sequence[@name='game_remove_entity']">
+		 
+		<action_sequence name="game_on_respawn_injured">
+			<property name="allow_user_trigger" value="false" />
+			<property name="action_type" value="Game" />
+
+			<action class="ModifyEntityStat">
+				<property name="stat" value="Food" />
+				<property name="value" value=".5" />
+				<property name="is_percent" value="true" />
+				<property name="operation" value="Set" />
+			</action>
+
+			<action class="ModifyEntityStat">
+				<property name="stat" value="Water" />
+				<property name="value" value=".5" />
+				<property name="is_percent" value="true" />
+				<property name="operation" value="Set" />
+			</action>
+
+			<action class="Teleport">
+				<property name="target_position" value="-584,65,-2379" rotation="0,90,0" />
+			</action>
+			
+         </action_sequence>
+		 <!-- *** GAME_ON_RESPAWN_NONE -->
+		 <!-- No penalties on death. Respawn side calculations. -->
+		 <action_sequence name="game_on_respawn_none">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+
+			 <action class="RemoveDeathBuffs" />
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Food" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Water" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Health" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Stamina" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="Teleport">
+				 <property name="target_position" value="-584,65,-2379" rotation="0,90,0" />
+			 </action>
+		 </action_sequence>
+
+		 <!-- *** GAME_ON_RESPAWN_DEFAULT -->
+		 <!-- Default death penalties. Respawn side calculations. -->
+		 <action_sequence name="game_on_respawn_default">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Food" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Water" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Health" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Stamina" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="Teleport">
+				 <property name="target_position" value="-560,65,-2340" rotation="0,90,0" />
+			 </action>
+		 </action_sequence>
+
+		 <!-- *** GAME_ON_RESPAWN_INJURED -->
+		 <!-- Keep most debuffs on death. 50% food and water on respawn. Respawn side calculations. -->
+		 <action_sequence name="game_on_respawn_injured">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Food" />
+				 <property name="value" value=".5" />
+				 <property name="is_percent" value="true" />
+				 <property name="operation" value="Set" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Water" />
+				 <property name="value" value=".5" />
+				 <property name="is_percent" value="true" />
+				 <property name="operation" value="Set" />
+			 </action>
+
+			 <action class="AddBuff">
+				 <property name="buff_name" value="buffInfectionCatch" />
+
+				 <requirement class="CVar">
+					 <property name="cvar" value="infectionCounterRespawn"/>
+					 <property name="operation" value="GT" />
+					 <property name="value" value="0" />
+				 </requirement>
+			 </action>
+
+			 <action class="Teleport">
+				 <property name="target_position" value="-584,65,-2379" rotation="0,90,0" />
+			 </action>
+		 </action_sequence>
+
+		 <!-- *** GAME_ON_RESPAWN_PERMANENT -->
+		 <!-- Completely resets the player's progression on death. Respawn side calculations. -->
+		 <action_sequence name="game_on_respawn_permanent">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+
+			 <!-- Backpack has already dropped. This just cleans up any items like the biome badges. -->
+			 <action class="RemoveItems">
+				 <property name="items_location" value="Toolbelt,Backpack,Equipment,BiomeBadge" param1="itemlocation" />
+			 </action>
+
+			 <!-- When the biome badge is removed, this will set the biome timers back to default to prevent the recover buffs from running. -->
+			 <action class="ModifyCVar">
+				 <property name="cvar" value="$BurntHazardTimer" />
+				 <property name="operation" value="set" />
+				 <property name="value" value="180" />
+			 </action>
+
+			 <action class="ModifyCVar">
+				 <property name="cvar" value="$DesertHazardTimer" />
+				 <property name="operation" value="set" />
+				 <property name="value" value="120" />
+			 </action>
+
+			 <action class="ModifyCVar">
+				 <property name="cvar" value="$SnowHazardTimer" />
+				 <property name="operation" value="set" />
+				 <property name="value" value="60" />
+			 </action>
+
+			 <action class="ModifyCVar">
+				 <property name="cvar" value="$WastelandHazardTimer" />
+				 <property name="operation" value="set" />
+				 <property name="value" value="30" />
+			 </action>
+
+			 <action class="RemoveDeathBuffs" />
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Food" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="ModifyEntityStat">
+				 <property name="stat" value="Water" />
+				 <property name="operation" value="SetMax" />
+			 </action>
+
+			 <action class="AddStartingItems" />
+
+			 <action class="Teleport">
+				 <property name="target_position" value="-584,65,-2379" rotation="0,90,0" />
+			 </action>
+		 </action_sequence>
+	 </insertBefore>
+
+	 <append xpath="/gameevents">
+
+		 <action_sequence name="BattleStarting">
+			 <property name="action_type" value="Game" />
+            <action class="AddItems">
+                <property name="added_items" value="meleeToolSalvageT1Wrench" />
+                <property name="added_item_counts" value="1" />
+            </action> 
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_500">
+			 <property name="allow_user_trigger" value="true" />
+			 <property name="action_type" value="Game" />
+			 
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+			 
+			 <action class="AddXP">
+				 <property name="xp_amount" value="1000" />
+			 </action>
+			 
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_1000">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="1000" />
+			 </action>
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_2000">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="2000" />
+			 </action>
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_2500">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="2500" />
+			 </action>
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_5000">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="5000" />
+			 </action>
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+		 </action_sequence>
+
+		 <action_sequence name="Battle_reward_10000">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="10000" />
+			 </action>
+			 <action class="AddItems">
+				 <property name="added_items" value="medicalFirstAidBandage" />
+				 <property name="added_item_counts" value="1" />
+			 </action>
+		 </action_sequence>
+
+<!--    <action_sequence name="BasicsCompleteTriggerSkillQuests">
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="AddXP">
+				 <property name="xp_amount" value="2000"/>
+			 </action>
+			 <action class="AddQuest">
+				 <property name="phase" value="1" />
+				 <property name="quest" value="challenge_chef1" />
+			 </action>
+			 <action class="AddQuest">
+				 <property name="phase" value="2" />
+				 <property name="quest" value="challenge_medic1" />
+			 </action>
+			 <action class="AddQuest">
+				 <property name="phase" value="3" />
+				 <property name="quest" value="challenge_Engineer1" />
+			 </action>
+			 <action class="AddQuest">
+				 <property name="phase" value="4" />
+				 <property name="quest" value="challenge_Mechanic1" />
+			 </action>
+		 </action_sequence> -->
+		 
+		 <action_sequence name="GyrocopterKitCompleteReward">
+			    <property name="allow_user_trigger" value="false" />
+				<property name="action_type" value="Game" />
+				<action class="AddXP">
+					<property name="xp_amount" value="2500"/>
+				</action>
+				<action class="AddQuest">
+					<property name="phase" value="1" />
+					<property name="quest" value="quest_BattleshipMuseum1" />
+				</action>
+			</action_sequence>
+			 
+	     <action_sequence name="BattleEnding"> 
+			 <property name="allow_user_trigger" value="false" />
+			 <property name="action_type" value="Game" />
+			 <action class="Delay">
+				 <property name="time" value="5" />
+			 </action>
+		         <action class="AddQuest">
+			     <property name="phase" value="1" />
+			     <property name="quest" value="Completion" />
+		     </action>
+	     </action_sequence>
+	 </append>
+	    
+	 </configs> 

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<!-- <set xpath="//nav_object_class[@name='supply_drop']/map_settings/property[@name='max_distance']/@value">10</set> -->
+	<set xpath="//nav_object_class[@name='supply_drop']/compass_settings/property[@name='max_distance']/@value">10</set>
+	<set xpath="//nav_object_class[@name='supply_drop']/onscreen_settings/property[@name='max_distance']/@value">10</set> 
+	
+<!--	<nav_object_class name="supply_drop">
+
+		<map_settings>
+			<property name="sprite_name" value="ui_game_symbol_airdrop"/>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="-1"/>
+			<property name="color" value="255,255,0,255"/>
+			<property name="has_pulse" value="true"/>
+		</map_settings>
+
+		<compass_settings>
+			<property name="sprite_name" value="ui_game_symbol_airdrop"/>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="4096"/>
+			<property name="max_scale_distance" value="1024"/>
+			<property name="color" value="255,255,0,255"/>
+			<property name="has_pulse" value="true"/>
+			<property name="icon_clamped" value="false" />
+		</compass_settings>
+
+		<onscreen_settings>
+			<property name="sprite_name" value="ui_game_symbol_airdrop"/>
+			<property name="min_distance" value="0"/>
+			<property name="max_distance" value="500"/>
+			<property name="color" value="255,255,0,255"/>
+			<property name="has_pulse" value="true"/>
+			<property name="text_type" value="Distance"/>
+		</onscreen_settings>
+		
+	</nav_object_class> -->
+	
+</xml>
