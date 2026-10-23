@@ -19,18 +19,18 @@
   <property name="SleeperVolumeSize" value="18, 3, 40#18, 3, 36#18, 4, 76#18, 3, 65#18, 3, 58#18, 3, 37" />
   <property name="SleeperVolumeStart" value="2, 12, 83#2, 12, 47#2, 15, 47#2, 20, 47#2, 24, 47#2, 28, 65" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="2GroupNightClub,6,7,2GroupNightClub,6,7,2GroupNightClub,6,7,2GroupNightClub,4,5,2GroupNightClub,4,5,2GroupNightClub,2,3" />
+  <property name="SleeperVolumeGroup" value="GroupNightClub,6,7,GroupNightClub,6,7,GroupNightClub,6,7,GroupNightClub,4,5,GroupNightClub,4,5,GroupNightClub,2,3" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,0,0,0,0" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # " />
   <property class="Stats">
     <property name="LightsVolume" value="25697.71" />
-    <property name="TotalVertices" value="1398860" />
-    <property name="TotalTriangles" value="666779" />
+    <property name="TotalVertices" value="1399542" />
+    <property name="TotalTriangles" value="666970" />
     <property class="BlockEntities">
-      <property name="Vertices" value="772376" />
-      <property name="Triangles" value="290085" />
+      <property name="Vertices" value="773058" />
+      <property name="Triangles" value="290276" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="302406" />

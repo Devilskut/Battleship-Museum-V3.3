@@ -168,7 +168,7 @@
                 <property name="AntiNerdPole" value="false"/>
 
                 <!-- Allow you to fit through one block spaces -->
-                <property name="OneBlockCrouch" value="false"/>
+                <property name="OneBlockCrouch" value="true"/>
                 <property name="PhysicsCrouchHeightModifier" value="0.49"/>
 
                 
@@ -206,16 +206,16 @@
                 <property name="AutoRedeemChallenges" value="false"/>
                 
                 <!-- Allows all players within a party to share their reading of books -->
-                <property name="SharedReading" value="false" />
+                <property name="SharedReading" value="true" />
             </property>
 
             <property class="AdvancedZombieFeatures">
                 <property name="Logging" value="false"/>
                 <property name="HeadshotOnly" value="false"/>
                 <!-- Only way to kill them is through head shots -->
-                <property name="RandomSize" value="false"/>
+                <property name="RandomSize" value="true"/>
                 <!-- Give them random sizes for more variety -->
-                <property name="RandomWalk" value="false"/>
+                <property name="RandomWalk" value="true"/>
 
                 <!-- Give them random walks. -->
 
@@ -393,7 +393,7 @@
 
             <!-- Allow themed settings to be applied: See Harmony/Atmosphere/-->
             <property class="Theme">
-                <property name="Spook" value="false"/>
+                <property name="Spook" value="true"/>
             </property>
 
             <property class="AdvancedWorkstationFeatures">

@@ -1425,10 +1425,10 @@
 		<property name="TakeDelay" value="1" />
 	</append> 
 
-   <!-- <insertafter xpath="/blocks/block[@name]/property[1]">
+   <insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> --> 
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
 
 	<append xpath="/blocks/block[@name='tableSaw']">
 		<drop event="Harvest" name="resourceScrapIron" count="300" tag="allHarvest,perkJunkMiner"/>

@@ -295,7 +295,7 @@
 
 			<objective type="POIStayWithin">
 				<property name="phase" value="3"/>
-				<property name="radius" value="25"/>
+				<property name="radius" value="50"/>
 			</objective>
 
 			<action type="UnlockPOI" >

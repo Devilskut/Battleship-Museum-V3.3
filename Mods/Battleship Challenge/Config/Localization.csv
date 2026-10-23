@@ -43,7 +43,7 @@ ConcreteMixer, Concrete Mixer Do not wrench
 ChemiestationCustom,Chemistry Station Do not wrench
 Workbench1,Workbench Do not wrench
 drinkCanMegaCrush,Goldens Swallow
-medicalFirstAidBandage2,Leather Bandage
+medicalFirstAidBandage2,Band Aid
 
 gunT4Minigun,Minigun
 MinigunDesc," Very beefy and heavy gun "You will be slowed" "
@@ -110,18 +110,12 @@ NerdDesc,"Head-XP Gain,Outfit-Magazing point chance,Gloves-Baton Damage+,Boots-F
 
 RaiderDesc,"Head-Stun Resist,Outfit-Crit Heal,Gloves-Melee Damage+,Boots-Fall Distance+, Bonus-Crit Resist+."
 
-Mission_1_Army DepotDesc, "Did you run to far away or die trying?"
-
-Mission_2_Bridge suppliesDesc, "Did you run to far away or die trying?"
-
-Mission_3_DD_62 suppliesDesc, "Did you run to far away or die trying?"
-
 adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed for quest progression."
 
 adminSkillMagazine2Desc,"Learn 10 Crafting Skills for weapons, tools and armor instantly!\n\nYou can now craft T1 weapons and tools."
 
 resourcePaper,"Classified Document" 
-resourcePaperDesc,"Just flush twice")"
+resourcePaperDesc,"Just flush twice"
 
 resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire"
 resourceAcidDesc,A resource used in crafting recipes.\n\nCan be crafted in beaker at a campfire or at the chemistry station.
@@ -192,6 +186,12 @@ zombieWightRadiated,Radiated DeathAngel
 zombieWightCharged,Charged DeathAngel
 zombieWightInfernal,Infernal DeathAngel
 
+zombieFemaleFat,KatPop
+zombieFemaleFatFeral,Feral KatPop
+zombieFemaleFatRadiated,Radiated KatPop
+zombieFemaleFatCharged,Charged KatPop
+zombieFemaleFatInfernal,Infernal KatPop
+
 animalMountainLion,KatPop
 
 # ============================================================
@@ -228,19 +228,19 @@ Battle_reward_500xp, 500xp and First Aid Bandage
 
 challengeKillZombiesBattle25Short,25 more zombies
 challengeKillZombiesBattle25Desc,"Kill another 25 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
-Battle_reward_1000xp, 1000xp and FirstAidBandage
+Battle_reward_1000xp, 1000xp and First Aid Bandage
 
 challengeKillZombiesBattle50Short,50 more zombies
 challengeKillZombiesBattle50Desc,"Kill another 50 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
-Battle_reward_2000xp, 2000xp and FirstAidBandage
+Battle_reward_2000xp, 2000xp and First Aid Bandage
 
 challengeKillZombiesBattle75Short,75 more zombies
 challengeKillZombiesBattle75Desc,"Kill another 75 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
-Battle_reward_2500xp, 2500xp and FirstAidBandage
+Battle_reward_2500xp, 2500xp and First Aid Bandage
 
 challengeKillZombiesBattle125Short,125 more zombies
 challengeKillZombiesBattle125Desc,"Kill another 125 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages."
-Battle_reward_5000xp, 5000xp and FirstAidBandage
+Battle_reward_5000xp, 5000xp and First Aid Bandage
 
 challengeKillZombiesBattle200Short,200 more zombies
 challengeKillZombiesBattle200Desc,"Kill another 200 Zombies.\n\nGoal is to eliminate 500 Zombies and earn XP through multiple smaller stages.\n\nNow you're just showing off!"
@@ -364,14 +364,13 @@ quest_BattleshipMuseum_offer,"You want a scrap of food tonight? Then you're goin
 
 quest_BattleshipMuseum1,"The Engineering Trap"
 quest_BattleshipMuseum1_subtitle,"Survive Hugh's Death Trap in Engineering"
-quest_BattleshipMuseum1_description,"You tried to slip away toward Bob's coordinates, but Trader Hugh treats his captives with an iron fist and caught wind of your defiance. In a paranoid rage over losing his forced labor, he rigged the entire Engineering room with an explosive dead man's switch to execute you. The moment you step into the lower deck, the trap springs—but the explosives malfunction. Instead of blowing you to pieces, the system triggers the emergency security lockdown doors, trapping you in pitch blackness while releasing a massive, starving horde of zombies directly onto your position. You have to fight off this claustrophobic nightmare before you can even look for the override to the secret tunnel hatch."
+quest_BattleshipMuseum1_description,"You tried to slip away toward Bob's coordinates, but Trader Hugh treats his captives with an iron fist and caught wind of your defiance. In a paranoid rage over losing his forced labor, he rigged the entire Engineering room with an explosive dead man's switch to execute you. The moment you step into the lower deck, the trap springs—but the explosives malfunction. Instead of blowing you to pieces, the system triggers the emergency security lockdown doors, trapping you in pitch blackness while releasing a massive, starving horde of zombies directly onto your position. You have to fight off this claustrophobic nightmare before you can even look for the Commando to override to the secret tunnel hatch  [FFFF00]below the engineering deck[-]."
 quest_BattleshipMuseum1_offer,"(Intercom static) You think you can just walk away from me? You belong to this pier now! If you won't work the forge, you can bleed for it. I've locked down the entire Engineering deck and opened up the holding pens. Enjoy the dark, you ungrateful rat. Let's see if those walkers leave enough of you to clean up the mess."
 
 quest_BattleshipMuseum03,"The Yacht Party Gauntlet"
 quest_BattleshipMuseum03_subtitle,"Break Through the Yacht's Security System"
 quest_BattleshipMuseum03_description,"You've broken out of Hugh's lower decks, but your path to true freedom runs straight through a high-end luxury yacht anchored in the harbor—now overflowing with mutated, bloodthirsty former partygoers. Following Bob's directions, you must infiltrate the vessel and locate a heavily barricaded commando inside the yacht's server room. He holds the key to overriding the ship's automated lockdown. Once he bypasses the security grid, he'll remotely unseal the hidden lower deck hatch directly across from the stairs, exposing your final escape route out of Hugh's territory. Fight like your life depends on it, because it does."
 quest_BattleshipMuseum03_offer,"This is it—your one clean shot at escaping Hugh's slave labor. The yacht ahead is packed tight with the infected from an old high-society bash, but it's the only way into the deeper harbor channels. Get inside, find that commando locked in the server room, and get him to override the security protocols. If you fail here, you're either zombie chow or you'll spend the rest of your short life slaving away at Hugh's forge."
-
 
 quest_BattleshipMuseum04,"The Gyrocopter Escape"
 quest_BattleshipMuseum04_subtitle,"Rebuild and Fly to Freedom"
