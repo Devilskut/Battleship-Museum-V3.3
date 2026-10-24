@@ -5,7 +5,7 @@ goAirDropFrequency,Air Drops. Set to [ffd700]DISABLED[-].
 
 noteDuke01,"Note from Devilskut"
 
-noteDuke01Desc,"Congratulations!  \nThe ship's still afloat. Your odds aren't. Keep going. I could use the entertainment.\nSee you soon,\nDevilskut \n\n Warning: Complaints must be submitted after surviving."
+noteDuke01Desc,"Welcome to the Battleship Museum Overhaul!\n\nYou have been taken captive by Trader Hugh. To earn your freedom, you must survive long enough to escape via Devil's Air Strip." />
 
 escape_hugh,Storage Facility
 Museum_Trader,Museum Trader
@@ -380,6 +380,11 @@ quest_BattleshipMuseum04_offer,"This is your final ticket out of this living hel
 challenge_BattleshipMuseum05,"Safe Harbor"
 challenge_BattleshipMuseum05_subtitle,"Speak with Trader Bob at his Mechanic Shop"
 challenge_BattleshipMuseum05_description,"The engine of the gyrocopter roars to life, carrying you far above the zombie-infested harbor and out of Trader Hugh's tyrannical reach. Following the flight coordinates, you successfully touch down in the secure roof top of Trader Bob's Mechanic Shop. The smell of motor oil and the sound of whirring power tools replace the nightmare of the battleship. Bob walks out to meet you, wiping his grease-stained hands on a rag, eagerly waiting to see if you actually managed to bring back the priceless mechanical manuals from the storage facility.\nWell look at you! You actually survived Hugh's little death trap and flew that rust-bucket all the way here. Hand over those manuals, friend, you've officially earned your freedom, and a cold drink's on me."
+
+quest_BattleshipMuseum6,"Noisey Neighbors"
+quest_BattleshipMuseum6_subtitle,"Clear out the infested park"
+quest_BattleshipMuseum6_description,"Trader Hugh need some peace and quiet"
+quest_BattleshipMuseum6_offer,"Maybe I will give you something for your troubles."
 
 Challenge_Completion,"Freedom Earned"
 Challenge_Completion_subtitle,"Escape Complete!"

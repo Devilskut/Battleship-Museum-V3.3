@@ -137,12 +137,77 @@
 			</objective>
 
 			<reward type="Exp" value="5060"/>
-			<!--	<reward type="Quest" id="quest_BattleshipMuseum1"/> -->
+			<reward type="Quest" id="quest_BattleshipMuseum6"/> 
 
 			<reward type="LootItem" id="groupQuestWoodShapes" ischosen="true" value="2"/>
 
 		</quest>
+		<quest id="quest_BattleshipMuseum6">
+			<property name="name_key" value="quest_BattleshipMuseum6" param1="name"/>
+			<property name="subtitle_key" value="quest_BattleshipMuseum6_subtitle"/>
+			<property name="description_key" value="quest_BattleshipMuseum6_offer"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="quest_BattleshipMuseum6_offer" param1="offer"/>
+			<property name="difficulty_tier" value="2" param1="difficulty"/>
+			<property name="statement_key" value="quest_BattleshipMuseum6_statement"/>
+			<property name="response_key" value="quest_BattleshipMuseum6_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="infested" param1="extra_tags"/>
+			<property name="filter_tags" value="poi" param1="filter_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="spawn_multiplier" value="2" param1="spawn_multiplier"/>
+			<property name="gamestage_mod" value=".6" param1="gamestage_mod"/>
+			<property name="gamestage_bonus" value="30" param1="gamestage_bonus"/>
 
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_clear_completion"/>
+
+			<objective type="GotoPOISDX, SCore" value="10-6000" phase="1">
+				<property name="completion_distance" value="50" />
+				<property name="phase" value="1" />
+				<property name="PrefabName" value="Battleship_Park" />
+				<property name="nav_object" value="quest" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+				<property name="rally_marker_type" value="questRallyMarkerInfestation"/>
+			</objective>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="50"/>
+			</objective>
+
+			<action type="UnlockPOI" >
+				<property name="phase" value="4"/>
+			</action>
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+
+			<reward type="Exp" value="5625"/>
+
+			<reward type="LootItem" id="groupQuestFood,groupQuestAmmo,groupQuestSchematics" ischosen="true" value="2"/>
+	
+		</quest>
+		
 		<quest id="quest_BattleshipMuseum1">
 			<property name="name_key" value="quest_BattleshipMuseum1"/>
 			<property name="subtitle_key" value="quest_BattleshipMuseum1_subtitle"/>

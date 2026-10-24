@@ -47,10 +47,10 @@
 			<property name="CreativeMode" value="None"/>
 		</block>
 		
-	<block name="BlockBuffAOETest">
+	    <block name="BlockBuffAOETest">
             <property name="Extends" value="metalCatwalkWedgeRailing2"/>
-            
-            <property name="ActiveRadiusEffects" value="buffRadiationAOE,500"/>
+		    <property name="Class" value="DecoAoE, SCore"/>
+		    <property name="ActiveRadiusEffects" value="buffRadiationAOE,500"/>
         </block>
 
 		<block name="Radiationrock01">
@@ -59,7 +59,7 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="@:Entities/OutdoorDecor/stoneAPrefab.prefab"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
-			
+			<property name="Class" value="DecoAoE, SCore"/>
 			<property name="LootList" value="cntStorageChestSmall"/>
 			<property name="ItemTypeIcon" value="explosion"/>
 			<property name="MultiBlockDim" value="1,1,1"/>
@@ -1425,7 +1425,7 @@
 		<property name="TakeDelay" value="1" />
 	</append> 
 
-   <insertafter xpath="/blocks/block[@name]/property[1]">
+    <insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
 	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
