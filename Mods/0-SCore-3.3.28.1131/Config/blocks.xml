@@ -1,5 +1,5 @@
 ﻿<configs>
-    <include filename="Blocks/PortalBlocks.xml" />
+<!--    <include filename="Blocks/PortalBlocks.xml" /> -->
     <include filename="Blocks/DropBoxBlocks.xml" />
     <include filename="Blocks/CaveBlocks.xml" />
     <include filename="Blocks/PathingBlocks.xml" />
