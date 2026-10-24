@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-	<ServerGroup Name="USS New Jersey Battleship Museum Challenge" Logo="https://githubusercontent.com" Description="Can you escape the Battleship?">
-		<Server Name="USS New Jersey Battleship Museum Challenge V.3.3" Logo="https://githubusercontent.com">
+	<ServerGroup Name="USS New Jersey Battleship Museum Challenge" Logo="" Description="Can you escape the Battleship?">
+		<Server Name="USS New Jersey Battleship Museum Challenge V.3.3" Logo="">
 			<Description>
-				An overhaul mod pack for Release Ver.3.3 (B13) Stable. 
-				
+				An overhaul mod pack for Release Ver.3.3 (B13) Stable.
+
 				This mod pack was created for a solo or dual survival challenge onboard an US Iowa-class Battleship (USS New Jersey BB-62), concept design and custom POIs engineered by Devilskut.
 
 				MAIN FEATURE OVERHAUL:
@@ -13,26 +13,28 @@
 				Notes about this mini-mod changes and mechanics:
 				- Map and Logistics: Features five (5) existing pre-generated custom worlds allowing you to choose your starting area biome—Forest, Burnt, Desert, Snow, or the ultimate challenge, Wasteland.
 				- Important Tool Warning: Everything MUST be wrenched.
-				- Item and Crafting Tweaks: Added specialized consumables like "Goldens Swallow" (Mega Crush) and "Leather Bandage". Acid can be processed via a beaker at a campfire or refined directly from car batteries at a chemistry station. Coal can now be rendered down directly from wood in a campfire.
 				- Naval Fortifications and Transport: Deploys heavy automated defenses including 5D CWIS Turrets, 5D Patriot Mobile Launchers/Trailers, alongside tactical vehicle assets like the ATV Puma and Military Trailer.
 				- Custom made Battleship Museum POI, giving you everything you need to be able to complete your quests.
 				- Custom questline and challenges page to help guide you on your way.
 
 				THE Battleship Museum Challenge:
-				
-		
+
+
 
 				CHALLENGE RULES:
 
-				1: You must stay within the Battleship Museum grounds until you can repair your gyrocopter.
+				1: You must stay within the Battleship Museum grounds until you can build a repair kit and find your gyrocopter.
 
-				2: The rubble on the ground around the carrier is NOT part of the aircraft carrier, and as such may NOT be used to support any structures, or to grow any crops,
+				2: The rubble on the ground and water around the Battleship is spicy and as such may NOT be used to support any structures, or to grow any crops,
 				unless you can do this WITHOUT touching it.
-				4: You may NOT mine or dig under the Battleship.
 
-				5: All default game settings, unless you want to turn up the size of the hordes. It's recommended to have loot respawn set to 7 days and turn airdrops OFF.
+				3: You may NOT mine or dig under the Battleship.
 
-				7: You must survive until you are able to repair your gyrocopter and fly to your Trader.
+				4: You may only use one of the Six (6) Group preset difficulties, It's recommended to have respawns set to 5 days groups and 7 days solo and turn airdrops OFF.
+
+				5: Trader Hours are set to 6 AM and 12pm (noon) sharp!
+
+				6: You must survive until you are able to repair your gyrocopter and fly to your Trader.
 
 				Additional thanks for permission to use following modlets by their respective creator(s):
 
@@ -40,12 +42,11 @@
 				0-Score	, Learn by doing				-Author: Spherii
 
 
-				Shout outs and thanks to the mod authors, Special CPB Blocks permission by StallionsDen CP Team, SarahAndJeff, TFP. Specter(to Sarahandjeff).
+				Shout outs and thanks to the mod authors, Special CPB Blocks permission by StallionsDen CP Team, SarahAndJeff, TFP. Specter(toSarahandjeff).
 
 				For full details, check the forum post here: *No post*
 
-				Found a bug or poi stability issue and wish to let us know?  
-				</link> and open an issues ticket.
+				Found a bug or poi stability issue and wish to let us know? open an issues ticket.
 
 			</Description>
 			<Version>3.3 (B13) Stable</Version>
