@@ -14,7 +14,7 @@
   <property name="Zoning" value="none" />
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="commercial, downtown" />
-  <property name="ThemeTags" value="siteMilitary, trader, traderHugh" />
+  <property name="ThemeTags" value="traderHugh, trader, siteMilitary" />
   <property name="QuestTags" value="trader, clear, fetch" />
   <property name="SleeperVolumeSize" value="23, 4, 29#23, 8, 6#23, 4, 30" />
   <property name="SleeperVolumeStart" value="0, 9, 44#0, 9, 73#0, 9, 79" />
@@ -47,15 +47,15 @@
   </property>
   <property class="Stats">
     <property name="LightsVolume" value="14627.6" />
-    <property name="TotalVertices" value="951427" />
-    <property name="TotalTriangles" value="453118" />
+    <property name="TotalVertices" value="951187" />
+    <property name="TotalTriangles" value="452890" />
     <property class="BlockEntities">
       <property name="Vertices" value="580153" />
       <property name="Triangles" value="234386" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="45280" />
-      <property name="Triangles" value="29712" />
+      <property name="Vertices" value="45052" />
+      <property name="Triangles" value="29508" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="303104" />
@@ -74,8 +74,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes5">
-      <property name="Vertices" value="22394" />
-      <property name="Triangles" value="37208" />
+      <property name="Vertices" value="22382" />
+      <property name="Triangles" value="37184" />
     </property>
   </property>
 </prefab>

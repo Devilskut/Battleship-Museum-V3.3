@@ -1,4 +1,6 @@
 ﻿<configs>
+	   
+	
 	<insertafter xpath="/blocks/block[@name='concreteNoUpgradeMaster']">
 		<block name="corrugatedMetalNoUpgradeMaster2">
 			<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1423,12 +1425,7 @@
 		<property name="CanPickup" value="true" />
 		<property name="DowngradeBlock" value="plantedAloe1" />
 		<property name="TakeDelay" value="1" />
-	</append> 
-
-    <insertafter xpath="/blocks/block[@name]/property[1]">
-		<property name="CreativeMode" value="None"/>
-	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
+	</append>
 
 	<append xpath="/blocks/block[@name='tableSaw']">
 		<drop event="Harvest" name="resourceScrapIron" count="300" tag="allHarvest,perkJunkMiner"/>
@@ -1631,6 +1628,7 @@
 	<insertafter xpath="/blocks/block[@name='powerSwitch01']">
 
 		<block name="MilitaryCommandoSwitch">
+			<property name="CreativeMode" value="Dev"/>
 			<property name="Class" value="ActivateSwitch"/>
 			<property name="ActivateSound" value="button4"/>
 			<property name="Powered" value="true"/>
@@ -1655,5 +1653,8 @@
 			<property name="FilterTags" value="MC_building,SC_electrical"/>
 		</block>
 	</insertafter>
-	
+	<insertafter xpath="/blocks/block[@name]/property[1]">
+		<property name="CreativeMode" value="None"/>
+	</insertafter>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
 </configs>

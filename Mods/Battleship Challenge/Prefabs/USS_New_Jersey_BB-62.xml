@@ -24,27 +24,27 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,4,4,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,2,2,2,0,0,2,0,0,0,0" />
   <property name="SleeperVolumeTriggeredBy" value="1# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #2# #3# # # # # # # # # # # # #7# # # # # # # # # # # # # # " />
-  <property name="TriggerVolumeSize" value="9, 3, 1#9, 3, 1#5, 4, 5#5, 4, 5" />
-  <property name="TriggerVolumeStart" value="24, 16, 150#24, 16, 160#51, 17, 50#26, 16, 180" />
+  <property name="TriggerVolumeSize" value="9, 3, 1#9, 3, 1#5, 4, 5#5, 1, 5" />
+  <property name="TriggerVolumeStart" value="24, 16, 150#24, 16, 160#51, 17, 50#26, 19, 180" />
   <property name="TriggerVolumeTriggers" value="3#4#1#4" />
   <property name="AllowDecorations" value="True" />
   <property name="WallVolumeSize" value="57, 23, 1#1, 4, 100#1, 4, 100#9, 1, 1" />
   <property name="WallVolumeStart" value="0, 17, 200#10, 15, 0#46, 15, 0#42, 23, 117" />
   <property class="Stats">
     <property name="LightsVolume" value="33385.15" />
-    <property name="TotalVertices" value="7136371" />
-    <property name="TotalTriangles" value="2841646" />
+    <property name="TotalVertices" value="7136192" />
+    <property name="TotalTriangles" value="2841545" />
     <property class="BlockEntities">
       <property name="Vertices" value="5776264" />
       <property name="Triangles" value="1982094" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="1002129" />
-      <property name="Triangles" value="631012" />
+      <property name="Vertices" value="1002014" />
+      <property name="Triangles" value="630943" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="306880" />
-      <property name="Triangles" value="153440" />
+      <property name="Vertices" value="306816" />
+      <property name="Triangles" value="153408" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="4744" />

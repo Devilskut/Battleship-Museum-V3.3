@@ -250,13 +250,14 @@
 		</lootgroup>
 		
 		<lootgroup name="groupSteveandTomLoot" count="all">
+			
 			<item group="groupLooterBooks" prob=".5" force_prob="true" />	
 		</lootgroup>
 		
 		<lootgroup name="groupZombieMaleLoot" count="all">
-			<item name="Workstation Skill Book" prob=".5" force_prob="true" />
-			<item group="groupSpearBooks" prob=".5" force_prob="true" tags="SpLoot"/>
-			<item group="groupArcheryBooks" prob=".5" force_prob="true" tags="BowLoot"/>			
+			<item name="Workstation Skill Book" prob=".25" force_prob="true" />
+			<item group="groupSpearBooks" prob=".4" force_prob="true" tags="SpLoot"/>
+			<item group="groupArcheryBooks" prob=".4" force_prob="true" tags="BowLoot"/>			
 		</lootgroup>
 		
 		<lootgroup name="groupRadZombieMaleLoot" count="all">
@@ -265,13 +266,13 @@
 		</lootgroup>
 		
 		<lootgroup name="groupZombieFemaleLoot" count="all">
-			<item name="Cooking Skill Book" prob=".75" force_prob="true" tags="FoodLoot"/>
+			<item name="Cooking Skill Book" prob=".6" force_prob="true" tags="FoodLoot"/>
 		</lootgroup>
 		
 		<lootgroup name="groupBusinessmanLoot" count="all">
-			<item name="casinoCoin" count="10,15" prob=".75" force_prob="true"/>
-			<item group="groupMagnumBooks" prob=".75" force_prob="true" tags="EXLoot"/>
-			<item group="groupHeistBooks" prob=".75" force_prob="true" tags="EXLoot"/>
+			<item name="casinoCoin" count="10,15" prob=".6" force_prob="true"/>
+			<item group="groupMagnumBooks" prob=".6" force_prob="true" tags="EXLoot"/>
+			<item group="groupHeistBooks" prob=".6" force_prob="true" tags="EXLoot"/>
 		</lootgroup>
 		
 		<lootgroup name="groupRadBusinessmanLoot" count="all">
@@ -281,10 +282,10 @@
 		</lootgroup>
 		
 		<lootgroup name="groupPartyGirlLoot" count="all">
-			<item name="oldCash" count="10,15" prob=".75" force_prob="true"/>
-			<item name="casinoCoin" count="20,30" prob=".75" force_prob="true"/>
-			<item group="groupHeistBooks" prob=".75" force_prob="true" tags="EXLoot"/>
-			<item group="groupLooterBooks" prob=".75" force_prob="true" />
+			<item name="oldCash" count="10,15" prob=".6" force_prob="true"/>
+			<item name="casinoCoin" count="20,30" prob=".6" force_prob="true"/>
+			<item group="groupHeistBooks" prob=".6" force_prob="true" tags="EXLoot"/>
+			<item group="groupLooterBooks" prob=".6" force_prob="true" />
 		</lootgroup>
 		
 		<lootgroup name="groupRadPartyGirlLoot" count="all">
@@ -294,10 +295,10 @@
 		</lootgroup>
 		
 		<lootgroup name="groupSoldierLoot" count="all">
-			<item group="groupRifleBooks" prob=".3" force_prob="true" tags="RiLoot"/>
-			<item group="groupMachineGunBooks" prob=".3" force_prob="true" tags="MGLoot"/>
-			<item group="groupHuntingBooks" prob=".3" force_prob="true" tags="RiLoot"/>
-			<item group="groupUrbanBooks" prob=".3" force_prob="true" tags="EXLoot"/>
+			<item group="groupRifleBooks" prob=".25" force_prob="true" tags="RiLoot"/>
+			<item group="groupMachineGunBooks" prob=".25" force_prob="true" tags="MGLoot"/>
+			<item group="groupHuntingBooks" prob=".25" force_prob="true" tags="RiLoot"/>
+			<item group="groupUrbanBooks" prob=".25" force_prob="true" tags="EXLoot"/>
 		</lootgroup>
 		
 		<lootgroup name="groupRadSoldierLoot" count="all">
@@ -308,8 +309,8 @@
 		</lootgroup>
 		
 		<lootgroup name="groupThugLoot" count="all">
-			<item group="groupShotgunBooks" prob=".75" force_prob="true" tags="SGLoot"/>
-			<item group="groupKnucklesBooks" prob=".75" force_prob="true" tags="KnLoot"/>			
+			<item group="groupShotgunBooks" prob=".65" force_prob="true" tags="SGLoot"/>
+			<item group="groupKnucklesBooks" prob=".65" force_prob="true" tags="KnLoot"/>			
 		</lootgroup>
 		
 		<lootgroup name="groupRadThugLoot" count="all">
@@ -318,23 +319,23 @@
 		</lootgroup>
 		
 		<lootgroup name="groupJanitorLoot" count="all">
-			<item group="groupSledgeBooks" prob=".75" force_prob="true" tags="SHLoot"/>
-			<item group="groupWastelandTreasuresBooks" prob=".75" force_prob="true" tags="STLoot"/>
-			<item group="groupMiningBooks" prob=".75" force_prob="true" tags="HTLoot"/>
-			<item group="groupFiremanBooks" prob=".75" force_prob="true" tags="SHLoot"/>
+			<item group="groupSledgeBooks" prob=".5" force_prob="true" tags="SHLoot"/>
+			<item group="groupWastelandTreasuresBooks" prob=".5" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" prob=".5" force_prob="true" tags="HTLoot"/>
+			<item name="Electrical Skill Book" prob=".25" force_prob="true" />
 		</lootgroup>
 		
 		<lootgroup name="groupRadJanitorLoot" count="all">
-			<item group="groupSledgeBooks" prob=".75" force_prob="true" tags="SHLoot"/>
-			<item group="groupWastelandTreasuresBooks" prob=".75" force_prob="true" tags="STLoot"/>
-			<item group="groupMiningBooks" prob=".75" force_prob="true" tags="HTLoot"/>
-			<item group="groupFiremanBooks" prob=".75" force_prob="true" tags="SHLoot"/>
+			<item group="groupSledgeBooks" prob=".6" force_prob="true" tags="SHLoot"/>
+			<item group="groupWastelandTreasuresBooks" prob=".6" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" prob=".6" force_prob="true" tags="HTLoot"/>
+			<item name="Electrical Skill Book" prob=".25" force_prob="true" />
 		</lootgroup>
 		
 		<lootgroup name="groupFatCopLoot" count="all">
-			<item group="groupClubsBooks" prob=".75" force_prob="true" tags="ClLoot"/>
-			<item group="groupHandgunBooks" prob=".75" force_prob="true" tags="HGLoot"/>
-			<item group="groupMagnumBooks" prob=".75" force_prob="true" tags="HGLoot"/>
+			<item group="groupClubsBooks" prob=".6" force_prob="true" tags="ClLoot"/>
+			<item group="groupHandgunBooks" prob=".6" force_prob="true" tags="HGLoot"/>
+			<item group="groupMagnumBooks" prob=".6" force_prob="true" tags="HGLoot"/>
 		</lootgroup>
 		
 		<lootgroup name="groupRadFatCopLoot" count="all">
@@ -347,10 +348,11 @@
 			<item group="groupClubsBooks" prob=".75" force_prob="true" tags="ClLoot"/>
 			<item group="groupShotgunBooks" prob=".75" force_prob="true" tags="SGLoot"/>
 			<item group="groupKnucklesBooks" prob=".75" force_prob="true" tags="KnLoot"/>
+			<item name="Vehicle Skill Book" prob=".75" force_prob="true" />
 		</lootgroup>
 
 		<lootgroup name="groupLabWorkerLoot" count="all">
-			<item name="Medical Skill Book" prob=".75" force_prob="true" />
+			<item name="Medical Skill Book" prob=".6" force_prob="true" />
 			<item name="drugHerbalAntibiotics" prob=".25" force_prob="true"/>
 			<item name="toolBeaker" prob=".15" force_prob="true"/>
 		</lootgroup>
@@ -362,7 +364,7 @@
 		</lootgroup>
 		
 		<lootgroup name="groupNurseLoot" count="all">
-			<item name="Medical Skill Book" prob=".75" force_prob="true" />
+			<item name="Medical Skill Book" prob=".6" force_prob="true" />
 			<item name="drugHerbalAntibiotics" prob=".25" force_prob="true"/>
 		</lootgroup>
 		
@@ -372,9 +374,9 @@
 		</lootgroup>
 		
     	<lootgroup name="groupUtilityWorkerLoot" count="all">		
-			<item group="groupWastelandTreasuresBooks" prob=".75" force_prob="true" tags="STLoot"/>
-			<item group="groupMiningBooks" prob=".75" force_prob="true" tags="HTLoot"/>
-			<item group="groupFiremanBooks" prob=".75" force_prob="true" tags="SHLoot"/>
+			<item group="groupWastelandTreasuresBooks" prob=".5" force_prob="true" tags="STLoot"/>
+			<item group="groupMiningBooks" prob=".5" force_prob="true" tags="HTLoot"/>
+			<item group="groupFiremanBooks" prob=".5" force_prob="true" tags="SHLoot"/>
 			
 		</lootgroup> 
 		
@@ -386,14 +388,14 @@
 		</lootgroup> 
 		
 		<lootgroup name="groupFatZombieLoot" count="all">
-			<item name="resourceAnimalFat" prob=".75" force_prob="true"/>
-			<item group="groupLooterBooks" prob=".75" force_prob="true"/>
-			<item group="groupKnucklesBooks" prob=".75" force_prob="true" tags="KnLoot"/>
+			<item name="resourceAnimalFat" prob=".6" force_prob="true"/>
+			<item group="groupLooterBooks" prob=".6" force_prob="true"/>
+			<item group="groupKnucklesBooks" prob=".6" force_prob="true" tags="KnLoot"/>
 		</lootgroup>
 		
 		<lootgroup name="groupRadFatZombieLoot" count="all">
-			<item name="resourceAnimalFat" prob=".6" force_prob="true"/>
-			<item group="groupLooterBooks" prob=".6" force_prob="true"/>
+			<item name="resourceAnimalFat" prob=".75" force_prob="true"/>
+			<item group="groupLooterBooks" prob=".75" force_prob="true"/>
 			<item group="groupKnucklesBooks" prob=".75" force_prob="true" tags="KnLoot"/>
 		</lootgroup>
 

@@ -114,8 +114,8 @@ adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed 
 
 adminSkillMagazine2Desc,"Learn 10 Crafting Skills for weapons, tools and armor instantly!\n\nYou can now craft T1 weapons and tools."
 
-resourcePaper,"Classified Document" 
-resourcePaperDesc,"Just flush twice"
+resourcePaper,"Tour brochure" 
+resourcePaperDesc,"If a tourist attempts to bite you, please remind them that outside food and beverages are not permitted on the ship."
 
 resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire"
 resourceAcidDesc,A resource used in crafting recipes.\n\nCan be crafted in beaker at a campfire or at the chemistry station.
@@ -181,6 +181,18 @@ zombieSteveCrawlerFeral,Feral LT Dan
 animalZombieVulture,VultureGeist
 animalZombieVultureRadiated,Radiated VultureGeist
 
+zombieUtilityWorker,Marwillie
+zombieUtilityWorkerFeral, Feral Marwillie
+zombieUtilityWorkerRadiated,Radiated Marwillie "Marco"
+zombieUtilityWorkerCharged,Charged Marwillie "Marco"
+zombieUtilityWorkerInfernal,Infernal Marwillie "Marco"
+
+zombieTomClark,Humble_Donkee
+zombieTomClarkRadiated,Radiated Humble_Donkee
+zombieTomClarkFeral,Feral Humble_Donkee
+zombieTomClarkCharged,Charged Humble_Donkee
+zombieTomClarkInfernal,Infernal Humble_Donkee
+
 zombieWightFeral,Feral DeathAngel
 zombieWightRadiated,Radiated DeathAngel
 zombieWightCharged,Charged DeathAngel
@@ -219,7 +231,9 @@ challenge_reward_BattleEnding,Final Trader
 # --- Start Mission ---
 challengeKillZombiesBattle10Short,10 zombies
 challengeKillZombiesBattle10Desc,"Talk to the Trader."
-challenge_BattleStarting_500xp,500XP and Wrench
+challenge_BattleStarting_500xp,Wrench and 500XP
+
+challengeQuestCompleteDesc,Complete this mission to unlock your challenges. Trader Hugh has only given you from 6:04 am to 12pm (noon) SHARP! Do not go near his Admission building unless you want to take a long walk from a short pier!
 
 # --- Kill some Zed heads! ---
 challengeKillZombiesBattle15Short,15 more zombies
@@ -270,7 +284,8 @@ challengeGatherGyroCopterItemsDesc,"Gather the final round of peripheral compone
 challengeGatherGyrocopterRepairKitHint,"Use your collected schematics and parts at a Workbench to craft the final kit."
 challengeGatherGyrocopterRepairKitShort,"Secure a fully manufactured Gyrocopter Repair Kit."
 challengeGatherGyrocopterRepairKitDesc,"With all structural materials,engines, and heavy framing modules gathered together, manufacture the unified aircraft repair package. This kit contains everything needed to completely restore a crashed bird to full operational status."
-challenge_reward_GyrocopterKitComplete,Challenges,RewardText,,3000 XP, Vehicle Supercharger Mod, and Story Progression
+
+challenge_reward_GyrocopterKitComplete,3000 XP,Story Progression
 
 # --- Trader Jen ---
 challengeMeetJenShort,Meet Trader Dawnrox
@@ -281,7 +296,7 @@ challengeMeetHughShort,Meet Trader Hugh
 challengeMeetHughDesc,"Trader Hugh is a grizzled veteran holed up in the Admissions building in the front of the ship. Hugh Got It. He's the guy holding you against your will."
 
 challengeMeetBobShort,Meet Trader Bob
-challengeMeetBobDesc,"Bob's Salvage is home to crapped vehicles,broken appliances, and local gear-head Trader Bob.If you are in the market for Vehicles and toolds he's the man to talk to."
+challengeMeetBobDesc,"Bob's Salvage is home to scrapped vehicles,broken appliances, and local gear-head Trader Bob.If you are in the market for Vehicles and tools he's the man to talk to."
 
 
 # --- Trader Joel ---
@@ -384,7 +399,7 @@ challenge_BattleshipMuseum05_description,"The engine of the gyrocopter roars to 
 quest_BattleshipMuseum6,"Noisey Neighbors"
 quest_BattleshipMuseum6_subtitle,"Clear out the infested park"
 quest_BattleshipMuseum6_description,"Trader Hugh need some peace and quiet"
-quest_BattleshipMuseum6_offer,"Maybe I will give you something for your troubles."
+quest_BattleshipMuseum6_offer,"Maybe, I will give you something for your troubles."
 
 Challenge_Completion,"Freedom Earned"
 Challenge_Completion_subtitle,"Escape Complete!"

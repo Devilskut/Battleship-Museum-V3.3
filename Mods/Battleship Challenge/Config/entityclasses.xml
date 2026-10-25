@@ -1058,7 +1058,7 @@
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="EntityFlags" value="animal,zombie"/>
 			<property name="EntityType" value="Zombie"/>
-			<property name="Tags" value="entity,animal,zombie,hostile,vulture"/>
+			<property name="Tags" value="entity,animal,zombie,zombieAnimal,hostile,vulture,special"/>
 			<property name="AvatarController" value="AvatarAnimalController"/>
 			<property name="Prefab" value="@:Entities/Animals/Vulture/animalBirdVulturePrefab.prefab"/>
 			<property name="PrefabCombined" value="true"/>
@@ -1213,7 +1213,7 @@
 		</entity_class>
 
 		<!-- *** ZOMBIE_SPIDER_FERAL-->
-		<entity_class name="FlippinMonkey" extends="zombieSpider">
+		<entity_class name="NuttyMonkey" extends="zombieSpider">
 			<property name="MatColor" value="charged"/>
 			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,zombie,feral,spider"/>

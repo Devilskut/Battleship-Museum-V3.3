@@ -131,7 +131,7 @@
 	           short_description_key="challengeGatherVehicleItemsShort" description_key="challengeGatherVehicleItemsDesc">
 		<objective type="Gather" item="resourceSpring" count="4"/>
 		<objective type="Gather" item="resourceHeadlight" count="8"/>
-		<objective type="Gather" item="vehicleWheels" count="2"/>
+		<objective type="Gather" item="vehicleWheels" count="3"/>
 		<objective type="Gather" item="carBattery" count="1"/>
 		<objective type="Gather" item="smallEngine" count="1"/>
 	</challenge>
@@ -157,7 +157,7 @@
 		   short_description_key="challengeGatherGyroCopterItemsShort" description_key="challengeGatherGyroCopterItemsDesc">
 		<objective type="Gather" item="vehicleGyroCopterAccessories" count="1"/>
 		<objective type="Gather" item="vehicleGyroCopterChassis" count="1"/>
-		<objective type="Gather" item="vehicleWheels" count="2"/>
+		<objective type="Gather" item="vehicleWheels" count="3"/>
 		<objective type="Gather" item="carBattery" count="1"/>
 		<objective type="Gather" item="smallEngine" count="1"/>
 	</challenge>
@@ -176,25 +176,25 @@
 	<challenge name="gathererIron" title_key="challengeGathererIron" icon="ui_game_symbol_mining" group="Resources"
 			short_description_key="challengeGathererIronShort" description_key="challengeGathererIronDesc"
 			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
-		<objective type="Harvest" item="resourceScrapIron" count="500" block_tag="ore"/>
+		<objective type="Harvest" item="resourceScrapIron" count="250" block_tag="ore"/>
 	</challenge>
 
 	<challenge name="gathererLead" title_key="challengeGathererLead" icon="ui_game_symbol_mining" group="Resources"
 		short_description_key="challengeGathererLeadShort" description_key="challengeGathererLeadDesc"
 		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
-		<objective type="Harvest" item="resourceScrapLead" count="500" block_tag="ore"/>
+		<objective type="Harvest" item="resourceScrapLead" count="250" block_tag="ore"/>
 	</challenge>
 
 	<challenge name="gathererCoal" title_key="challengeGathererCoal" icon="ui_game_symbol_mining" group="Resources"
 		short_description_key="challengeGathererCoalShort" description_key="challengeGathererCoalDesc"
 		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
-		<objective type="Harvest" item="resourceCoal" count="500" block_tag="ore"/>
+		<objective type="Harvest" item="resourceCoal" count="250" block_tag="ore"/>
 	</challenge>
 
 	<challenge name="gathererPotassium" title_key="challengeGathererPotassium" icon="ui_game_symbol_mining" group="Resources"
 		short_description_key="challengeGathererPotassiumShort" description_key="challengeGathererPotassiumDesc"
 		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
-		<objective type="Harvest" item="resourcePotassiumNitratePowder" count="500" block_tag="ore"/>
+		<objective type="Harvest" item="resourcePotassiumNitratePowder" count="250" block_tag="ore"/>
 	</challenge>
 	<!-- ========================================
 	     GROUP 5: ESCAPE (Reach the TRADER)

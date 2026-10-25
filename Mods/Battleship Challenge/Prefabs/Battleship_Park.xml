@@ -32,16 +32,11 @@
       <property name="1" value="14, 11, 104" />
       <property name="2" value="14, 13, 104" />
       <property name="3" value="15, 10, 104" />
-      <property name="4" value="15, 11, 104" />
-      <property name="5" value="15, 13, 104" />
-      <property name="6" value="16, 10, 104" />
-      <property name="7" value="16, 11, 104" />
-      <property name="8" value="16, 13, 104" />
-      <property name="9" value="17, 10, 104" />
-      <property name="10" value="17, 11, 104" />
-      <property name="11" value="17, 13, 104" />
-      <property name="12" value="16, 10, 105" />
-      <property name="13" value="17, 10, 105" />
+      <property name="4" value="15, 13, 104" />
+      <property name="5" value="16, 10, 104" />
+      <property name="6" value="17, 10, 104" />
+      <property name="7" value="17, 11, 104" />
+      <property name="8" value="17, 10, 105" />
     </property>
     <property class="TraderOnOff">
       <property name="0" value="35, 10, 75" />
@@ -66,15 +61,15 @@
   </property>
   <property class="Stats">
     <property name="LightsVolume" value="5093.569" />
-    <property name="TotalVertices" value="975712" />
-    <property name="TotalTriangles" value="535626" />
+    <property name="TotalVertices" value="949758" />
+    <property name="TotalTriangles" value="529624" />
     <property class="BlockEntities">
-      <property name="Vertices" value="669722" />
-      <property name="Triangles" value="348476" />
+      <property name="Vertices" value="643744" />
+      <property name="Triangles" value="342462" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="55168" />
-      <property name="Triangles" value="36250" />
+      <property name="Vertices" value="55192" />
+      <property name="Triangles" value="36262" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="228608" />

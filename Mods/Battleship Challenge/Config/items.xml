@@ -1,8 +1,8 @@
 ﻿<configs>
     <insertafter xpath="/items/item[@name]/property[1]">
-		<property name="CreativeMode" value="none"/> 
+		<property name="CreativeMode" value="None"/> 
 	</insertafter>
-	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
+	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set>
 	
 	<insertAfter xpath="/items/item[@name='ammoBundleMaster']"> 
 	<item name="Backpack">
@@ -223,6 +223,7 @@
 	<append xpath="/items">
 
 		<item name="medicalFirstAidBandage2">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="medicalBandage"/>
 			<property name="CustomIcon" value="medicalBandage"/>
 			<property name="CustomIconTint" value="ff00bf"/>
@@ -336,8 +337,8 @@
 		</item>
 
 		<item name="cucumber">
-			<property name="CreativeMode" value="Dev"/>
 			<property name="Tags" value="Gurke"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="Gurke"/>
 			<property name="HoldType" value="31"/>
 			<property name="DisplayType" value="food"/>
@@ -364,6 +365,7 @@
 
 		<item name="vehicleGyrocopterRepairKit">
         <property name="DescriptionKey" value="RestoringToolsDesc"/>
+		<property name="CreativeMode" value="None"/>
         <property name="DisplayType" value="melee"/>
 	    <property name="HoldType" value="74"/>
 	    <property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
@@ -415,7 +417,7 @@
 
 		<item name="gunExplosivesT3RG4Launcher">
 			<!-- Tier 3 -->
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="weapon,perkASExplosives,gunExplosivesT3RG4Launcher,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,mediumTopAttachments,smallTopAttachments"/>
 			<property name="DisplayType" value="RangedLauncherDamage"/>
 			<property name="HoldType" value="5"/>
@@ -512,7 +514,7 @@
 		</item>
 
 		<item name="ammoGrenade40mmFrag">
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="ammoRocketHE"/>
 			<property name="Meshfile" value="#@modfolder:Resources/DevgrenadeLauchers.unity3d?ApocNow40mmGrenade.prefab"/>
 			<property name="CustomIcon" value="ammoGrenade40mmFrag"/>
@@ -546,7 +548,7 @@
 		</item>
 
 		<item name="ammoGrenade40mmFragAP">
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="ammoRocketHE"/>
 			<property name="Meshfile" value="#@modfolder:Resources/DevgrenadeLauchers.unity3d?ApocNow40mmGrenade.prefab"/>
 			<property name="CustomIcon" value="ammoGrenade40mmFragAP"/>
@@ -581,7 +583,7 @@
 			
 	<item name="SkillMagazine10">
 	<property name="Extends" value="masterSkillMagazine"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Tags" value="admin"/>
 	<property name="CustomIcon" value="bookTechPlanet"/>
 	<property name="CustomIconTint" value="98FB98"/>
@@ -621,7 +623,7 @@
 </item>
 		<item name="Electrical Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CreativeMode" value="Player"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="bookWiring101"/>
 			<property name="CustomIconTint" value="98FB98"/>
 			<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
@@ -640,7 +642,7 @@
 
 		<item name="Medical Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CreativeMode" value="Player"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="bookMedicalJournal"/>
 			<property name="CustomIconTint" value="98FB98"/>
 			<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
@@ -659,7 +661,7 @@
 		
 		<item name="Cooking Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="admin"/>
 			<property name="CustomIcon" value="bookHomeCookingWeekly"/>
 			<property name="CustomIconTint" value="98FB98"/>
@@ -679,7 +681,7 @@
 
 		<item name="Workstation Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="admin"/>
 			<property name="CustomIcon" value="bookForgeAhead"/>
 			<property name="CustomIconTint" value="98FB98"/>
@@ -699,7 +701,7 @@
 
 		<item name="Vehicle Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="admin"/>
 			<property name="CustomIcon" value="bookVehicleAdventures"/>
 			<property name="CustomIconTint" value="98FB98"/>
@@ -720,7 +722,7 @@
 		<!-- ARMOR SETS -->
 		
 		<item name="Armor">
-			<property name="CreativeMode" value="Dev"/>
+			<property name="CreativeMode" value="None"/>
 			<property name="HoldType" value="21"/>
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -734,7 +736,7 @@
 		
 		<item name="ClassBag">
 		<property name="Extends" value="Armor"/>
-		<property name="CreativeMode" value="Dev"/>
+		<property name="CreativeMode" value="None"/>
 		<property name="CustomIcon" value="backpackMedium"/>
 		<property name="CustomIconTint" value="ff00bf"/>
 		<property name="Material" value="Mpaper"/>
