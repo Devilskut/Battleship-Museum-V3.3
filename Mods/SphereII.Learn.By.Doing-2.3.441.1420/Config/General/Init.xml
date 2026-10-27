@@ -10,19 +10,19 @@
 
             <!-- perkMasterChef -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xptonext" operation="set" value="200"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xptonext" operation="set" value="500"/>
 
             <!-- perkLivingOffTheLand -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xptonext" operation="set" value="50"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xptonext" operation="set" value="100"/>
 
             <!-- perkLockPicking -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xptonext" operation="set" value="20"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xptonext" operation="set" value="50"/>
 
             <!-- perkLuckyLooter -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkluckylooter_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkluckylooter_lbd_xptonext" operation="set" value="200"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkluckylooter_lbd_xptonext" operation="set" value="1000"/>
             <!-- XP per container that actually paid loot XP. Kept separate from the shared
                  $lbd_xp_special_base (5), which ten other perks read and which must stay at 5.
 
@@ -39,18 +39,18 @@
 
             <!-- NEW: Initializers for Light Armor -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklightarmor_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklightarmor_lbd_xptonext" operation="set" value="800"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklightarmor_lbd_xptonext" operation="set" value="1200"/>
 
             <!-- NEW: Initializers for Medium Armor -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmediumarmor_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmediumarmor_lbd_xptonext" operation="set" value="1000"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmediumarmor_lbd_xptonext" operation="set" value="1400"/>
 
             <!-- NEW: Initializers for Heavy Armor -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkheavyarmor_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkheavyarmor_lbd_xptonext" operation="set" value="1200"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkheavyarmor_lbd_xptonext" operation="set" value="1600"/>
 
             <!-- Bonus XP for long crafting times (Master Chef) -->
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbd_xp_masterchef_longcraft_bonus" operation="set" value="40"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbd_xp_masterchef_longcraft_bonus" operation="set" value="20"/>
 
         </effect_group>
     </append>

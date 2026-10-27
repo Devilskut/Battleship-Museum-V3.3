@@ -91,7 +91,7 @@
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingarmor_lbd_xptonext" operation="set" value="15"/>
              <!-- Medical -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingmedical_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingmedical_lbd_xptonext" operation="set" value="15"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingmedical_lbd_xptonext" operation="set" value="10"/>
             
             <!-- Food -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingfood_lbd_xp" operation="set" value="0"/>
@@ -99,7 +99,7 @@
             
             <!-- Seeds -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingseeds_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingseeds_lbd_xptonext" operation="set" value="15"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingseeds_lbd_xptonext" operation="set" value="20"/>
             <!-- One rate for every seed.
 
                  Was two: $lbd_xp_crafting_seed_small_base at 1 and _large_base at 2. The gate
@@ -124,7 +124,7 @@
             
             <!-- Traps -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingtraps_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingtraps_lbd_xptonext" operation="set" value="5"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingtraps_lbd_xptonext" operation="set" value="10"/>
             
             <!-- Workstations -->
             <!-- Two cvars used to be set here and were read by nothing:
@@ -148,10 +148,10 @@
                  and repeats many times per block. -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$lbd_xp_salvaging_workstation_small_hit" operation="set" value="1"/>
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingworkstations_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingworkstations_lbd_xptonext" operation="set" value="10"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingworkstations_lbd_xptonext" operation="set" value="15"/>
             <!-- Vehicles -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingvehicles_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingvehicles_lbd_xptonext" operation="set" value="20"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$craftingvehicles_lbd_xptonext" operation="set" value="15"/>
         </effect_group>
     </append>
 </configs>

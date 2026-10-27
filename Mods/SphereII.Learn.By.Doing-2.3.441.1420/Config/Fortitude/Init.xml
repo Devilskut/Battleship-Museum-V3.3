@@ -17,47 +17,47 @@
                  1200, the same number every perk uses, level 1 lands in under two
                  hours and the full ten levels total 31,150, still three and a half
                  times a perk's whole ladder. The 1.2 curve is global and unchanged. -->
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$attfortitude_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$attfortitude_lbd_xptonext" operation="set" value="1200"/>
 
             <!-- perkBrawler -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbrawler_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbrawler_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbrawler_lbd_xptonext" operation="set" value="600"/>
 
             <!-- perkMachineGunner -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmachinegunner_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmachinegunner_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmachinegunner_lbd_xptonext" operation="set" value="600"/>
 
             <!-- perkFlurryOfFortitude -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryoffortitude_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryoffortitude_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryoffortitude_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkTheHuntsman -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkthehuntsman_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkthehuntsman_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkthehuntsman_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkSiphoningStrikes -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perksiphoningstrikes_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perksiphoningstrikes_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perksiphoningstrikes_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkPainTolerance -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkpaintolerance_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkpaintolerance_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkpaintolerance_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkHealingFactor -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkhealingfactor_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkhealingfactor_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkhealingfactor_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkSlowMetabolism -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkslowmetabolism_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkslowmetabolism_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkslowmetabolism_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkRuleOneCardio -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkruleonecardio_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkruleonecardio_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkruleonecardio_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkFortitudeMastery -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkfortitudemastery_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkfortitudemastery_lbd_xptonext" operation="set" value="800"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkfortitudemastery_lbd_xptonext" operation="set" value="2000"/>
 
         </effect_group>
     </append>

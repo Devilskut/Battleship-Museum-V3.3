@@ -17,27 +17,27 @@
                  1200, the same number every perk uses, level 1 lands in under two
                  hours and the full ten levels total 31,150, still three and a half
                  times a perk's whole ladder. The 1.2 curve is global and unchanged. -->
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$attintellect_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$attintellect_lbd_xptonext" operation="set" value="1200"/>
 
             <!-- perkElectrocutioner -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkelectrocutioner_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkelectrocutioner_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkelectrocutioner_lbd_xptonext" operation="set" value="600"/>
 
             <!-- perkRoboticTurrets -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkturrets_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkturrets_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkturrets_lbd_xptonext" operation="set" value="600"/>
 
             <!-- perkFlurryOfIntellect -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryofintellect_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryofintellect_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkflurryofintellect_lbd_xptonext" operation="set" value="800"/>
 
             <!-- perkBetterBarter -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbetterbarter_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbetterbarter_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkbetterbarter_lbd_xptonext" operation="set" value="600"/>
 
             <!-- perkDaringAdventurer -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkdaringadventurer_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkdaringadventurer_lbd_xptonext" operation="set" value="350"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkdaringadventurer_lbd_xptonext" operation="set" value="500"/>
 
             <!-- perkPhysician -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkphysician_lbd_xp" operation="set" value="0"/>
@@ -45,19 +45,19 @@
 
             <!-- perkAdvancedEngineering -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkadvancedengineering_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkadvancedengineering_lbd_xptonext" operation="set" value="350"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkadvancedengineering_lbd_xptonext" operation="set" value="500"/>
 
             <!-- perkGreaseMonkey -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkgreasemonkey_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkgreasemonkey_lbd_xptonext" operation="set" value="400"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkgreasemonkey_lbd_xptonext" operation="set" value="500"/>
 
             <!-- perkCharismaticNature -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkcharismaticnature_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkcharismaticnature_lbd_xptonext" operation="set" value="250"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkcharismaticnature_lbd_xptonext" operation="set" value="700"/>
 
             <!-- perkIntellectMastery -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkintellectmastery_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkintellectmastery_lbd_xptonext" operation="set" value="800"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkintellectmastery_lbd_xptonext" operation="set" value="2000"/>
 
 
         </effect_group>
