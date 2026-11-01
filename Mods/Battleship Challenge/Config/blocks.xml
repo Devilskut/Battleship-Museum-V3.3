@@ -1653,8 +1653,8 @@
 			<property name="FilterTags" value="MC_building,SC_electrical"/>
 		</block>
 	</insertafter>
-	<insertafter xpath="/blocks/block[@name]/property[1]">
+<insertafter xpath="/blocks/block[@name]/property[1]">
 		<property name="CreativeMode" value="None"/>
 	</insertafter>
-	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set>
+	<set xpath="/blocks/block[@name]/property[@name='CreativeMode']/@value">None</set> 
 </configs>

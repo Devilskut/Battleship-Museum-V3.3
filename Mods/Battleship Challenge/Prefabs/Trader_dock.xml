@@ -12,6 +12,17 @@
   <property name="PrefabSize" value="24, 13, 34" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
+  <property name="TriggerVolumeSize" value="22, 3, 18" />
+  <property name="TriggerVolumeStart" value="1, 6, 1" />
+  <property name="TriggerVolumeTriggers" value="6" />
+  <property name="SleeperVolumeSize" value="2, 1, 1" />
+  <property name="SleeperVolumeStart" value="11, 7, 10" />
+  <property name="SleeperVolumeGroupId" value="0" />
+  <property name="SleeperVolumeGroup" value="zombieBikerInfernal,2,2" />
+  <property name="SleeperIsLootVolume" value="False" />
+  <property name="SleeperIsQuestExclude" value="False" />
+  <property name="SleeperVolumeFlags" value="3" />
+  <property name="SleeperVolumeTriggeredBy" value="6" />
   <property class="IndexedBlockOffsets">
     <property class="TraderOnOff">
       <property name="0" value="0, 12, 23" />

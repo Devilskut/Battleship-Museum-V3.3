@@ -18,8 +18,8 @@
   <property name="SleeperVolumeGroup" value="GroupGenericZombie,4,5,GroupGenericZombie,5,6,GroupZomSoldier,2,3" />
   <property name="SleeperIsLootVolume" value="False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False" />
-  <property name="SleeperVolumeFlags" value="2,0,0" />
-  <property name="SleeperVolumeTriggeredBy" value=" # # " />
+  <property name="SleeperVolumeFlags" value="2,0,2" />
+  <property name="SleeperVolumeTriggeredBy" value="2# #3" />
   <property name="Tags" value="industrial" />
   <property name="ThemeTags" value="traderHugh, trader, storeHardware" />
   <property name="QuestTags" value="clear, fetch, infested" />
@@ -38,16 +38,16 @@
       <property name="7" value="17, 11, 104" />
       <property name="8" value="17, 10, 105" />
     </property>
+    <property class="POILight">
+      <property name="0" value="15, 13, 102" />
+      <property name="1" value="17, 13, 102" />
+    </property>
     <property class="TraderOnOff">
       <property name="0" value="35, 10, 75" />
     </property>
     <property class="challenge_polymers">
       <property name="0" value="11, 10, 104" />
       <property name="1" value="12, 10, 105" />
-    </property>
-    <property class="POILight">
-      <property name="0" value="8, 13, 111" />
-      <property name="1" value="7, 13, 117" />
     </property>
     <property class="FetchContainer">
       <property name="0" value="12, 11, 108" />
@@ -60,12 +60,12 @@
     </property>
   </property>
   <property class="Stats">
-    <property name="LightsVolume" value="5093.569" />
-    <property name="TotalVertices" value="952512" />
-    <property name="TotalTriangles" value="530340" />
+    <property name="LightsVolume" value="6903.126" />
+    <property name="TotalVertices" value="997956" />
+    <property name="TotalTriangles" value="555008" />
     <property class="BlockEntities">
-      <property name="Vertices" value="646474" />
-      <property name="Triangles" value="343166" />
+      <property name="Vertices" value="691918" />
+      <property name="Triangles" value="367834" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="55216" />

@@ -173,10 +173,10 @@
 	<!-- ========================================
 	     GROUP 4: Resources
 	     ======================================== -->
-	<challenge name="gathererIron" title_key="challengeGathererIron" icon="ui_game_symbol_mining" group="Resources"
-			short_description_key="challengeGathererIronShort" description_key="challengeGathererIronDesc"
-			reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
-		<objective type="Harvest" item="resourceScrapIron" count="250" block_tag="ore"/>
+	<challenge name="gathererOilShale" title_key="challengeGathererOilShale" icon="ui_game_symbol_mining" group="Gatherer"
+		short_description_key="challengeGathererOilShaleShort" description_key="challengeGathererOilShaleDesc"
+		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000" harvest_required="ore">
+		<objective type="Harvest" item="resourceOilShale" count="250" block_tag="ore"/>
 	</challenge>
 
 	<challenge name="gathererLead" title_key="challengeGathererLead" icon="ui_game_symbol_mining" group="Resources"

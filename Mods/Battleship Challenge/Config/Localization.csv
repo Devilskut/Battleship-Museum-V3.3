@@ -114,7 +114,7 @@ adminQuestTicketDesc,"Read, accept, and complete to receive next quest.\n\nUsed 
 
 adminSkillMagazine2Desc,"Learn 10 Crafting Skills for weapons, tools and armor instantly!\n\nYou can now craft T1 weapons and tools."
 
-resourcePaper,"Tour brochure" 
+resourcePaper,"Tour Brochure" 
 resourcePaperDesc,"If a tourist attempts to bite you, please remind them that outside food and beverages are not permitted on the ship."
 
 resourceCoalDesc,"A great fuel source and a core ingredient for gunpowder.\n\nCan be made from wood in a campfire"
@@ -342,11 +342,11 @@ loadingTipBattleship12,"Resource gathering has many changes from vanilla. Clay s
 loadingTipBattleship13_title,Search Everywhere
 loadingTipBattleship13,"For a military vessel, there are considerable nooks, crannies, hidey-holes, and hidden stashes all over the place. Some say there are secret shortcuts within the walls too! Navy brass would be rolling in their graves if they weren't ambling around in hordes of the reanimated dead..."
 
-loadingTipBattleship14_title,Failed Quest?
-loadingTipBattleship14,"Want to restart your mission after you have died? You can recover and resume your progress by crafting the mission item using Dukes."
+loadingTipBattleship14_title,Medic!
+loadingTipBattleship14,"Want to level up medical use your "band aids" to help level your skills in physician."
 
-loadingTipBattleship15_title,Permadeath?
-loadingTipBattleship15,"Want to continue your mission after you have died? You can freely adjust your death penalties in the main game options."
+loadingTipBattleship15_title,Permadeath
+loadingTipBattleship15,"This has been designed for a Permadeath challenge."
 
 dishongTowerBundle,Battleship Starter Items,,
 dishongTowerBundleDesc,Starter items for the Battleship challenge.,,
@@ -355,8 +355,7 @@ Welcome,"Started The Battleship Museum"
 
 tutorialTipQuest01,"You didn't choose to board the USS New Jersey Battleship Museum, but Trader Hugh didn't give you a choice. After his previous outpost was overrun, Trader Hugh seized the massive Iowa-class battleship, setting up his main command center right inside the Admissions Building on the pier. Hugh has locked down the entire shore infrastructure, trapping you within the secure perimeter.\n\nTrader Hugh's hours of operation are strictly 6:00 AM to 12:00 PM (noon). If you are inside after these hours, you will get dumped straight off the pier into the toxic harbor or if your lucky into the radiated field."
 
- 
-tutorialTipQuest02,"Look here, fresh meat. You think you're walking out of here? Think again. You work for me now, and you're going to put that forge to use and make yourself useful. Don't go looking around for a payout either—your reward is getting to breathe another day.\n\n My doors slide open at 0600 and slam shut at 1200 maximum. Fire up the forge, clear my walkway, or take a long swim off the edge of this pier."/>
+tutorialTipQuest02,"You want a scrap of food tonight? Then you're going to earn it. I dropped some high-value items out by the entrance toll booths when the world went to hell. You're going out there to get them back for me. Don't go expecting a fat payout either—getting to eat a stale ration is your reward. Secure the area, bring me my stuff, and don't even think about running."
 
 tutorialTipQuest03,"This is it—your one clean shot at escaping Hugh's slave labor. The yacht ahead is packed tight with the infected from an old high-society bash, but it's the only way into the deeper harbor channels. Get inside, find that commando locked in the server room, and get him to override the security protocols. If you fail here, you're either zombie chow or you'll spend the rest of your short life slaving away at Hugh's forge."/>
 
@@ -370,7 +369,7 @@ tutorialTipQuest06,"This is your final ticket out of this living hell. You've go
 challenge_StartingBattleship,"The Battleship Captive"
 challenge_StartingBattleship_subtitle,"Survival Under Lock and Key"
 challenge_StartingBattleship_description,"You're trapped here, and Trader Hugh has no intention of letting you leave without getting his hands dirty first. He's locked you in and is demanding you fire up a forge to produce assets for him. With absolutely no rewards on the table, it's either comply with his demands or rot on the walkway. Remember: his heavy steel doors are only unlocked from 6:00 AM until noon sharp. If you aren't producing or if you miss your window, you're getting dumped right off the pier into the dark water below."
-challenge_StartingBattleship_offer,"Look here, fresh meat. You think you're walking out of here? Think again. You work for me now, and you're going to put that forge to use and make yourself useful. Don't go looking around for a payout either—your reward is getting to breathe another day. My doors slide open at 0600 and slam shut at 1200 maximum. Fire up the forge, clear my walkway, or take a long swim off the edge of this pier."
+challenge_StartingBattleship_offer,"Look here, fresh meat. You think you're walking out of here? Think again. You work for me now, and you're going to put that forge to use and make yourself useful. Don't go looking around for a payout either—your reward is getting to breathe another day. My doors slide open at 6am and slam shut at 12 noon. Fire up the forge, clear my walkway, or take a long swim off the edge of this pier."
 
 quest_BattleshipMuseum,"The Pier-Side Exploitation"
 quest_BattleshipMuseum_subtitle,"Recover Hugh's Valuables Under Threat"
@@ -396,7 +395,7 @@ challenge_BattleshipMuseum05,"Safe Harbor"
 challenge_BattleshipMuseum05_subtitle,"Speak with Trader Bob at his Mechanic Shop"
 challenge_BattleshipMuseum05_description,"The engine of the gyrocopter roars to life, carrying you far above the zombie-infested harbor and out of Trader Hugh's tyrannical reach. Following the flight coordinates, you successfully touch down in the secure roof top of Trader Bob's Mechanic Shop. The smell of motor oil and the sound of whirring power tools replace the nightmare of the battleship. Bob walks out to meet you, wiping his grease-stained hands on a rag, eagerly waiting to see if you actually managed to bring back the priceless mechanical manuals from the storage facility.\nWell look at you! You actually survived Hugh's little death trap and flew that rust-bucket all the way here. Hand over those manuals, friend, you've officially earned your freedom, and a cold drink's on me."
 
-quest_BattleshipMuseum6,"Noisey Neighbors"
+quest_BattleshipMuseum6,"Noisy Neighbors"
 quest_BattleshipMuseum6_subtitle,"Clear out the infested park"
 quest_BattleshipMuseum6_description,"Trader Hugh need some peace and quiet"
 quest_BattleshipMuseum6_offer,"Maybe, I will give you something for your troubles."

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<signs version="2">
+  <sign guid="82028338-e800-46fb-af06-dade36c8adc3" name="Museum Bragging Rights Sign 10x2" modified="2026-11-01 09:57:00Z" next_poly_id="0" next_text_id="8" next_noise_id="0" next_group_id="0">
+    <layer name="Backdrop" type="TextSignLayer" pos="0, 0" rot="0" scale="3, 3" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="____________________" direction="0" spacing="1" softness="0" dilate="2" />
+    <layer name="Border Left" type="TextSignLayer" pos="-0.49, 0" rot="0" scale="0.15, 1.2" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="I" direction="0" spacing="1" softness="0" dilate="0.3" />
+    <layer name="Border Right" type="TextSignLayer" pos="0.49, 0" rot="0" scale="0.15, 1.2" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="I" direction="0" spacing="1" softness="0" dilate="0.3" />
+    <layer name="Divider Ribbon" type="TextSignLayer" pos="0, 0" rot="0" scale="0.12, 0.12" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="===============" direction="0" spacing="0.85" softness="0" dilate="0.1" />
+    <layer name="Heading Shadow" type="TextSignLayer" pos="0.002, 0.09" rot="0" scale="0.22, 0.22" color="#000000FF" mode="ColorOnly" font="Stardos Stencil" text="BRAGGING RIGHTS" direction="0" spacing="0.88" softness="0.15" dilate="0.01" />
+    <layer name="Heading Main" type="TextSignLayer" pos="0, 0.11" rot="0" scale="0.22, 0.22" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="BRAGGING RIGHTS" direction="0" spacing="0.88" softness="0" dilate="0" />
+    <layer name="Subtitle Shadow" type="TextSignLayer" pos="0.001, -0.12" rot="0" scale="0.18, 0.18" color="#000000FF" mode="ColorOnly" font="Stardos Stencil" text="* WALL OF HEROES *" direction="0" spacing="0.92" softness="0.15" dilate="0.01" />
+    <layer name="Subtitle Main" type="TextSignLayer" pos="0, -0.11" rot="0" scale="0.18, 0.18" color="#FFFFFFFF" mode="ColorOnly" font="Stardos Stencil" text="* WALL OF HEROES *" direction="0" spacing="0.92" softness="0" dilate="0" />
+  </sign>
+  <sign guid="69c01ac3-b82d-4679-967f-13dd54544068" name="Completed" modified="2026-11-01 11:07:00Z" next_poly_id="5" next_text_id="6" next_noise_id="0" next_group_id="0">
+    <layer name="Backdrop Fill" type="TextSignLayer" pos="0, 0" rot="0" scale="3, 3" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="____________________" direction="0" spacing="1" softness="0" dilate="2" />
+    <layer name="Star Top Left" type="TextSignLayer" pos="-0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Top Right" type="TextSignLayer" pos="0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Left" type="TextSignLayer" pos="-0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Right" type="TextSignLayer" pos="0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Name Text" type="TextSignLayer" pos="0, 0.14" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="HUMBLE_DONKEE" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Status Text" type="TextSignLayer" pos="0, -0.16" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="COMPLETED" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Poly 01" type="PolygonSignLayer" pos="-0.002615799, 0.9736235" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 02" type="PolygonSignLayer" pos="-0.02615799, -0.9736241" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 03" type="PolygonSignLayer" pos="0.9736237, 0.04185279" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 04" type="PolygonSignLayer" pos="-0.9736238, 0.03923666" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+  </sign>
+  <sign guid="3f5c71b2-c0e8-46cb-b209-77ba85dfb90c" name="Completed Katpop22" modified="2026-11-01 11:12:00Z" next_poly_id="5" next_text_id="6" next_noise_id="0" next_group_id="0">
+    <layer name="Backdrop Fill" type="TextSignLayer" pos="0, 0" rot="0" scale="3, 3" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="____________________" direction="0" spacing="1" softness="0" dilate="2" />
+    <layer name="Star Top Left" type="TextSignLayer" pos="-0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Top Right" type="TextSignLayer" pos="0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Left" type="TextSignLayer" pos="-0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Right" type="TextSignLayer" pos="0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Name Text" type="TextSignLayer" pos="0, 0.14" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="KATPOP22" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Status Text" type="TextSignLayer" pos="0, -0.16" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="COMPLETED" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Poly 01" type="PolygonSignLayer" pos="-0.002615799, 0.9736235" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 02" type="PolygonSignLayer" pos="-0.02615799, -0.9736241" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 03" type="PolygonSignLayer" pos="0.9736237, 0.04185279" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 04" type="PolygonSignLayer" pos="-0.9736238, 0.03923666" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+  </sign>
+  <sign guid="8f82c743-0e24-4b93-bb6b-b4ee68d7ac15" name="New Sign" modified="2026-11-01 11:31:37Z" next_poly_id="0" next_text_id="1" next_noise_id="0" next_group_id="0">
+    <layer name="Backdrop Fill" type="TextSignLayer" pos="0, 0" rot="0" scale="3, 3" color="#0B2F64FF" mode="ColorOnly" font="Stardos Stencil" text="____________________" direction="0" spacing="1" softness="0" dilate="2" />
+    <layer name="Star Top Left" type="TextSignLayer" pos="-0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Top Right" type="TextSignLayer" pos="0.4, 0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Left" type="TextSignLayer" pos="-0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Star Bottom Right" type="TextSignLayer" pos="0.4, -0.4" rot="0" scale="0.18, 0.18" color="#D4AF37FF" mode="ColorOnly" font="Stardos Stencil" text="*" direction="0" spacing="1" softness="0" dilate="0" />
+    <layer name="Name Text" type="TextSignLayer" pos="0, 0.14" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="survivor_name" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Status Text" type="TextSignLayer" pos="0, -0.16" rot="0" scale="0.13, 0.13" color="#F2CD5CFF" mode="ColorOnly" font="Stardos Stencil" text="COMPLETED" direction="0" spacing="0.9" softness="0" dilate="0.04" />
+    <layer name="Poly 01" type="PolygonSignLayer" pos="-0.002615799, 0.9736235" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 02" type="PolygonSignLayer" pos="-0.02615799, -0.9736241" rot="0" scale="2, 0.02" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 03" type="PolygonSignLayer" pos="0.9736237, 0.04185279" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+    <layer name="Poly 04" type="PolygonSignLayer" pos="-0.9736238, 0.03923666" rot="0" scale="0.02, 2" color="#D4AF37FF" mode="ColorOnly" sides="4" smoothness="0" starify="0" softness="0" dilate="0" frequency="5" shapeMode="Normal" />
+  </sign>
+</signs>

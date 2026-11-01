@@ -20,15 +20,6 @@
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="biomeonly" />
   <property name="ThemeTags" value="traderHugh" />
-  <property name="SleeperVolumeSize" value="3, 1, 10" />
-  <property name="SleeperVolumeStart" value="56, 12, 22" />
-  <property name="SleeperVolumeGroupId" value="0" />
-  <property name="SleeperVolumeGroup" value="GroupGenericZombie,0,0" />
-  <property name="SleeperIsLootVolume" value="False" />
-  <property name="SleeperIsQuestExclude" value="True" />
-  <property name="SleeperVolumeFlags" value="3" />
-  <property name="SleeperVolumeTriggeredBy" value="1" />
-  <property name="SVS0" value="sound intercom_chime3^sleep 2^sound trader_rekt_firstgreet" />
   <property class="IndexedBlockOffsets">
     <property class="TraderOnOff">
       <property name="0" value="35, 9, 23" />

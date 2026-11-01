@@ -171,22 +171,21 @@
 
 
 		<!-- *** CLUB_SKILLS -->
-	<crafting_skill name="craftingClubs" max_level="25" parent="attCrafting" name_key="craftingClubsName" desc_key="craftingClubsDesc" long_desc_key="craftingClubsLongDesc" icon="ui_game_symbol_club">
+		<crafting_skill name="craftingClubs" max_level="20" parent="attCrafting" name_key="craftingClubsName" desc_key="craftingClubsDesc" long_desc_key="craftingClubsLongDesc" icon="ui_game_symbol_club">
+			<display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,2,3,4,5"/>
+			<display_entry item="meleeWpnClubT1BaseballBat" unlock_level="6,7,8,9,11"/>
+			<display_entry item="meleeWpnClubT3SteelClub" unlock_level="12,14,16,18,20"/>
 
-		<display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,2,3,4,5,6"/>
-		<display_entry item="meleeWpnClubT1BaseballBat" unlock_level="7,8,10,11,13,14"/>
-		<display_entry item="meleeWpnClubT3SteelClub" unlock_level="15,17,19,21,23,25"/>
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,20" value="1" tags="meleeWpnClubT0WoodenClub"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,20" value="1" tags="meleeWpnClubT1BaseballBat"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,20" value="1" tags="meleeWpnClubT3SteelClub"/>
 
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,25" value="1" tags="meleeWpnClubT0WoodenClub"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,25" value="1" tags="meleeWpnClubT1BaseballBat"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,25" value="1" tags="meleeWpnClubT3SteelClub"/>
-
-			<passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,6,25" value="1,2,3,4,5,5" tags="meleeWpnClubT0WoodenClub"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="8,10,11,13,14,25" value="1,2,3,4,5,5" tags="meleeWpnClubT1BaseballBat"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="17,19,21,23,25" value="1,2,3,4,5" tags="meleeWpnClubT3SteelClub"/>
-		</effect_group>
-	</crafting_skill>
+				<passive_effect name="CraftingTier" operation="base_add" level="2,3,4,5,20" value="1,2,3,4,4" tags="meleeWpnClubT0WoodenClub"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="7,8,9,11,20" value="1,2,3,4,4" tags="meleeWpnClubT1BaseballBat"/>
+				<passive_effect name="CraftingTier" operation="base_add" level="14,16,18,20" value="1,2,3,4" tags="meleeWpnClubT3SteelClub"/>
+			</effect_group>
+		</crafting_skill>
 
 	<!-- *** SLEDGEHAMMER_SKILLS -->
 		<crafting_skill name="craftingSledgehammers" max_level="20" parent="attCrafting" name_key="craftingSledgehammersName" desc_key="craftingSledgehammersDesc" long_desc_key="craftingSledgehammersLongDesc" icon="ui_game_symbol_sledge">
