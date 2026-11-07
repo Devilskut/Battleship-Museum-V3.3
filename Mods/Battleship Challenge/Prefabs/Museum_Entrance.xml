@@ -9,21 +9,21 @@
   <property name="ShowQuestClearCount" value="1" />
   <property name="TraderArea" value="False" />
   <property name="YOffset" value="-6" />
-  <property name="PrefabSize" value="60, 19, 128" />
+  <property name="PrefabSize" value="23, 19, 128" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="EditorGroups" value="any" />
   <property name="Tags" value="commercial, downtown" />
   <property name="ThemeTags" value="siteMilitary, traderHugh, trader" />
   <property name="QuestTags" value="trader, clear, fetch" />
-  <property name="SleeperVolumeSize" value="23, 4, 29#23, 8, 6#23, 4, 30#5, 1, 5" />
-  <property name="SleeperVolumeStart" value="0, 9, 44#0, 9, 73#0, 9, 79#39, 7, 26" />
-  <property name="SleeperVolumeGroupId" value="0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="zombieSoldier,3,4,zombieSoldier,3,4,GroupHospital,4,5,zombieBikerInfernal,2,2" />
-  <property name="SleeperIsLootVolume" value="False,False,False,False" />
-  <property name="SleeperIsQuestExclude" value="False,False,False,False" />
-  <property name="SleeperVolumeFlags" value="0,0,0,2" />
-  <property name="SleeperVolumeTriggeredBy" value=" # # #6" />
+  <property name="SleeperVolumeSize" value="23, 4, 29#23, 8, 6#23, 4, 30" />
+  <property name="SleeperVolumeStart" value="0, 9, 44#0, 9, 73#0, 9, 79" />
+  <property name="SleeperVolumeGroupId" value="0,0,0" />
+  <property name="SleeperVolumeGroup" value="zombieSoldier,3,4,zombieSoldier,3,4,GroupHospital,4,5" />
+  <property name="SleeperIsLootVolume" value="False,False,False" />
+  <property name="SleeperIsQuestExclude" value="False,False,False" />
+  <property name="SleeperVolumeFlags" value="0,0,0" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # " />
   <property name="TriggerVolumeSize" value="35, 2, 51" />
   <property name="TriggerVolumeStart" value="24, 7, 2" />
   <property name="TriggerVolumeTriggers" value="6" />
@@ -50,19 +50,19 @@
   </property>
   <property class="Stats">
     <property name="LightsVolume" value="14627.6" />
-    <property name="TotalVertices" value="951187" />
-    <property name="TotalTriangles" value="452890" />
+    <property name="TotalVertices" value="633715" />
+    <property name="TotalTriangles" value="279874" />
     <property class="BlockEntities">
-      <property name="Vertices" value="580153" />
-      <property name="Triangles" value="234386" />
+      <property name="Vertices" value="579673" />
+      <property name="Triangles" value="234314" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="45052" />
-      <property name="Triangles" value="29508" />
+      <property name="Vertices" value="43388" />
+      <property name="Triangles" value="28100" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="303104" />
-      <property name="Triangles" value="151552" />
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="432" />
@@ -77,8 +77,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes5">
-      <property name="Vertices" value="22382" />
-      <property name="Triangles" value="37184" />
+      <property name="Vertices" value="10158" />
+      <property name="Triangles" value="17200" />
     </property>
   </property>
 </prefab>

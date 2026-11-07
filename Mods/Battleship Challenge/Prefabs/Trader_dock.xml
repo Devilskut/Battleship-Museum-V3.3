@@ -18,10 +18,10 @@
   <property name="SleeperVolumeSize" value="2, 1, 1" />
   <property name="SleeperVolumeStart" value="11, 7, 10" />
   <property name="SleeperVolumeGroupId" value="0" />
-  <property name="SleeperVolumeGroup" value="zombieBikerInfernal,2,2" />
+  <property name="SleeperVolumeGroup" value="zombieBikerInfernal,3,4" />
   <property name="SleeperIsLootVolume" value="False" />
   <property name="SleeperIsQuestExclude" value="False" />
-  <property name="SleeperVolumeFlags" value="3" />
+  <property name="SleeperVolumeFlags" value="0" />
   <property name="SleeperVolumeTriggeredBy" value="6" />
   <property class="IndexedBlockOffsets">
     <property class="TraderOnOff">

@@ -20,6 +20,7 @@ Battleship_Park,Battleship Park
 ESCAPE_AIR_STRIP,Devil's Air Strip
 Trader_dock,Museum Trader
 Spicy_Sea_10,Yacht Club
+ENTRANCE_TRAP,Museum Toll Booths
 
 Biker Bag,Duffle Bag
 Chip Bag,Duffle Bag
@@ -328,7 +329,7 @@ loadingTipBattleship8_title,Trying to Leave?
 loadingTipBattleship8,"Trying to leave the Naval Museum is not advised. The ground is SPICY, and the air surrounding the area is radiated—stepping out will end your challenge..."
 
 loadingTipBattleship9_title,Wrench
-loadingTipBattleship9,"Use this on everything!"
+loadingTipBattleship9,"Use this on everything! All car parts including tires, hoods and fenders."
 
 loadingTipBattleship10_title,Special Thanks
 loadingTipBattleship10,"Special thanks to Spherii for the custom code."

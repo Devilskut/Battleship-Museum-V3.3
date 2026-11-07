@@ -27,7 +27,7 @@
 	</insertAfter>
 
 	<append xpath="/items/item[contains(property[@name='Tags']/@value, 'miningTool')]/effect_group[1]">
-		<passive_effect name="EntityDamage" operation="perc_add" value="-0.85"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="-0.90"/>
 	</append>
 	
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>

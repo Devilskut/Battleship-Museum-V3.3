@@ -93,4 +93,5 @@
   <decoration type="model" name="downtown_strip_10" position="-448,64,-2444" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="gas_station_11" position="-434,64,-2351" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="Trader_dock" position="-588,63,-2406" rotation="0" y_is_groundlevel="true" />
+  <decoration type="model" name="ENTRANCE_TRAP" position="-601,61,-2372" rotation="0" y_is_groundlevel="true" />
 </prefabs>

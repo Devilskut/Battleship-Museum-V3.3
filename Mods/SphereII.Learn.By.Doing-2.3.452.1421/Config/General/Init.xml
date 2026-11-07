@@ -10,15 +10,15 @@
 
             <!-- perkMasterChef -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xptonext" operation="set" value="500"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkmasterchef_lbd_xptonext" operation="set" value="200"/>
 
             <!-- perkLivingOffTheLand -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xptonext" operation="set" value="100"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklivingofftheland_lbd_xptonext" operation="set" value="50"/>
 
             <!-- perkLockPicking -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xp" operation="set" value="0"/>
-            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xptonext" operation="set" value="50"/>
+            <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perklockpicking_lbd_xptonext" operation="set" value="20"/>
 
             <!-- perkLuckyLooter -->
             <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$perkluckylooter_lbd_xp" operation="set" value="0"/>
