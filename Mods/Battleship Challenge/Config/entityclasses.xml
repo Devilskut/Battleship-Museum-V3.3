@@ -1,6 +1,13 @@
 <configs>
 
-<!-- ZOMBIE_ARLENE ex. Regular, Feral, Radiated !-->
+	<!-- Update Male Player Starting Items -->
+	
+	<!-- Update Male Player Starting Items -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvival']/@value">foodCanSalmon</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalSP']/@value">foodCanSalmon</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']/property[@name='GameModeSurvivalMP']/@value">foodCanSalmon</set>
+
+	<!-- ZOMBIE_ARLENE ex. Regular, Feral, Radiated !-->
 	<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
 		<property name="LootDropProb" value=".33"/>
 		<property name="LootDropEntityClass" value="Duffle Bag"/>			    

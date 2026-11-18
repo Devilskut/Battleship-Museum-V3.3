@@ -1,11 +1,32 @@
 Key,English
-goGameWorld,[FF4F00]Select Battleship (biome)[-]
+goGameWorld,[FF4F00]Select LBD (BIOME)[-] V3
 goLootRespawnDays,Loot Respawn[FF4F00]Select 7 Days [-]
-goAirDropFrequency,Air Drops. Set to [ffd700]DISABLED[-].
 
 noteDuke01,"Note from Devilskut"
 
 noteDuke01Desc,"Welcome to the Battleship Museum Overhaul!\n\nYou have been taken captive by Trader Hugh. To earn your freedom, you must survive long enough to escape via Devil's Air Strip." />
+
+drinkJarRiverWater,Sea Water
+drinkJarRiverWaterDesc,Unfiltered sea water collected from open water sources. Boil it down in a campfire with a cooking pot to harvest salt.
+resourceSalt,Salt
+resourceSaltDesc,"Coarse mineral salt harvested from evaporated sea water. Used to season cooked meals and preserve rations in the wasteland."
+
+foodSaltedSalmon,Salt-Cured Salmon
+foodSaltedSalmonDesc,"Canned salmon cured in coarse sea salt over a campfire. Boosts calorie density at the cost of a little extra thirst."
+foodSaltedTunaStew,Salted Tuna Sea Stew
+foodSaltedTunaStewDesc,"A hearty naval broth simmered with tuna, potatoes, boiled water, and sea salt. Restores significant hunger, health, and hydration."
+foodSaltedBaconAndEggs,Salted Bacon & Eggs
+foodSaltedBaconAndEggsDesc,"Thick-cut meat and eggs fried in a skillet and seasoned with coarse sea salt. Restores more hunger and health than plain bacon and eggs."
+foodSaltedSteakAndEggs,Salted Steak & Eggs
+foodSaltedSteakAndEggsDesc,"A heavy-duty wasteland skillet meal of seared meat, three eggs, animal fat, and sea salt for maximum stamina recovery."
+drinkJarWeakCoffee,Weak Coffee
+drinkJarWeakCoffeeDesc,"A slightly brackish brew made by boiling coffee beans directly in sea water. Restores modest hydration and gives a brief stamina boost."
+drinkJarCucumberWater,Cucumber Water
+drinkJarCucumberWaterDesc,"Distilled drinking water infused with sliced cucumbers. Crisp, refreshing, and restores extra hydration."
+foodPickles,items,Item,Sea-Brined Pickles
+foodPicklesDesc,"Crisp cucumbers pickled in boiled sea water and coarse sea salt. Restores both hunger and hydration."
+foodTunaPickleSandwich,Tuna & Pickle Sandwich
+foodTunaPickleSandwichDesc,"Two salvaged Sham sandwiches stacked with canned tuna and tangy sea-brined pickles. Safe to eat and surprisingly filling."
 
 escape_hugh,Storage Facility
 Museum_Trader,Museum Trader
@@ -21,6 +42,10 @@ ESCAPE_AIR_STRIP,Devil's Air Strip
 Trader_dock,Museum Trader
 Spicy_Sea_10,Yacht Club
 ENTRANCE_TRAP,Museum Toll Booths
+
+creativeMenuBlockGroupDesc,Cucumber (POI)
+plantedCucumber2,Cucumber (Growing)
+Cucumber seed, Cucumber (Seed)
 
 Biker Bag,Duffle Bag
 Chip Bag,Duffle Bag
@@ -45,6 +70,7 @@ ChemiestationCustom,Chemistry Station Do not wrench
 Workbench1,Workbench Do not wrench
 drinkCanMegaCrush,Goldens Swallow
 medicalFirstAidBandage2,Band Aid
+plantedCucumber1,Cucumber seed
 
 gunT4Minigun,Minigun
 MinigunDesc," Very beefy and heavy gun "You will be slowed" "

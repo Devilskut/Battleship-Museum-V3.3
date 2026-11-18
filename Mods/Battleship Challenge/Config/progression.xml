@@ -558,66 +558,72 @@
 		<!-- *** FOOD_SKILLS -->
 		<crafting_skill name="craftingFood" max_level="20" parent="attCrafting" name_key="craftingFoodName" desc_key="craftingFoodDesc" long_desc_key="craftingFoodLongDesc" icon="ui_game_symbol_fork">
 
-			<!-- Changed unlock_level from "1,1,2,2,3" to "0,0,1,1,2" to shift the tier 1 group down -->
+			<!-- Tier 1: Levels 0, 0, 1, 1, 2 -->
 			<display_entry icon="foodCornOnTheCob,foodCornBread,foodGrilledMeat,foodBoiledMeat,foodBaconAndEggs" name_key="foodT1-1,foodT1-2,foodT1-3,foodT1-4,foodT1-5" has_quality="false" unlock_level="0,0,1,1,2" >
-				<unlock_entry item="foodCornOnTheCob,foodBakedPotato" unlock_tier="1"/>
+				<unlock_entry item="foodCornOnTheCob,foodBakedPotato,drinkJarWeakCoffee" unlock_tier="1"/>
 				<unlock_entry item="foodCornBread,drinkJarGoldenRodTea" unlock_tier="2"/>
 				<unlock_entry item="foodGrilledMeat,drinkJarRedTea" unlock_tier="3"/>
-				<unlock_entry item="foodBoiledMeat,drinkJarYuccaJuice" unlock_tier="4"/>
-				<unlock_entry item="foodBaconAndEggs,drinkJarCoffee" unlock_tier="5"/>
+				<unlock_entry item="foodBoiledMeat,drinkJarYuccaJuice,foodSaltedSalmon,drinkJarCucumberWater" unlock_tier="4"/>
+				<unlock_entry item="foodBaconAndEggs,drinkJarCoffee,foodSaltedBaconAndEggs" unlock_tier="5"/>
 			</display_entry>
+
+			<!-- Tier 2: Levels 3, 4, 4, 5, 6 -->
 			<display_entry icon="foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5" has_quality="false" unlock_level="3,4,4,5,6" >
-				<unlock_entry item="foodPumpkinBread,foodBlueberryPie,foodChickenNuggets" unlock_tier="1"/>
-				<unlock_entry item="foodPumpkinPie,drinkJarHoneyTea" unlock_tier="2"/>
+				<unlock_entry item="foodPumpkinBread,foodBlueberryPie,foodChickenNuggets,foodPickles" unlock_tier="1"/>
+				<unlock_entry item="foodPumpkinPie,drinkJarHoneyTea,foodTunaPickleSandwich" unlock_tier="2"/>
 				<unlock_entry item="foodPumpkinCheesecake,foodRoadrunnerChickenJerky" unlock_tier="3"/>
-				<unlock_entry item="foodVegetableStew,foodMeatStew" unlock_tier="4"/>
-				<unlock_entry item="foodSteakAndPotato,foodAshChickenStew" unlock_tier="5"/>
+				<unlock_entry item="foodVegetableStew,foodMeatStew,foodSaltedTunaStew" unlock_tier="4"/>
+				<unlock_entry item="foodSteakAndPotato,foodAshChickenStew,foodSaltedSteakAndEggs" unlock_tier="5"/>
 			</display_entry>
-			<display_entry icon="drinkYuccaJuiceSmoothie,foodHoboStew,foodFishTacos,foodChiliDog,foodShamChowder" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5" has_quality="false" unlock_level="7,8,9,10,12" >
+
+			<!-- Tier 3: Levels 7, 8, 9, 10, 12 (Removed Chili Dog & Sham Chowder) -->
+			<display_entry icon="drinkYuccaJuiceSmoothie,foodHoboStew,foodFishTacos,foodHoneyGlazedSham,foodChickenWings" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5" has_quality="false" unlock_level="7,8,9,10,12" >
 				<unlock_entry item="drinkYuccaJuiceSmoothie,drinkJarBeer" unlock_tier="1"/>
 				<unlock_entry item="foodHoboStew" unlock_tier="2"/>
 				<unlock_entry item="foodFishTacos" unlock_tier="3"/>
-				<unlock_entry item="foodChiliDog" unlock_tier="4"/>
-				<unlock_entry item="foodShamChowder,foodHoneyGlazedSham" unlock_tier="5"/>
+				<unlock_entry item="foodHoneyGlazedSham" unlock_tier="4"/>
+				<unlock_entry item="foodChickenWings" unlock_tier="5"/>
 			</display_entry>
-			<display_entry icon="foodTunaFishGravyToast,foodShepardsPie,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew" name_key="foodT4-1,foodT4-2,foodT4-3,foodT4-4,foodT4-5" has_quality="false" unlock_level="13,15,16,18,20" >
-				<unlock_entry item="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce" unlock_tier="1"/>
-				<unlock_entry item="foodShepardsPie,drinkJarGrandpasMoonshine" unlock_tier="2"/>
-				<unlock_entry item="drinkJarGrandpasLearningElixir,foodHoneyBrisket" unlock_tier="3"/>
-				<unlock_entry item="foodSpaghetti,foodChickenWings" unlock_tier="4"/>
-				<unlock_entry item="foodGumboStew" unlock_tier="5"/>
+
+			<!-- Tier 4: Levels 13, 15, 16, 18, 20 (Removed Shepherd's Pie, Spaghetti & Gumbo Stew) -->
+			<display_entry icon="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasMoonshine,drinkJarGrandpasLearningElixir,foodHoneyBrisket" name_key="foodT4-1,foodT4-2,foodT4-3,foodT4-4,foodT4-5" has_quality="false" unlock_level="13,15,16,18,20" >
+				<unlock_entry item="foodTunaFishGravyToast" unlock_tier="1"/>
+				<unlock_entry item="drinkJarGrandpasAwesomeSauce" unlock_tier="2"/>
+				<unlock_entry item="drinkJarGrandpasMoonshine" unlock_tier="3"/>
+				<unlock_entry item="drinkJarGrandpasLearningElixir" unlock_tier="4"/>
+				<unlock_entry item="foodHoneyBrisket" unlock_tier="5"/>
 			</display_entry>
 
 			<effect_group>
-				<!-- Changed level from "1,20" to "0,20" for the first two tiers so they unlock immediately -->
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,20" value="1" tags="foodCornOnTheCob,foodBakedPotato"/>
+				<!-- Tier 1 Unlocks -->
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,20" value="1" tags="foodCornOnTheCob,foodBakedPotato,drinkJarWeakCoffee"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="0,20" value="1" tags="foodCornBread,drinkJarGoldenRodTea"/>
-
-				<!-- Shifted remaining tier 1 recipes down by 1 level to match the new unlock_level display -->
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,20" value="1" tags="foodGrilledMeat,drinkJarRedTea"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,20" value="1" tags="foodBoiledMeat,drinkJarYuccaJuice"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,20" value="1" tags="foodBaconAndEggs,drinkJarCoffee"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,20" value="1" tags="foodBoiledMeat,drinkJarYuccaJuice,foodSaltedSalmon,drinkJarCucumberWater"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,20" value="1" tags="foodBaconAndEggs,drinkJarCoffee,foodSaltedBaconAndEggs"/>
 
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,20" value="1" tags="foodPumpkinBread,foodBlueberryPie,foodChickenNuggets"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,20" value="1" tags="foodPumpkinPie,drinkJarHoneyTea"/>
+				<!-- Tier 2 Unlocks -->
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,20" value="1" tags="foodPumpkinBread,foodBlueberryPie,foodChickenNuggets,foodPickles"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,20" value="1" tags="foodPumpkinPie,drinkJarHoneyTea,foodTunaPickleSandwich"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,20" value="1" tags="foodPumpkinCheesecake,foodRoadrunnerChickenJerky"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,20" value="1" tags="foodVegetableStew,foodMeatStew"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,20" value="1" tags="foodSteakAndPotato,foodAshChickenStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,20" value="1" tags="foodVegetableStew,foodMeatStew,foodSaltedTunaStew"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,20" value="1" tags="foodSteakAndPotato,foodAshChickenStew,foodSaltedSteakAndEggs"/>
 
+				<!-- Tier 3 Unlocks -->
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,20" value="1" tags="drinkYuccaJuiceSmoothie,drinkJarBeer"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,20" value="1" tags="foodHoboStew"/>
 				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="9,20" value="1" tags="foodFishTacos"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="foodChiliDog"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,20" value="1" tags="foodShamChowder,foodHoneyGlazedSham"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="foodHoneyGlazedSham"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="12,20" value="1" tags="foodChickenWings"/>
 
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="13,20" value="1" tags="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,20" value="1" tags="foodShepardsPie,drinkJarGrandpasMoonshine"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,20" value="1" tags="drinkJarGrandpasLearningElixir,foodHoneyBrisket"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,20" value="1" tags="foodSpaghetti,foodChickenWings"/>
-				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,20" value="1" tags="foodGumboStew"/>
+				<!-- Tier 4 Unlocks -->
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="13,20" value="1" tags="foodTunaFishGravyToast"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="15,20" value="1" tags="drinkJarGrandpasAwesomeSauce"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="16,20" value="1" tags="drinkJarGrandpasMoonshine"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,20" value="1" tags="drinkJarGrandpasLearningElixir"/>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,20" value="1" tags="foodHoneyBrisket"/>
 			</effect_group>
 		</crafting_skill>
-
 
 		<!-- *** TRAP_SKILLS -->
 

@@ -2,7 +2,7 @@
     <insertafter xpath="/items/item[@name]/property[1]">
 		<property name="CreativeMode" value="None"/> 
 	</insertafter>
-	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
+	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set>
 	
 	<insertAfter xpath="/items/item[@name='ammoBundleMaster']"> 
 	<item name="Backpack">
@@ -20,8 +20,8 @@
 			<property name="Delay" value="0"/>
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="UseActions/open_backpack"/>
-			<property name="Create_item" value="biomeBadge1,biomeBadge2,biomeBadge3,biomeBadge4,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanChili,medicalFirstAidBandage2,Class Bag"/>
-			<property name="Create_item_count" value="1,1,1,1,1,1,1,5,1"/>
+			<property name="Create_item" value="biomeBadge1,biomeBadge2,biomeBadge3,biomeBadge4,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanSalmon,medicalFirstAidBandage2,Class Bag"/>
+			<property name="Create_item_count" value="1,1,1,1,1,2,1,10,1"/>
 		</property>
 	</item>	
 	</insertAfter>
@@ -30,6 +30,10 @@
 		<passive_effect name="EntityDamage" operation="perc_add" value="-0.90"/>
 	</append>
 	
+    <remove xpath="/items/item[@name='drinkJarRiverWater']/property[@class='Action0']"/>
+    <remove xpath="/items/item[@name='drinkJarRiverWater']/effect_group"/>
+    <set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='DisplayType']/@value">item</set>
+
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
 	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
 	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
@@ -38,6 +42,8 @@
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderFeral']" />
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderCharged']" />
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulderInfernal']" />
+
+	<set xpath="/items/item[starts-with(@name, 'foodCan') and @name != 'foodCanSalmon' and @name != 'foodCanTuna']/property[@name='CreativeMode']/@value">None</set>
 
 	<insertbefore xpath="/items/item[@name='meleeHandAnimalZombieDog']">
 
@@ -200,8 +206,143 @@
 	</item>
 	</insertafter>
 	
-	<set xpath="//item[@name='resourceWaterFilter']//property[@name='Stacknumber']/@value">1</set>
+	<append xpath="/items">
+		<!-- Salted Salmon Jerky: High food, slight thirst cost, zero spoilage/poison chance -->
+		<item name="foodSaltedSalmon">
+			<property name="Extends" value="foodCanSalmon"/>
+			<property name="CustomIcon" value="foodCanSalmon"/>
+			<property name="CustomIconTint" value="255,220,200"/>
+			<property name="DescriptionKey" value="foodSaltedSalmonDesc"/>
+			<property name="EconomicValue" value="45"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Effects">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="18"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<!-- Salted Tuna & Sea Broth: Restores both hunger and hydration -->
+		<item name="foodSaltedTunaStew">
+			<property name="Extends" value="foodMeatStew"/>
+			<property name="CustomIcon" value="foodMeatStew"/>
+			<property name="CustomIconTint" value="210,235,255"/>
+			<property name="DescriptionKey" value="foodSaltedTunaStewDesc"/>
+			<property name="EconomicValue" value="75"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Effects">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="55"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
 	
+		<!-- Salted Bacon & Eggs: Upgraded campfire breakfast with extra food and health -->
+		<item name="foodSaltedBaconAndEggs">
+			<property name="Extends" value="foodBaconAndEggs"/>
+			<property name="CustomIcon" value="foodBaconAndEggs"/>
+			<property name="CustomIconTint" value="255,240,210"/>
+			<property name="DescriptionKey" value="foodSaltedBaconAndEggsDesc"/>
+			<property name="EconomicValue" value="65"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Effects">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="48"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-3"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<!-- Salted Steak & Eggs: High-protein ration using raw meat, eggs, cornmeal, and salt -->
+		<item name="foodSaltedSteakAndEggs">
+			<property name="Extends" value="foodSteakAndPotato"/>
+			<property name="CustomIcon" value="foodSteakAndPotato"/>
+			<property name="CustomIconTint" value="255,225,205"/>
+			<property name="DescriptionKey" value="foodSaltedSteakAndEggsDesc"/>
+			<property name="EconomicValue" value="95"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Effects">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="68"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+		
+		<!-- Tuna & Pickle Sandwich: Eliminates the food poisoning risk of raw Sham Sandwiches -->
+		<item name="foodTunaPickleSandwich">
+			<property name="Extends" value="foodShamSandwich"/>
+			<property name="CustomIcon" value="foodShamSandwich"/>
+			<property name="CustomIconTint" value="200,245,215"/>
+			<property name="DescriptionKey" value="foodTunaPickleSandwichDesc"/>
+			<property name="DisplayType" value="foodWaterNegative"/>
+			<property name="EconomicValue" value="55"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<effect_group tiered="false" name="Food Effects">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="42"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="$foodAmountAdd" value="42"/>
+				<display_value name="$waterAmountAdd" value="5"/>
+				<display_value name="foodHealthAmount" value="20"/>
+			</effect_group>
+		</item>
+		
+			<!-- Weak Coffee: Modest hydration (+12), mild stamina boost (2 min), and a small 4% dysentery risk from the sea water -->
+			<item name="drinkJarWeakCoffee">
+				<property name="Extends" value="drinkJarCoffee"/>
+				<property name="CustomIcon" value="drinkJarCoffee"/>
+				<property name="CustomIconTint" value="210,190,170"/>
+				<property name="DescriptionKey" value="drinkJarWeakCoffeeDesc"/>
+				<property name="EconomicValue" value="15"/>
+				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+				<effect_group tiered="false" name="Drink Effects">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="120"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffCoffee"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysentery01">
+						<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="4"/>
+					</triggered_effect>
+				</effect_group>
+			</item>
+
+			<!-- Cucumber Water: High-value clean hydration (+38 water, +8 health, zero dysentery risk) -->
+			<item name="drinkJarCucumberWater">
+				<property name="Extends" value="drinkJarYuccaJuice"/>
+				<property name="CustomIcon" value="drinkJarPureMineralWater"/>
+				<property name="CustomIconTint" value="190,255,190"/>
+				<property name="DescriptionKey" value="drinkJarCucumberWaterDesc"/>
+				<property name="EconomicValue" value="25"/>
+				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+				<effect_group tiered="false" name="Drink Effects">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="38"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				</effect_group>
+			</item>
+
+			<!-- Salted Pickles: Restores both food (+18) and hydration (+10) with zero dysentery risk -->
+			<item name="foodPickles">
+				<property name="Extends" value="foodCropYuccaFruit"/>
+				<property name="CustomIcon" value="foodCropYuccaFruit"/>
+				<property name="CustomIconTint" value="160,220,130"/>
+				<property name="DescriptionKey" value="foodPicklesDesc"/>
+				<property name="EconomicValue" value="35"/>
+				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+				<effect_group tiered="false" name="Food Effects">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="18"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				</effect_group>
+			</item>
+		</append>
+
 	<remove xpath="/items/item[@name='questRewardGyrocopterPartsBundle']" />
 	
 	<insertafter xpath="/items/item[@name='questReward4x4PartsBundle']">
@@ -223,7 +364,7 @@
 			</property>
 		</item>
 	</insertafter>
-	
+
 	<append xpath="/items">
 
 		<item name="medicalFirstAidBandage2">
@@ -234,7 +375,7 @@
 			<property name="Group" value="Basics,Science,Medical,TCMedical"/>
 			<property name="EconomicValue" value="15"/>
 			<property name="DescriptionKey" value="medicalFirstAidBandageDesc"/>
-			<property name="Stacknumber" value="5"/>
+			<property name="Stacknumber" value="25"/>
 			<property name="UnlockedBy" value="craftingMedical"/>
 			<!-- perkPhysician,medicalFirstAidBandageSchematic, -->
 
@@ -340,22 +481,24 @@
 			</effect_group>
 		</item>
 
-		<item name="cucumber">
-			<property name="Tags" value="Gurke"/>
-			<property name="CreativeMode" value="None"/>
+		<item name="Cucumber">
+			<property name="Tags" value="food,foodSkill,fitness"/>
 			<property name="CustomIcon" value="Gurke"/>
 			<property name="HoldType" value="31"/>
-			<property name="DisplayType" value="food"/>
-			<property name="Meshfile" value="#@modfolder:Resources/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="#@modfolder:Resources/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="50"/>
-			<!-- STK food -->
-			<property name="EconomicValue" value="1"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="125"/>
+			<!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<!-- <property name="EconomicBundleSize" value="5"/> -->
+			<property name="CraftingIngredientTime" value="8"/>
+			<property name="SoundPickup" value="blueberries_grab"/>
+			<property name="SoundPlace" value="blueberries_place"/>
 			<property class="Action0">
 				<property name="Class" value="Eat"/>
 				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
 				<property name="Sound_start" value="player_eating"/>
 			</property>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
@@ -367,57 +510,71 @@
 			</effect_group>
 		</item>
 
+		<item name="resourceSalt">
+			<property name="Tags" value="food,foodSkill,fitness"/>
+			<property name="CustomIcon" value="Salty2"/>
+			<property name="HoldType" value="45"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+		</item>
+
 		<item name="vehicleGyrocopterRepairKit">
-        <property name="DescriptionKey" value="RestoringToolsDesc"/>
-		<property name="CreativeMode" value="None"/>
-        <property name="DisplayType" value="melee"/>
-	    <property name="HoldType" value="74"/>
-	    <property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
-        <property name="TintColor" value="179, 54, 0"/>
-        <property name="RepairTools" value="resourceRepairKit"/>
-        <property name="DegradationBreaksAfter" value="false"/>
-        <property name="SoundJammed" value="ItemNeedsRepair"/>
-        <property name="SoundDestroy" value="metaldestroy"/>
-        <property name="EconomicValue" value="1500"/>
-        <property name="TraderStageTemplate" value="baseTier2"/>
-        <property name="Material" value="MMotorToolParts"/>
-        <property name="Weight" value="1"/>
-        <property name="ShowQuality" value="false"/>
-        <property name="Stacknumber" value="1"/>
-        <property name="Group" value="VehicleRepairKit"/>
-        <property name="RepairExpMultiplier" value="5.5"/>
-        <property name="SoundUnholster" value="weapon_unholster"/>
-        <property name="SoundHolster" value="weapon_holster"/>
-	    <property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>		
-            <property class="Action0">
-            <property name="Class" value="ExchangeItem"/>
-            <property name="Delay" value="1.0"/>
-            <property name="Change_item_to" value="vehicleGyrocopterPlaceable"/>
-            <property name="Change_block_to" value="air"/>
-            <property name="Focused_blockname_1" value="gyrocopterFull"/>
-            <property name="Sound_start" value="impact_driver_swinglight"/>
-            <property name="UseGrazingHits" value="true"/>
-            <property name="GrazeStart" value=".25"/>
-            <property name="GrazeEnd" value=".3"/>
-            <property name="SwingDegrees" value="50"/>
-            <property name="SwingAngle" value="180"/>
-            <property name="HarvestHitEffectOn" value="false"/>
-    </property>
-            <property class="Action1">
-            <property name="Class" value="ExchangeItem"/>
-            <property name="Delay" value="1.0"/>
-            <property name="Change_item_to" value="vehicleGyrocopterPlaceable"/>
-            <property name="Change_block_to" value="air"/>
-            <property name="Focused_blockname_1" value="gyrocopterFull"/>
-            <property name="Sound_start" value="impact_driver_swinglight"/>
-            <property name="UseGrazingHits" value="true"/>
-            <property name="GrazeStart" value=".25"/>
-            <property name="GrazeEnd" value=".3"/>
-            <property name="SwingDegrees" value="50"/>
-            <property name="SwingAngle" value="180"/>
-            <property name="HarvestHitEffectOn" value="false"/>
-    </property>	
-    </item>
+			<property name="DescriptionKey" value="RestoringToolsDesc"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="74"/>
+			<property name="Meshfile" value="@:Other/Items/Tools/impactDriverPrefab.prefab"/>
+			<property name="TintColor" value="179, 54, 0"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy"/>
+			<property name="EconomicValue" value="1500"/>
+			<property name="TraderStageTemplate" value="baseTier2"/>
+			<property name="Material" value="MMotorToolParts"/>
+			<property name="Weight" value="1"/>
+			<property name="ShowQuality" value="false"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="VehicleRepairKit"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+			<property name="CustomIcon" value="meleeToolSalvageT3ImpactDriver"/>
+			<property class="Action0">
+				<property name="Class" value="ExchangeItem"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="vehicleGyrocopterPlaceable"/>
+				<property name="Change_block_to" value="air"/>
+				<property name="Focused_blockname_1" value="gyrocopterFull"/>
+				<property name="Sound_start" value="impact_driver_swinglight"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".25"/>
+				<property name="GrazeEnd" value=".3"/>
+				<property name="SwingDegrees" value="50"/>
+				<property name="SwingAngle" value="180"/>
+				<property name="HarvestHitEffectOn" value="false"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="ExchangeItem"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="vehicleGyrocopterPlaceable"/>
+				<property name="Change_block_to" value="air"/>
+				<property name="Focused_blockname_1" value="gyrocopterFull"/>
+				<property name="Sound_start" value="impact_driver_swinglight"/>
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".25"/>
+				<property name="GrazeEnd" value=".3"/>
+				<property name="SwingDegrees" value="50"/>
+				<property name="SwingAngle" value="180"/>
+				<property name="HarvestHitEffectOn" value="false"/>
+			</property>
+		</item>
 
 		<item name="gunExplosivesT3RG4Launcher">
 			<!-- Tier 3 -->
@@ -584,47 +741,47 @@
 				<display_value name="dExEntityDamage" value="600"/>
 			</effect_group>
 		</item>
-			
-	<item name="SkillMagazine10">
-	<property name="Extends" value="masterSkillMagazine"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="Tags" value="admin"/>
-	<property name="CustomIcon" value="bookTechPlanet"/>
-	<property name="CustomIconTint" value="98FB98"/>
-	<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
-	<property name="SoundPickup" value="magazine_grab"/>
-	<property name="SoundPlace" value="magazine_place"/>
 
-	<property class="Action0">
-		<property name="Sound_start" value="read_skillbook_final"/>
-		<property name="Sound_in_head" value="true"/>
-	</property> 
+		<item name="SkillMagazine10">
+			<property name="Extends" value="masterSkillMagazine"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="admin"/>
+			<property name="CustomIcon" value="bookTechPlanet"/>
+			<property name="CustomIconTint" value="98FB98"/>
+			<property name="DescriptionKey" value="adminSkillMagazine2Desc"/>
+			<property name="SoundPickup" value="magazine_grab"/>
+			<property name="SoundPlace" value="magazine_place"/>
 
-	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="10" show_message="false"/>
-		
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="10" show_message="false"/>
-		
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="10" show_message="false"/>
-		
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="10" show_message="false"/>
-		
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="10" show_message="false"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="10" show_message="false"/>
-	</effect_group>
-</item>
+			<property class="Action0">
+				<property name="Sound_start" value="read_skillbook_final"/>
+				<property name="Sound_in_head" value="true"/>
+			</property>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHarvestingTools" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRepairTools" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSalvageTools" level="10" show_message="false"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingKnuckles" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBlades" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingClubs" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSledgehammers" level="10" show_message="false"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingBows" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingSpears" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingHandguns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingShotguns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRifles" level="10" show_message="false"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMachineGuns" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingExplosives" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingRobotics" level="10" show_message="false"/>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingArmor" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingElectrician" level="10" show_message="false"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTraps" level="10" show_message="false"/>
+			</effect_group>
+		</item>
 		<item name="Electrical Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
 			<property name="CreativeMode" value="None"/>
@@ -662,7 +819,7 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingMedical" level="1" show_message="false"/>
 			</effect_group>
 		</item>
-		
+
 		<item name="Cooking Skill Book">
 			<property name="Extends" value="masterSkillMagazine"/>
 			<property name="CreativeMode" value="None"/>
@@ -724,7 +881,7 @@
 		</item>
 
 		<!-- ARMOR SETS -->
-		
+
 		<item name="Armor">
 			<property name="CreativeMode" value="None"/>
 			<property name="HoldType" value="21"/>
@@ -737,14 +894,14 @@
 			<property name="SellableToTrader" value="false"/>
 			<property name="Group" value="Special Items"/>
 		</item>
-		
+
 		<item name="ClassBag">
-		<property name="Extends" value="Armor"/>
-		<property name="CreativeMode" value="None"/>
-		<property name="CustomIcon" value="backpackMedium"/>
-		<property name="CustomIconTint" value="ff00bf"/>
-		<property name="Material" value="Mpaper"/>
-		<property name="EconomicValue" value="60"/>
+			<property name="Extends" value="Armor"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="backpackMedium"/>
+			<property name="CustomIconTint" value="ff00bf"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="EconomicValue" value="60"/>
 		</item>
 
 		<item name="LumberJack">
@@ -956,7 +1113,7 @@
 				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
-		
+
 		<item name="Assassin">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="armorAssassinOutfit"/>
@@ -998,7 +1155,7 @@
 				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
-		
+
 		<item name="Nomad">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="armorNomadOutfit"/>
@@ -1019,7 +1176,7 @@
 				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
-		
+
 		<item name="Nerd">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="armorNerdOutfit"/>
@@ -1040,7 +1197,7 @@
 				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
-		
+
 		<item name="Raider">
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="armorRaiderOutfit"/>
@@ -1061,7 +1218,7 @@
 				<property name="Create_item_count" value="1,1-2,1-2,1-2,1-2"/>
 			</property>
 		</item>
-		
+
 		<!-- WEAPON SETS -->
 		<!-- ballistic max distance for duration -->
 		<item name="Ordnance Specialist">
@@ -1172,6 +1329,6 @@
 				<property name="Create_item" value="meleeWpnBatonT0PipeBaton,gunBotT1JunkSledge"/>
 				<property name="Create_item_count" value="2,2"/>
 			</property>
-		</item> 
+		</item>
 	</append>	
 </configs>

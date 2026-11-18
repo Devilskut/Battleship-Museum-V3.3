@@ -1,10 +1,65 @@
 <configs>
+	
   <append xpath="/recipes">
-    
-    <recipe name="resourceCoal" count="1" craft_area="campfire" craft_time="10" >
-      <ingredient name="resourceWood" count="1"/>
-    </recipe>
+			<!-- Unlocks at craftingFood Level 1 (with Grilled/Boiled Meat) -->
+	<recipe name="foodSaltedSalmon" count="1" craft_area="campfire" craft_time="25" tags="learnable">
+		<ingredient name="foodCanSalmon" count="1"/>
+		<ingredient name="resourceSalt" count="2"/>
+	</recipe>
+
+	<!-- Unlocks at craftingFood Level 2 (with Bacon & Eggs) -->
+	<recipe name="foodSaltedBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30" tags="learnable">
+		<ingredient name="foodRawMeat" count="5"/>
+		<ingredient name="foodEgg" count="2"/>
+		<ingredient name="resourceSalt" count="1"/>
+	</recipe>
+
+	<!-- Unlocks at craftingFood Level 5 (with Meat Stew) -->
+	<recipe name="foodSaltedTunaStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="45" tags="learnable">
+		<ingredient name="foodCanTuna" count="1"/>
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+		<ingredient name="foodCropPotato" count="1"/>
+		<ingredient name="resourceSalt" count="2"/>
+	</recipe>
+
+				<!-- Unlocks at craftingFood Level 6 (with Steak & Potato) -->
+	<recipe name="foodSaltedSteakAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="45" tags="learnable">
+		<ingredient name="foodRawMeat" count="8"/>
+		<ingredient name="foodEgg" count="3"/>
+		<ingredient name="resourceAnimalFat" count="1"/>
+		<ingredient name="resourceSalt" count="2"/>
+	</recipe>
+	
+
+	  <!-- Weak Coffee: Brewed straight from Sea Water + 1 Coffee Bean -->
+	  <recipe name="drinkJarWeakCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="15" tags="learnable">
+		  <ingredient name="drinkJarRiverWater" count="1"/>
+		  <ingredient name="resourceCropCoffeeBeans" count="1"/>
+	  </recipe>
+
+	  <!-- Cucumber Water: Uses clean Boiled Water (distilled from Sea Water) + Cucumbers -->
+	  <recipe name="drinkJarCucumberWater" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="20" tags="learnable">
+		  <ingredient name="drinkJarBoiledWater" count="1"/>
+		  <ingredient name="Cucumber" count="2"/>
+	  </recipe>
+
+	  <!-- Brined Pickles: Uses Sea Water directly for the brine + Cucumbers + Salt -->
+	  <recipe name="foodPickles" count="2" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30" tags="learnable">
+		  <ingredient name="Cucumber" count="2"/>
+		  <ingredient name="drinkJarRiverWater" count="1"/>
+		  <ingredient name="resourceSalt" count="1"/>
+	  </recipe>
+
+	  <recipe name="foodTunaPickleSandwich" count="1" craft_time="10" tags="learnable">
+		  <ingredient name="foodShamSandwich" count="2"/>
+		  <ingredient name="foodCanTuna" count="1"/>
+		  <ingredient name="foodPickles" count="1"/>
+	  </recipe>
 	  
+	<recipe name="resourceCoal" count="1" craft_area="campfire" craft_time="10" >
+	    <ingredient name="resourceWood" count="1"/>
+	</recipe>
+
 	<recipe name="vehicleGyrocopterRepairKit" count="1">
 		<ingredient name="vehicleWheels" count="3"/>
 		<ingredient name="vehicleGyroCopterChassis" count="1"/>
@@ -17,145 +72,171 @@
 		<ingredient name="resourceLeather" count="1"/>
 		<ingredient name="resourceCloth" count="5"/>
 	</recipe>
-	  
+
 	<recipe name="ammoArrowStone" count="1">
-      <ingredient name="ammoCrossbowBoltStone" count="1"/>
-    </recipe>
-
-    <recipe name="ammoCrossbowBoltStone" count="1">
-      <ingredient name="ammoArrowStone" count="1"/>
-    </recipe>
-
-    <recipe name="ammoArrowIron" count="1">
-      <ingredient name="ammoCrossbowBoltIron" count="1"/>
-    </recipe>
-
-    <recipe name="ammoCrossbowBoltIron" count="1">
-      <ingredient name="ammoArrowIron" count="1"/>
-    </recipe>
-
-	<recipe name="ammoArrowSteelAP" count="1">
-	  <ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+		<ingredient name="ammoCrossbowBoltStone" count="1"/>
 	</recipe>
 
-	<recipe name="ammoCrossbowBoltSteelAP" count="1">
-	  <ingredient name="ammoArrowSteelAP" count="1"/>
-	</recipe>
-	
-	<recipe name="resourceBatteryAcid" count="1" craft_area="chemistryStation" craft_time="40" >
-      <ingredient name="carBattery" count="1"/>
-    </recipe>
-	
-	<recipe name="resourceAcid" count="1" craft_area="chemistryStation" craft_time="200" tags="perkGreaseMonkey,learnable,chemStationCrafting">
-      <ingredient name="drinkJarBoiledWater" count="3"/>
-	  <ingredient name="resourceCoal" count="75"/>
-	  <ingredient name="resourceScrapIron" count="25"/>
-	  <ingredient name="resourceScrapBrass" count="25"/>
-    </recipe>
-	
-	<recipe name="resourceAcid" count="1" craft_area="campfire" craft_tool="toolBeaker" craft_time="300" tags="perkGreaseMonkey,learnable">
-      <ingredient name="drinkJarBoiledWater" count="5"/>
-	  <ingredient name="resourceCoal" count="150"/>
-	  <ingredient name="resourceScrapIron" count="50"/>
-	  <ingredient name="resourceScrapBrass" count="50"/>
-    </recipe>
-	  
-    <recipe name="LumberJack" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="LumberJackDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-	<recipe name="Preacher" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="PreacherDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-	<recipe name="Rogue" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="RogueDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Athletic" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="AthleticDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Enforcer" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="EnforcerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Farmer" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="FarmerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Biker" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="BikerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Scavenger" count="1" craft_time="1" is_trackable="false">
-	  <property name="DescriptionKey" value="ScavengerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Ranger" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="RangerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Commando" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="CommandoDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Assassin" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="AssassinDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Miner" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="MinerDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Nomad" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="NomadDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
-	
-    <recipe name="Nerd" count="1" craft_time="1" is_trackable="false">
-		<property name="DescriptionKey" value="NerdDesc"/>
-	  <ingredient name="Armor" count="1"/>
-    </recipe>
+		<recipe name="ammoCrossbowBoltStone" count="1">
+			<ingredient name="ammoArrowStone" count="1"/>
+		</recipe>
 
-	  <recipe name="Raider" count="1" craft_time="1" is_trackable="false">
-		  <property name="DescriptionKey" value="RaiderDesc"/>
-		  <ingredient name="Armor" count="1"/>
-	  </recipe>
-	  
-	  <recipe name="Ordnance Specialist" count="1" craft_time="1" is_trackable="false">
-		  <ingredient name="ClassBag" count="1"/>
-	  </recipe>
+		<recipe name="ammoArrowIron" count="1">
+			<ingredient name="ammoCrossbowBoltIron" count="1"/>
+		</recipe>
 
-	  <recipe name="Director of Security" count="1" craft_time="1" is_trackable="false">
-		  <ingredient name="ClassBag" count="1"/>
-	  </recipe>
+		<recipe name="ammoCrossbowBoltIron" count="1">
+			<ingredient name="ammoArrowIron" count="1"/>
+		</recipe>
 
-	  <recipe name="Naval Recon Scout" count="1" craft_time="1" is_trackable="false">
-		  <ingredient name="ClassBag" count="1"/>
-	  </recipe>
+		<recipe name="ammoArrowSteelAP" count="1">
+			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
+		</recipe>
 
-	  <recipe name="Chief Systems Engineer" count="1" craft_time="1" is_trackable="false">
-		  <ingredient name="ClassBag" count="1"/>
-	  </recipe>
+		<recipe name="ammoCrossbowBoltSteelAP" count="1">
+			<ingredient name="ammoArrowSteelAP" count="1"/>
+		</recipe>
 
-	  <recipe name="Biological Warfare Survivor" count="1" craft_time="1" is_trackable="false">
-		  <ingredient name="ClassBag" count="1"/>
-	  </recipe>
-  </append>
+		<recipe name="resourceBatteryAcid" count="1" craft_area="chemistryStation" craft_time="40" >
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
 
+		<recipe name="resourceAcid" count="1" craft_area="chemistryStation" craft_time="200" tags="perkGreaseMonkey,learnable,chemStationCrafting">
+			<ingredient name="drinkJarBoiledWater" count="3"/>
+			<ingredient name="resourceCoal" count="75"/>
+			<ingredient name="resourceScrapIron" count="25"/>
+			<ingredient name="resourceScrapBrass" count="25"/>
+		</recipe>
+
+		<recipe name="resourceAcid" count="1" craft_area="campfire" craft_tool="toolBeaker" craft_time="300" tags="perkGreaseMonkey,learnable">
+			<ingredient name="drinkJarBoiledWater" count="5"/>
+			<ingredient name="resourceCoal" count="150"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+			<ingredient name="resourceScrapBrass" count="50"/>
+		</recipe>
+
+		<recipe name="plantedCucumber1" count="1" tags="perkLivingOffTheLand">
+		<ingredient name="Cucumber" count="2" />
+		</recipe>
+
+		<recipe name="LumberJack" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="LumberJackDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Preacher" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="PreacherDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Rogue" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="RogueDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Athletic" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="AthleticDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Enforcer" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="EnforcerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Farmer" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="FarmerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Biker" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="BikerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Scavenger" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="ScavengerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Ranger" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="RangerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Commando" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="CommandoDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Assassin" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="AssassinDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Miner" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="MinerDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Nomad" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="NomadDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Nerd" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="NerdDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Raider" count="1" craft_time="1" is_trackable="false">
+			<property name="DescriptionKey" value="RaiderDesc"/>
+			<ingredient name="Armor" count="1"/>
+		</recipe>
+
+		<recipe name="Ordnance Specialist" count="1" craft_time="1" is_trackable="false">
+			<ingredient name="ClassBag" count="1"/>
+		</recipe>
+
+		<recipe name="Director of Security" count="1" craft_time="1" is_trackable="false">
+			<ingredient name="ClassBag" count="1"/>
+		</recipe>
+
+		<recipe name="Naval Recon Scout" count="1" craft_time="1" is_trackable="false">
+			<ingredient name="ClassBag" count="1"/>
+		</recipe>
+
+		<recipe name="Chief Systems Engineer" count="1" craft_time="1" is_trackable="false">
+			<ingredient name="ClassBag" count="1"/>
+		</recipe>
+
+		<recipe name="Biological Warfare Survivor" count="1" craft_time="1" is_trackable="false">
+			<ingredient name="ClassBag" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceSalt" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>	
+	</append>
+  <remove xpath="/recipes/recipe[@name='drinkJarBoiledWater' and ingredient[@name='drinkJarRiverWater']]"/>
+
+	<append xpath="/recipes/recipe[@name='foodGrilledMeat']">
+		<ingredient name="resourceSalt" count="1"/>
+	</append>
+
+	<append xpath="/recipes/recipe[@name='foodBoiledMeat']">
+		<ingredient name="resourceSalt" count="1"/>
+	</append>
+
+	<!-- Add 2 Salt to Meat Stew and Fish Tacos -->
+	<append xpath="/recipes/recipe[@name='foodMeatStew']">
+		<ingredient name="resourceSalt" count="2"/>
+	</append>
+
+	<append xpath="/recipes/recipe[@name='foodFishTacos']">
+		<ingredient name="resourceSalt" count="2"/>
+	</append>
+	
   <!-- reduce requirements for some scarce resources -->
   <set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='campfire']/ingredient[@name='resourceBone']/@count">4</set>
   <set xpath="/recipes/recipe[@name='resourceGlue' and @craft_area='chemistryStation']/ingredient[@name='resourceBone']/@count">2</set>

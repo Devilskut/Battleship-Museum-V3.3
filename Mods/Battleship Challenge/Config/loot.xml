@@ -1,5 +1,22 @@
 ﻿<configs>
+	<remove xpath="//lootgroup[@name='cannedfood']" />
+	<remove xpath="//lootgroup[@name='groupDumpsterFood']" />
 
+	<insertbefore xpath="//lootgroup[@name='foodCandy']">
+		<lootgroup name="cannedfood">
+			<item name="foodCanSalmon"/>
+			<item name="foodCanTuna"/>
+		</lootgroup>
+
+		<!-- *** Master_Chef_Dumpster_Food -->
+		<lootgroup name="groupDumpsterFood">
+			<item name="foodCanSalmon"/>
+			<item name="foodCanTuna"/>
+			<item name="foodEgg" count="1,5"/>
+			<item name="drinkJarEmpty" count="1"/>
+		</lootgroup>
+
+	</insertbefore>
 	<!-- removes non-essential vehicle parts -->
 	<remove xpath="//lootgroup[@name='bicycleParts']//item[@name='vehicleBicycleChassis']"/>
 	<remove xpath="//lootgroup[@name='minibikeParts']//item[@name='vehicleMinibikeChassis']"/>
@@ -46,7 +63,7 @@
 	<setattribute xpath="//lootcontainer[@name='chemPileSmall']" name="destroy_on_close">empty</setattribute>
 	<setattribute xpath="//lootcontainer[@name='chemPileMed']" name="destroy_on_close">empty</setattribute>
 	<setattribute xpath="//lootcontainer[@name='chemPileLarge']" name="destroy_on_close">empty</setattribute>
-	<setattribute xpath="//lootcontainer[@name='collapsedDewCollector']" name="destroy_on_close">empty</setattribute>
+	<setattribute xpath="//lootcontainer[@name='collapsedDewCollector']" name="destroy_on_close">false</setattribute>
 	
 	<!-- removes paper from bookshelf loot -->
 	<remove xpath="//lootgroup[@name='groupBookcase01']//item[@name='resourcePaper']" />
@@ -65,7 +82,6 @@
         <item name="resourceOilShale" count="50,100"/>
 	</set>
 
-	
 
 	<!-- zombie specific loot -->
 		
