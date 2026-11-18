@@ -31,12 +31,12 @@
   <property name="WallVolumeSize" value="19, 23, 1#9, 5, 1#2, 6, 99#1, 6, 4#1, 6, 11#4, 6, 1#1, 6, 5#1, 6, 9#1, 6, 8#1, 6, 10#1, 6, 12#1, 6, 12#1, 6, 7#1, 6, 5#1, 6, 7#1, 6, 7#1, 6, 5#1, 6, 7#1, 6, 12#1, 6, 12#1, 6, 10#1, 6, 8#1, 6, 6#3, 6, 1#4, 3, 1" />
   <property name="WallVolumeStart" value="19, 17, 200#24, 15, 188#9, 14, 0#11, 14, 104#13, 14, 117#14, 14, 127#10, 14, 99#12, 14, 108#17, 14, 128#18, 14, 136#19, 14, 146#20, 14, 158#21, 14, 170#22, 14, 177#23, 14, 182#33, 14, 182#34, 14, 177#35, 14, 170#36, 14, 158#37, 14, 146#38, 14, 136#39, 14, 128#42, 14, 122#39, 14, 127#43, 14, 122" />
   <property class="Stats">
-    <property name="LightsVolume" value="33385.16" />
-    <property name="TotalVertices" value="7137628" />
-    <property name="TotalTriangles" value="2842158" />
+    <property name="LightsVolume" value="33385.14" />
+    <property name="TotalVertices" value="7120708" />
+    <property name="TotalTriangles" value="2832168" />
     <property class="BlockEntities">
-      <property name="Vertices" value="5782171" />
-      <property name="Triangles" value="1984966" />
+      <property name="Vertices" value="5765203" />
+      <property name="Triangles" value="1974952" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="1001895" />
@@ -51,8 +51,8 @@
       <property name="Triangles" value="2528" />
     </property>
     <property class="ChunkMeshes3">
-      <property name="Vertices" value="2616" />
-      <property name="Triangles" value="1308" />
+      <property name="Vertices" value="2664" />
+      <property name="Triangles" value="1332" />
     </property>
     <property class="ChunkMeshes4">
       <property name="Vertices" value="0" />
@@ -132,7 +132,6 @@
     </property>
     <property class="quest_wood_trees">
       <property name="0" value="49, 18, 85" />
-      <property name="1" value="55, 18, 85" />
     </property>
   </property>
 </prefab>

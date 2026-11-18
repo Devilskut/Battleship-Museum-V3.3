@@ -452,7 +452,21 @@
 		</lootgroup>	
 	</insertafter>
 
-	
+    <!-- Add Cucumbers to farm produce, coolers, and common food crates -->
+    <append xpath="/lootcontainers/lootgroup[contains(@name, 'farm') or contains(@name, 'produce') or @name='groupFoodCommon' or @name='groupFoodUncommon']">
+        <item name="Cucumber" count="1,3" prob="0.8"/>
+    </append>
+
+    <!-- Add Sea-Brined Pickles to uncommon/prepared food containers and coolers -->
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon' or @name='groupFoodRare' or contains(@name, 'cooler')]">
+        <item name="foodPickles" count="1,2" prob="0.6"/>
+    </append>
+
+    <!-- Add Cucumber Seeds to seed loot groups -->
+    <append xpath="/lootcontainers/lootgroup[contains(@name, 'seeds') or contains(@name, 'Seeds')]">
+        <item name="plantedCucumber1" count="1,2" prob="0.8"/>
+    </append>
+
 	<append xpath="/lootcontainers">
 
 		<lootgroup name="ACgroupAmmoMunitions" count="all">
