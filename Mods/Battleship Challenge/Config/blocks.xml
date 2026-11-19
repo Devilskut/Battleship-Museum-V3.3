@@ -10,9 +10,10 @@
 
 		<!-- Hover text always says Has Water -->
 		<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HasItem1Text']/@value">dewCollectorHasWater</set>
+
+		<!-- Increases Dew Collector health (default vanilla MaxDamage is 200) -->
+		<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxDamage']/@value">1000</set>
 	
-
-
 	<insertafter xpath="/blocks/block[@name='concreteNoUpgradeMaster']">
 		<block name="corrugatedMetalNoUpgradeMaster2">
 			<property name="DescriptionKey" value="scrapIronGroupDesc"/>

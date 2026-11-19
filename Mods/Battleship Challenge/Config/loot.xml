@@ -17,6 +17,35 @@
 		</lootgroup>
 
 	</insertbefore>
+	<remove xpath="//lootgroup[@name='groupFoodCommon']" />
+	<remove xpath="//lootgroup[@name='groupFoodPileCommon']" />
+	<remove xpath="//lootgroup[@name='groupFoodUncommon']" />
+	
+	<insertbefore xpath="//lootgroup[@name='groupFoodRare']">
+		<lootgroup name="groupFoodCommon">
+			<item name="foodCanSalmon"/>
+			<item name="foodCanTuna"/>
+			<item name="foodCornMeal"/>
+			<item name="foodShamSandwich"/>
+			<item name="foodCharredMeat"/>
+			<item name="Cucumber" count="1,3" prob="0.8"/>
+		</lootgroup>
+
+		<lootgroup name="groupFoodPileCommon">
+			<item name="foodCanSalmon"/>
+			<item name="foodCanTuna"/>
+			<item name="foodCornBread"/>
+			<item name="foodCharredMeat"/>
+			<item name="Cucumber" count="1,3" prob="0.8"/>
+		</lootgroup>
+
+		<lootgroup name="groupFoodUncommon">
+			<item name="foodCanSalmon"/>
+			<item name="foodCanTuna"/>
+			<item name="Cucumber" count="1,3" prob="0.8"/>
+			<item name="foodPickles" count="1,2" prob="0.6"/>
+		</lootgroup>
+	</insertbefore>
 	<!-- removes non-essential vehicle parts -->
 	<remove xpath="//lootgroup[@name='bicycleParts']//item[@name='vehicleBicycleChassis']"/>
 	<remove xpath="//lootgroup[@name='minibikeParts']//item[@name='vehicleMinibikeChassis']"/>
@@ -451,8 +480,13 @@
 			<item name="resourceBeeswax" prob=".75" force_prob="true" />
 		</lootgroup>	
 	</insertafter>
+	
+	<append xpath="//lootgroup[contains(@name, 'Drinks') or contains(@name, 'drinks') or contains(@name, 'Beverage')]">
+		<item name="drinkJarWeakCoffee" count="1,2" prob="0.8"/>
+		<item name="drinkJarCucumberWater" count="1,2" prob="0.7"/>
+	</append>
 
-    <!-- Add Cucumbers to farm produce, coolers, and common food crates -->
+	<!-- Add Cucumbers to farm produce, coolers, and common food crates -->
     <append xpath="/lootcontainers/lootgroup[contains(@name, 'farm') or contains(@name, 'produce') or @name='groupFoodCommon' or @name='groupFoodUncommon']">
         <item name="Cucumber" count="1,3" prob="0.8"/>
     </append>

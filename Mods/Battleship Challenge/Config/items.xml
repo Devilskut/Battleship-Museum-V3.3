@@ -1,5 +1,5 @@
 ﻿<configs>
-   <insertafter xpath="/items/item[@name]/property[1]">
+	  <insertafter xpath="/items/item[@name]/property[1]">
 		<property name="CreativeMode" value="None"/> 
 	</insertafter>
 	<set xpath="/items/item//property[@name='CreativeMode']/@value">None</set> 
@@ -21,7 +21,7 @@
 			<property name="Use_time" value="0"/>
 			<property name="Sound_start" value="UseActions/open_backpack"/>
 			<property name="Create_item" value="biomeBadge1,biomeBadge2,biomeBadge3,biomeBadge4,meleeToolRepairT0StoneAxe,drinkJarBoiledWater,foodCanSalmon,medicalFirstAidBandage2,Class Bag"/>
-			<property name="Create_item_count" value="1,1,1,1,1,3,2,10,1"/>
+			<property name="Create_item_count" value="1,1,1,1,1,4,1,10,1"/>
 		</property>
 	</item>	
 	</insertAfter>
@@ -29,13 +29,206 @@
 	<append xpath="/items/item[contains(property[@name='Tags']/@value, 'miningTool')]/effect_group[1]">
 		<passive_effect name="EntityDamage" operation="perc_add" value="-0.90"/>
 	</append>
+
+	<set xpath="//item[@name='foodBaconAndEggs']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">18</set>
+	<set xpath="//item[@name='foodBaconAndEggs']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">9</set>
+	<set xpath="//item[@name='foodBaconAndEggs']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">9</set>
+	<set xpath="//item[@name='foodBaconAndEggs']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">5</set>
+	<set xpath="//item[@name='foodBaconAndEggs']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">5</set>
+
+	<set xpath="//item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">23</set>
+	<set xpath="//item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">20</set>
+	<set xpath="//item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">20</set>
+	<set xpath="//item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">15</set>
+	<set xpath="//item[@name='foodFishTacos']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">15</set>
 	
-    <remove xpath="/items/item[@name='drinkJarRiverWater']/property[@class='Action0']"/>
+	<set xpath="//item[@name='foodHoboStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">32</set>
+    <set xpath="//item[@name='foodHoboStew']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+    <set xpath="//item[@name='foodHoboStew']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">16</set>
+    <set xpath="//item[@name='foodHoboStew']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">15</set>
+    <set xpath="//item[@name='foodHoboStew']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">15</set>
+
+	<!-- Sham Sandwich -->
+	<set xpath="//item[@name='foodShamSandwich']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">8</set>
+
+	<!-- Chicken Wings -->
+	<set xpath="//item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">49</set>
+	<set xpath="//item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">24</set>
+	<set xpath="//item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">2</set>
+	<set xpath="//item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Chicken Nuggets -->
+	<set xpath="//item[@name='foodChickenNuggets']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">12</set>
+	<set xpath="//item[@name='foodChickenNuggets']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">6</set>
+	<set xpath="//item[@name='foodChickenNuggets']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">2</set>
+	<set xpath="//item[@name='foodChickenNuggets']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">5</set>
+	<set xpath="//item[@name='foodChickenNuggets']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">5</set>
+
+	<!-- Ash Chicken Stew -->
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">38</set>
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">18</set>
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">12</set>
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodAshChickenStew']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Roadrunner Chicken Jerky -->
+	<set xpath="//item[@name='foodRoadrunnerChickenJerky']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
+	<set xpath="//item[@name='foodRoadrunnerChickenJerky']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">7</set>
+	<set xpath="//item[@name='foodRoadrunnerChickenJerky']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">2</set>
+	<set xpath="//item[@name='foodRoadrunnerChickenJerky']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">7</set>
+	<set xpath="//item[@name='foodRoadrunnerChickenJerky']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">7</set>
+
+	<!-- Meat Stew -->
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">25</set>
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">12</set>
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">12</set>
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodMeatStew']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Steak and Potato -->
+	<set xpath="//item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">25</set>
+	<set xpath="//item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">12</set>
+	<set xpath="//item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">12</set>
+	<set xpath="//item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodSteakAndPotato']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Honey Glazed Sham -->
+	<set xpath="//item[@name='foodHoneyGlazedSham']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">49</set>
+	<set xpath="//item[@name='foodHoneyGlazedSham']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">24</set>
+	<set xpath="//item[@name='foodHoneyGlazedSham']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">24</set>
+	<set xpath="//item[@name='foodHoneyGlazedSham']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">15</set>
+	<set xpath="//item[@name='foodHoneyGlazedSham']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">15</set>
+
+	<!-- Honey Brisket -->
+	<set xpath="//item[@name='foodHoneyBrisket']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">70</set>
+	<set xpath="//item[@name='foodHoneyBrisket']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">35</set>
+	<set xpath="//item[@name='foodHoneyBrisket']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">35</set>
+	<set xpath="//item[@name='foodHoneyBrisket']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">20</set>
+	<set xpath="//item[@name='foodHoneyBrisket']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">20</set>
+
+	<!-- Sham Chowder -->
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">26</set>
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">5</set>
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">40</set>
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">40</set>
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">15</set>
+	<set xpath="//item[@name='foodShamChowder']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">15</set>
+
+	<!-- Chili Dog -->
+	<set xpath="//item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">26</set>
+	<set xpath="//item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">15</set>
+	<set xpath="//item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">15</set>
+	<set xpath="//item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">15</set>
+	<set xpath="//item[@name='foodChiliDog']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">15</set>
+
+	<!-- Blueberry Pie -->
+	<set xpath="//item[@name='foodBlueberryPie']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
+	<set xpath="//item[@name='foodBlueberryPie']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
+	<set xpath="//item[@name='foodBlueberryPie']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">11</set>
+	<set xpath="//item[@name='foodBlueberryPie']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodBlueberryPie']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Pumpkin Pie -->
+	<set xpath="//item[@name='foodPumpkinPie']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">25</set>
+	<set xpath="//item[@name='foodPumpkinPie']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">12</set>
+	<set xpath="//item[@name='foodPumpkinPie']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">12</set>
+	<set xpath="//item[@name='foodPumpkinPie']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodPumpkinPie']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Pumpkin Cheesecake -->
+	<set xpath="//item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">21</set>
+	<set xpath="//item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">10</set>
+	<set xpath="//item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">10</set>
+	<set xpath="//item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Pumpkin Bread -->
+	<set xpath="//item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">6</set>
+	<set xpath="//item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">3</set>
+	<set xpath="//item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">3</set>
+	<set xpath="//item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Gumbo Stew -->
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">56</set>
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">28</set>
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">28</set>
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">20</set>
+	<set xpath="//item[@name='foodGumboStew']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">20</set>
+
+	<!-- Shepherd's Pie -->
+	<set xpath="//item[@name='foodShepardsPie']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">52</set>
+	<set xpath="//item[@name='foodShepardsPie']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">26</set>
+	<set xpath="//item[@name='foodShepardsPie']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">26</set>
+	<set xpath="//item[@name='foodShepardsPie']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">20</set>
+	<set xpath="//item[@name='foodShepardsPie']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">20</set>
+
+	<!-- Spaghetti -->
+	<set xpath="//item[@name='foodSpaghetti']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">60</set>
+	<set xpath="//item[@name='foodSpaghetti']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">30</set>
+	<set xpath="//item[@name='foodSpaghetti']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">30</set>
+	<set xpath="//item[@name='foodSpaghetti']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">20</set>
+	<set xpath="//item[@name='foodSpaghetti']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">20</set>
+
+	<!-- Tuna Fish Gravy Toast -->
+	<set xpath="//item[@name='foodTunaFishGravyToast']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">45</set>
+	<set xpath="//item[@name='foodTunaFishGravyToast']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">22</set>
+	<set xpath="//item[@name='foodTunaFishGravyToast']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">22</set>
+	<set xpath="//item[@name='foodTunaFishGravyToast']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">20</set>
+	<set xpath="//item[@name='foodTunaFishGravyToast']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">20</set>
+
+	<!-- Vegetable Stew -->
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15.5</set>
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">7.5</set>
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='foodHealthFarmer']/@value">7.5</set>
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='.foodStaminaBonusAdd']/@value">10</set>
+	<set xpath="//item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='foodStaminaFarmer']/@value">10</set>
+
+	<!-- Boiled Water: 20 -> 10 water -->
+	<set xpath="//item[@name='drinkJarBoiledWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">10</set>
+
+	<!-- Pure Mineral Water: 60 -> 30 water -->
+	<set xpath="//item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">30</set>
+
+	<!-- Yucca Juice: 34 -> 17 water -->
+	<set xpath="//item[@name='drinkJarYuccaJuice']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">17</set>
+
+	<!-- Goldenrod Tea: 24 -> 12 water -->
+	<set xpath="//item[@name='drinkJarGoldenRodTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">12</set>
+
+	<!-- Honey Tea: 24 -> 12 water, 8 -> 4 food -->
+	<set xpath="//item[@name='drinkJarHoneyTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">12</set>
+	<set xpath="//item[@name='drinkJarHoneyTea']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">4</set>
+
+	<!-- Red Tea: 24 -> 12 water -->
+	<set xpath="//item[@name='drinkJarRedTea']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">12</set>
+
+	<!-- Yucca Juice Smoothie: 22 -> 11 food, 78 -> 39 water -->
+	<set xpath="//item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">11</set>
+	<set xpath="//item[@name='drinkYuccaJuiceSmoothie']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">39</set>
+
+	<!-- Mega Crush: 60 -> 30 water -->
+	<set xpath="//item[@name='drinkCanMegaCrush']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">30</set>
+
+	<!-- Coffee: 24 -> 12 water -->
+	<set xpath="//item[@name='drinkJarCoffee']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">12</set>
+
+	<!-- Blackstrap Coffee: 24 -> 12 water -->
+	<set xpath="//item[@name='drinkJarBlackStrapCoffee']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">12</set>
+
+	<!-- Remove Action2 (bare-handed Drink from water blocks/puddles) while keeping Action1 (Power Attack) -->
+	<remove xpath="/items/item[@name='meleeHandPlayer']/property[@class='Action2']"/>
+	<remove xpath="/items/item[@name='meleeHandPlayer']/effect_group[@name='Drink']"/>
+
+	<remove xpath="/items/item[@name='drinkJarRiverWater']/property[@class='Action0']"/>
     <remove xpath="/items/item[@name='drinkJarRiverWater']/effect_group"/>
     <set xpath="/items/item[@name='drinkJarRiverWater']/property[@name='DisplayType']/@value">item</set>
 
-	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">22</set>
-	<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">11</set>
 	<set xpath="/items/item[@name='foodEgg']/property[@name='EconomicValue']/@value">30</set>
 	
 	<remove xpath="/items/item[@name='ammoProjectileZombieBoulder']" />
@@ -209,15 +402,17 @@
 	<append xpath="/items">
 		<!-- Salted Salmon Jerky: High food, slight thirst cost, zero spoilage/poison chance -->
 		<item name="foodSaltedSalmon">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="foodCanSalmon"/>
 			<property name="CustomIcon" value="foodCanSalmon"/>
 			<property name="CustomIconTint" value="255,220,200"/>
 			<property name="DescriptionKey" value="foodSaltedSalmonDesc"/>
+			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="EconomicValue" value="45"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			<effect_group tiered="false" name="Food Effects">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="18"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 			</effect_group>
@@ -225,10 +420,12 @@
 
 		<!-- Salted Tuna & Sea Broth: Restores both hunger and hydration -->
 		<item name="foodSaltedTunaStew">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="foodMeatStew"/>
 			<property name="CustomIcon" value="foodMeatStew"/>
 			<property name="CustomIconTint" value="210,235,255"/>
 			<property name="DescriptionKey" value="foodSaltedTunaStewDesc"/>
+			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="EconomicValue" value="75"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			<effect_group tiered="false" name="Food Effects">
@@ -241,15 +438,17 @@
 	
 		<!-- Salted Bacon & Eggs: Upgraded campfire breakfast with extra food and health -->
 		<item name="foodSaltedBaconAndEggs">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="foodBaconAndEggs"/>
 			<property name="CustomIcon" value="foodBaconAndEggs"/>
 			<property name="CustomIconTint" value="255,240,210"/>
 			<property name="DescriptionKey" value="foodSaltedBaconAndEggsDesc"/>
+			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="EconomicValue" value="65"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			<effect_group tiered="false" name="Food Effects">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="48"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="24"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="38"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="18"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-3"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 			</effect_group>
@@ -257,15 +456,17 @@
 
 		<!-- Salted Steak & Eggs: High-protein ration using raw meat, eggs, cornmeal, and salt -->
 		<item name="foodSaltedSteakAndEggs">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="foodSteakAndPotato"/>
 			<property name="CustomIcon" value="foodSteakAndPotato"/>
 			<property name="CustomIconTint" value="255,225,205"/>
 			<property name="DescriptionKey" value="foodSaltedSteakAndEggsDesc"/>
+			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="EconomicValue" value="95"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			<effect_group tiered="false" name="Food Effects">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="68"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="35"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="58"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 			</effect_group>
@@ -273,11 +474,13 @@
 		
 		<!-- Tuna & Pickle Sandwich: Eliminates the food poisoning risk of raw Sham Sandwiches -->
 		<item name="foodTunaPickleSandwich">
+			<property name="CreativeMode" value="None"/>
 			<property name="Extends" value="foodShamSandwich"/>
 			<property name="CustomIcon" value="foodShamSandwich"/>
 			<property name="CustomIconTint" value="200,245,215"/>
 			<property name="DescriptionKey" value="foodTunaPickleSandwichDesc"/>
 			<property name="DisplayType" value="foodWaterNegative"/>
+			<property name="UnlockedBy" value="craftingFood"/>
 			<property name="EconomicValue" value="55"/>
 			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 			<effect_group tiered="false" name="Food Effects">
@@ -293,6 +496,7 @@
 		
 			<!-- Weak Coffee: Modest hydration (+12), mild stamina boost (2 min), and a small 4% dysentery risk from the sea water -->
 			<item name="drinkJarWeakCoffee">
+				<property name="CreativeMode" value="None"/>
 				<property name="Extends" value="drinkJarCoffee"/>
 				<property name="CustomIcon" value="drinkJarCoffee"/>
 				<property name="CustomIconTint" value="210,190,170"/>
@@ -300,7 +504,7 @@
 				<property name="EconomicValue" value="15"/>
 				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 				<effect_group tiered="false" name="Drink Effects">
-					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="12"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="8"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="120"/>
@@ -313,14 +517,16 @@
 
 			<!-- Cucumber Water: High-value clean hydration (+38 water, +8 health, zero dysentery risk) -->
 			<item name="drinkJarCucumberWater">
+				<property name="CreativeMode" value="None"/>
 				<property name="Extends" value="drinkJarYuccaJuice"/>
 				<property name="CustomIcon" value="drinkJarPureMineralWater"/>
 				<property name="CustomIconTint" value="190,255,190"/>
 				<property name="DescriptionKey" value="drinkJarCucumberWaterDesc"/>
+				<property name="UnlockedBy" value="craftingFood"/>
 				<property name="EconomicValue" value="25"/>
 				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 				<effect_group tiered="false" name="Drink Effects">
-					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="38"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="48"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 				</effect_group>
@@ -328,14 +534,16 @@
 
 			<!-- Salted Pickles: Restores both food (+18) and hydration (+10) with zero dysentery risk -->
 			<item name="foodPickles">
+				<property name="CreativeMode" value="None"/>
 				<property name="Extends" value="foodCropYuccaFruit"/>
 				<property name="CustomIcon" value="foodCropYuccaFruit"/>
 				<property name="CustomIconTint" value="160,220,130"/>
 				<property name="DescriptionKey" value="foodPicklesDesc"/>
+				<property name="UnlockedBy" value="craftingFood"/>
 				<property name="EconomicValue" value="35"/>
 				<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 				<effect_group tiered="false" name="Food Effects">
-					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="18"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
 					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
@@ -482,6 +690,7 @@
 		</item>
 
 		<item name="Cucumber">
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="food,foodSkill,fitness"/>
 			<property name="CustomIcon" value="Gurke"/>
 			<property name="HoldType" value="31"/>
@@ -511,6 +720,7 @@
 		</item>
 
 		<item name="resourceSalt">
+			<property name="CreativeMode" value="None"/>
 			<property name="Tags" value="food,foodSkill,fitness"/>
 			<property name="CustomIcon" value="Salty2"/>
 			<property name="HoldType" value="45"/>

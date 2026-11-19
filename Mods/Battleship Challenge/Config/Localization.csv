@@ -23,10 +23,12 @@ drinkJarWeakCoffee,Weak Coffee
 drinkJarWeakCoffeeDesc,"A slightly brackish brew made by boiling coffee beans directly in sea water. Restores modest hydration and gives a brief stamina boost."
 drinkJarCucumberWater,Cucumber Water
 drinkJarCucumberWaterDesc,"Distilled drinking water infused with sliced cucumbers. Crisp, refreshing, and restores extra hydration."
-foodPickles,items,Item,Sea-Brined Pickles
+foodPickles,Sea-Brined Pickles
 foodPicklesDesc,"Crisp cucumbers pickled in boiled sea water and coarse sea salt. Restores both hunger and hydration."
 foodTunaPickleSandwich,Tuna & Pickle Sandwich
 foodTunaPickleSandwichDesc,"Two salvaged Sham sandwiches stacked with canned tuna and tangy sea-brined pickles. Safe to eat and surprisingly filling."
+drinkJarRedTea,Bug Juice
+drinkJarRedTeaDesc,Rumors Say it can clean the paint off bulkheads.
 
 escape_hugh,Storage Facility
 Museum_Trader,Museum Trader
